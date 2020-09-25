@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ba262c</color>
+    <color name="colorPrimaryDark">#ba262c</color>
+    <color name="colorAccent">#ba262c</color>
+
+    <color name="theme_color">#ba262c</color>
+    <color name="user_theme_color">#e53935</color>
+    <color name="light_red">#ff8a80</color>
+    <color name="hold_red">#ff5252</color>
+    <color name="tight_red">#d32f2f</color>
+
+    <color name="theme_light">#EFCDCE</color>
+    <color name="bluish_grey">#ECE6E6</color>
+    <color name="window_background">#F2F2F2</color>
+    <color name="off_white">#f4f4f4</color>
+    <color name="black">#000000</color>
+    <color name="dim_black">#4C4C4C</color>
+    <color name="dim_grey">#696969</color>
+    <color name="trans_grey">#494949</color>
+	<color name="trans_greyy">#808080</color>
+    <color name="light_grey">#EFEFEF</color>
+    <color name="dark_grey">#A9A9A9</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="black_light_transparent">#33000000</color>
+	<color name="black_light_transparentt">#10000000</color>
+    <color name="shimmer_background">#dddddd</color>
+    <color name="background">#E5E5E5</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#FFFFFF</color>
+    <color name="semi_white">#A4A4B4</color>
+    <color name="white_pressed">#F1F1F1</color>
+    <color name="dim_white">#D3D3D3</color>
+    <color name="lite_white">#EBECEE</color>
+    <color name="pink">#E91E63</color>
+    <color name="pink_pressed">#EC407A</color>
+    <color name="blue_semi_transparent">#805677FC</color>
+    <color name="blue_semi_transparentt">#1a3871</color>
+    <color name="blue_semi_transparent_pressed">#90BED6F1 </color>
+    <color name="colorTransparent">#3A212121</color>
+    <color name="divider_color">#309E9EA0</color>
+    <color name="progress_secondary">#d7d7d7</color>
+	<color name="green_tranparent">#e6ffe6</color>
+	<color name="red_tranparent">#ffebe6</color>
+	<color name="green_light"> #99ff99</color>
+    <color name="green">#4CAF50</color>
+	<color name="green_drak">#009900</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FFA500</color>
+    <color name="brown">#DBA948</color>
+    <color name="yellow">#FBBB00</color>
+
+    <color name="dash_background">#E7E7E7</color>
+    <color name="date_background">#FCF9F9</color>
+
+    <color name="dim_red">#703320</color>
+
+    <color name="gradient_upper">#B3282d</color>
+    <color name="gradient_bottom">#482E2E</color>
+
+    <color name="gradient_red_start">#e53935</color>
+    <color name="gradient_red_end">#e35d5b</color>
+
+    <color name="cyan">#57DAE8</color>
+    <color name="cyan_light">#6AE9F7</color>
+    <color name="blue">#3772FF</color>
+	<color name="offline">#67b7dc</color>
+	<color name="online">#6794dc</color>
+    <color name="dim_blue">#E63772FF</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+        <item>@color/dot_dark_screen</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+        <item>@color/dot_light_screen</item>
+    </array>
+
+    <integer-array name="android_colors">
+        <item>@color/blue</item>
+        <item>@color/green</item>
+        <item>@color/orange</item>
+        <item>@color/red</item>
+    </integer-array>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen">#ba262c</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen">#F2F2F2</color>
+</resources>

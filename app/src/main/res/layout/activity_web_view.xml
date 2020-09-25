@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.socialsportz.Activities.WebViewActivity">
+
+	<RelativeLayout
+		android:id="@+id/search_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/margin_45dp"
+		android:orientation="horizontal"
+		android:background="@drawable/canvas_red_gradient">
+
+		<ImageButton
+			android:id="@+id/ib_back"
+			android:layout_width="@dimen/margin_40dp"
+			android:layout_height="match_parent"
+			android:background="@null"
+			android:paddingLeft="@dimen/margin_start_vary_5"
+			android:layout_gravity="center_vertical"
+			android:contentDescription="@string/app_desc"
+			android:src="@drawable/ic_keyboard_arrow_left_white"
+			android:tint="@color/white" />
+
+		<com.socialsportz.View.PMTextView
+			android:id="@+id/tv_page_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:text="@string/pay_now"
+			android:layout_toRightOf="@+id/ib_back"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_xlarge" />
+
+		<ImageView
+			android:id="@+id/img"
+			android:layout_width="@dimen/_50sdp"
+			android:layout_height="@dimen/_40sdp"
+			android:layout_alignParentEnd="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="@dimen/_10sdp"
+			android:src="@drawable/logo"
+			android:contentDescription="@string/app_desc"></ImageView>
+	</RelativeLayout>
+
+	<WebView
+
+		android:id="@+id/webview"
+
+		android:layout_width="match_parent"
+
+		android:layout_height="match_parent"
+		android:layout_below="@+id/search_toolbar"
+
+		android:visibility="visible" />
+
+</RelativeLayout>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/date_background"
+            android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_4sdp"
+				android:layout_marginRight="@dimen/_4sdp"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:orientation="horizontal"
+				android:weightSum="2">
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_sb_select"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1.2"
+					android:padding="@dimen/_5sdp"
+					android:layout_margin="@dimen/_5sdp"
+					android:gravity="center_horizontal"
+					android:layout_marginRight="@dimen/_10sdp"
+					android:background="@drawable/canvas_event_bottom_curve_bg_checcked"
+					android:textSize="@dimen/text_size_regular"
+					android:text="Slot/Batch"
+					android:elevation="@dimen/_5sdp"
+					android:textColor="@color/white"/>
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_event_select"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="0.8"
+					android:gravity="center_horizontal"
+					android:padding="@dimen/_5sdp"
+					android:layout_margin="@dimen/_5sdp"
+					android:elevation="@dimen/_5sdp"
+					android:background="@drawable/canvas_event_bottom_curve_bg_uncecked"
+					android:textSize="@dimen/text_size_regular"
+					android:text="Event"
+					android:textColor="@color/black"/>
+
+			</LinearLayout>
+
+            <com.socialsportz.Utils.DropDownView
+                style="@style/formDropDown"
+                android:id="@+id/drop_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/margin_start_vary_8"
+                android:layout_margin="@dimen/margin_10dp"
+                android:elevation="@dimen/margin_start_vary_2"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+                android:hint="@string/select_sportt"
+                android:textSize="@dimen/text_size_large"
+                android:textColor="@color/black"
+                android:background="@drawable/relative_rate_review_style"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <com.socialsportz.View.PRTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_regular"
+                        android:text="@string/start_date"
+                        android:visibility="gone"
+                        android:textColor="@color/black"/>
+
+
+					<com.socialsportz.Utils.DropDownView
+						style="@style/formDropDown"
+						android:id="@+id/drop_year"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:padding="@dimen/margin_start_vary_8"
+						android:layout_margin="@dimen/margin_5dp"
+						android:elevation="@dimen/margin_start_vary_2"
+						android:drawableEnd="@drawable/ic_date_range_grey"
+						android:hint="Please select year"
+						android:textSize="@dimen/text_size_large"
+						android:textColor="@color/black"
+						android:background="@drawable/relative_rate_review_style"/>
+
+                   <!-- <RelativeLayout
+                        android:id="@+id/st_date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="@dimen/margin_start_vary_2"
+						android:visibility="gone"
+                        android:background="@drawable/relative_rate_review_style"
+                        android:padding="@dimen/margin_start_vary_8"
+                        android:elevation="@dimen/margin_start_vary_2">
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:id="@+id/tv_st_date_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_regular"
+                            android:hint="Please select year"
+                            android:textColor="@color/dim_grey"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            tools:ignore="RelativeOverlap" />
+                        <ImageView
+                            android:id="@+id/date_picker1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_date_range_grey"
+                            android:layout_marginStart="@dimen/margin_start_vary_10"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                    <com.vibescom.socialsportz.View.PRTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_regular"
+                        android:text="@string/end_date"
+                        android:visibility="gone"
+                        android:layout_marginStart="@dimen/margin_3dp"
+                        android:textColor="@color/black"/>
+                    <RelativeLayout
+                        android:id="@+id/ed_date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/relative_rate_review_style"
+                        android:padding="@dimen/margin_start_vary_8"
+						android:visibility="gone"
+                        android:layout_margin="@dimen/margin_start_vary_2"
+                        android:elevation="@dimen/margin_start_vary_2">
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:id="@+id/tv_ed_date_picker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_regular"
+                            android:hint="@string/ed_date"
+                            android:textColor="@color/dim_grey"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            tools:ignore="RelativeOverlap" />
+                        <ImageView
+                            android:id="@+id/time_picker2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_date_range_grey"
+                            android:layout_marginStart="@dimen/margin_start_vary_10"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+                </LinearLayout>-->
+
+                <ImageButton
+                    android:id="@+id/ib_search"
+                    android:layout_width="@dimen/margin_40dp"
+                    android:layout_height="@dimen/margin_40dp"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/canvas_filter_img_bg_style"
+                    android:src="@drawable/ic_search"
+                    android:tint="@color/white"
+                    android:contentDescription="@string/app_desc"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:layout_marginBottom="@dimen/margin_start_vary_10"
+                android:visibility="gone">
+                <EditText
+                    android:id="@+id/search_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40dp"
+                    android:background="@drawable/canvas_search_bg_style"
+                    android:drawableStart="@drawable/quantum_ic_search_grey600_24"
+                    android:hint="Search Bookings"
+                    android:layout_alignParentStart="true"
+                    android:focusableInTouchMode="true"
+                    android:drawablePadding="@dimen/margin_start_vary_5"
+                    android:paddingStart="@dimen/margin_start_vary_10"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    tools:ignore="HardcodedText,RtlSymmetry"
+                    tools:targetApi="o" />
+            </RelativeLayout>
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="@dimen/margin_start_vary_10"
+                android:paddingEnd="@dimen/margin_start_vary_10"
+                android:drawableStart="@drawable/ic_clear_all_white"
+                android:drawablePadding="@dimen/margin_8dp"
+                android:textSize="@dimen/text_size_regular"
+                android:text="@string/clear_filter"
+                android:textColor="@color/white"
+                android:background="@color/theme_color"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_10dp"
+            android:paddingStart="@dimen/margin_start_vary_10"
+            android:paddingEnd="@dimen/margin_start_vary_10"
+            android:paddingBottom="@dimen/margin_10dp">
+
+            <com.socialsportz.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/revenue_stats"
+                android:textSize="@dimen/text_size_large" />
+
+            <LinearLayout
+                android:id="@+id/bar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/canvas_booking_details_img_bg">
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/book_chart"
+                    android:layout_width="match_parent"
+					android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_height="380dp" />
+
+            </LinearLayout>
+
+            <com.socialsportz.View.PMTextView
+				android:id="@+id/eventstatisyics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:textColor="@color/black"
+                android:text="@string/booking_stats"
+                android:textSize="@dimen/text_size_large" />
+
+            <LinearLayout
+				android:id="@+id/ll_pie"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:background="@drawable/canvas_booking_details_img_bg">
+
+
+				<!--<lecho.lib.hellocharts.view.PieChartView
+					android:id="@+id/chart1"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_marginBottom="@dimen/margin_10dp"/>-->
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

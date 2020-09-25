@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="@dimen/margin_3dp"
+        app:cardElevation="@dimen/margin_3dp"
+        app:cardCornerRadius="@dimen/margin_30dp">
+
+        <ImageView
+            android:id="@+id/iv_sport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="@dimen/margin_8dp"
+            android:src="@drawable/cricket"
+            android:tint="@color/user_theme_color"
+            android:contentDescription="@string/app_desc"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/total_tv"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_3dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/football"
+        android:textSize="@dimen/text_size_normal"
+        android:textColor="@color/dim_white"/>
+
+</LinearLayout>

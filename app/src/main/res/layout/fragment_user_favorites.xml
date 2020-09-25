@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--focusStealer, to avoid NestedScrollingView to scroll due to dynamically created views that take the focus-->
+	<View
+		android:layout_width="0px"
+		android:layout_height="0px"
+		android:focusable="true"
+		android:focusableInTouchMode="true"/>
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/color_vieww"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+		android:layout_alignParentTop="true"
+		android:padding="@dimen/_5sdp"
+        android:background="@drawable/canvas_red_gradient">
+
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_fav_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"/>
+
+        <com.socialsportz.View.PRButton
+            android:id="@+id/tv_fav_clesr"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/canvas_over_btn_bg"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textAllCaps="false"
+            android:text="@string/clear_list"
+            android:textColor="@color/user_theme_color"
+            android:textSize="@dimen/_12sdp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+		android:id="@+id/rv_list_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/color_vieww"
+		android:visibility="visible"
+        android:background="@color/window_background">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_fav_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"/>
+
+        <com.mickael.sportloadingview.SportLoadingView
+            android:id="@+id/loading_circle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:background="@color/black_light_transparent"
+            app:background_alpha="0.5"
+            app:image_height="80dp"
+            app:image_width="80dp"
+            app:image_loader="@drawable/bowling_ball"
+            app:fadeInOut_duration="500"
+            app:rotate_duration="900" />
+    </RelativeLayout>
+
+	<!--<com.facebook.shimmer.ShimmerFrameLayout
+		android:id="@+id/shimmer_view_containerr"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@+id/color_view"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+		android:orientation="vertical"
+		android:visibility="gone"
+		app:duration="800">
+
+		&lt;!&ndash; Adding 7 rows of placeholders &ndash;&gt;
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<include layout="@layout/row_view_user_fav_item_shimer" />
+			<include layout="@layout/row_view_user_fav_item_shimer" />
+			<include layout="@layout/row_view_user_fav_item_shimer" />
+			<include layout="@layout/row_view_user_fav_item_shimer" />
+			<include layout="@layout/row_view_user_fav_item_shimer" />
+			<include layout="@layout/row_view_user_fav_item_shimer" />
+
+
+
+		</LinearLayout>
+
+	</com.facebook.shimmer.ShimmerFrameLayout>-->
+
+	<RelativeLayout
+		android:id="@+id/rv_cart"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:visibility="gone"
+		android:background="@color/window_background"
+		android:layout_below="@+id/color_vieww">
+
+		<ImageView
+			android:id="@+id/img_cart"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_favorite_24px"
+			android:layout_centerVertical="true"
+			android:layout_centerHorizontal="true"></ImageView>
+
+		<com.socialsportz.View.PRTextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_10sdp"
+			android:layout_gravity="center_vertical"
+			android:layout_centerHorizontal="true"
+			android:layout_below="@+id/img_cart"
+			android:text="Your favorite is empty"
+			android:textColor="@color/dark_grey"
+			android:textSize="@dimen/_14sdp" />
+
+	</RelativeLayout>
+
+	</RelativeLayout>
+
+    <!--<androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/color_view"
+        android:background="@color/window_background">
+    </androidx.core.widget.NestedScrollView>-->
+
+</RelativeLayout>

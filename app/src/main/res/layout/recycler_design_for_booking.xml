@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/relative_rate_review_style"
+    app:cardCornerRadius="@dimen/margin_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/margin_start_vary_60"
+            android:layout_height="@dimen/margin_start_vary_60"
+            android:padding="2dp"
+            android:layout_gravity="start"
+            android:src="@drawable/man"
+            android:background="@drawable/profile_img_style"
+            android:elevation="@dimen/margin_3dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"/>
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profile"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_booking_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:text="Kapil Rao"
+                android:textSize="@dimen/text_size_regular"
+                android:textColor="#000"
+                android:padding="@dimen/margin_start_vary_2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:src="@drawable/ic_mail_outline"
+                    android:layout_gravity="center"
+                    android:tint="@color/theme_color"/>
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_booking_tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:text="raokapil01@gmail.com"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/dark_grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_white"
+                    android:tint="@color/theme_color"/>
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_booking_tv_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:text="7564312532"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/dark_grey"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/recycler_booking_tv_payment_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_20dp"
+            android:layout_alignParentEnd="true"
+            android:text="payment status"
+            android:textSize="@dimen/text_size_small"
+            android:textColor="@color/green"/>
+
+        <LinearLayout
+            android:id="@+id/review_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/profile_layout">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="Slot Time :"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/dark_grey"
+                android:padding="2dp"/>
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_booking_tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="9 am to 11 am"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="#000"
+                android:padding="2dp"/>
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_booking_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="Sports :"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="@color/dark_grey"
+                android:padding="2dp"/>
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_booking_tv_sports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="football"
+                android:textSize="@dimen/text_size_ideal"
+                android:textColor="#000"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/rating_divider_view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/review_layout"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/dark_grey"
+            android:layout_marginBottom="@dimen/margin_5dp"/>
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_divider_view"
+            android:orientation="horizontal">
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_booking_tv_academy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="Noida Sports Academy"
+                android:textSize="@dimen/text_size_regular"
+                android:textColor="@color/dark_grey"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+        <com.socialsportz.View.PRButton
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:id="@+id/btn_booking_view"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/recycle_rate_button_style"
+            android:layout_below="@+id/rating_divider_view"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:text="View"
+            android:textSize="@dimen/text_size_normal"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_achievement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp" />
+
+	<LinearLayout
+		android:id="@+id/empty_view"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center|top"
+		android:layout_marginTop="@dimen/margin_start_vary_20"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<com.socialsportz.View.PRTextView
+			android:id="@+id/tv_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin_5dp"
+			android:layout_marginStart="@dimen/margin_start_vary_10"
+			android:layout_marginEnd="@dimen/margin_start_vary_10"
+			android:gravity="center|top"
+			android:text="@string/not_achievment"
+			android:textColor="@color/dark_grey"
+			android:textSize="@dimen/text_size_small"/>
+
+	</LinearLayout>
+
+</LinearLayout>

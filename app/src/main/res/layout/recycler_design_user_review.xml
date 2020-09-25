@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/relative_rate_review_style"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/man"
+            android:elevation="@dimen/_3sdp" />
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profile"
+            android:layout_toLeftOf="@+id/rating_bar_review"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/review_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapil Rao"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="#000"
+                android:padding="@dimen/_2sdp"/>
+
+           <!-- <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:src="@drawable/ic_mail_outline"
+                    android:layout_gravity="center"
+                    android:tint="@color/theme_color"
+                    android:contentDescription="@string/app_desc"/>
+
+                <com.vibescom.socialsportz.View.PRTextView
+                    android:id="@+id/review_tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:text="raokapil01@gmail.com"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/dark_grey"/>
+            </LinearLayout>-->
+
+            <!-- <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/margin_10dp"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:layout_width="@dimen/margin_20dp"
+                     android:layout_height="@dimen/margin_20dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/ic_phone_white"
+                     android:tint="@color/theme_color"/>
+
+                 <com.vibescom.socialsportz.View.PRTextView
+                     android:id="@+id/recycler_rate_tv_contact"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/margin_5dp"
+                     android:text="7564312532"
+                     android:textSize="@dimen/text_size_small"
+                     android:textColor="@color/dark_grey"/>
+             </LinearLayout>
+ -->
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rating_bar_review"
+            style="@android:style/Widget.Material.Light.RatingBar.Small"
+            android:layout_width="@dimen/rating_width"
+            android:layout_height="@dimen/rating_height"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_below="@+id/profile_layout"
+            android:layout_alignParentEnd="true"
+            android:numStars="5"
+            android:progressTint="@color/yellow"/>
+
+        <LinearLayout
+            android:id="@+id/review_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/iv_profile">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_rate_tv_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Comment :"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/dark_grey" />
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/review_tv_msg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="jdudhdhucydhdyd jhduedyhe dueiwewlcsjcj jsjdn najnjdsn cjncjsa"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="#000"
+                android:padding="@dimen/_2sdp"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/rating_divider_view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/review_layout"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:background="@color/dark_grey"
+            android:layout_marginBottom="@dimen/_5sdp"/>
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_divider_view"
+            android:orientation="horizontal">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="27 July 2019"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/theme_color"
+                android:padding="@dimen/_2sdp"/>
+        </LinearLayout>
+
+        <com.socialsportz.View.PRButton
+            android:id="@+id/report_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/recycle_rate_button_style"
+            android:layout_below="@+id/rating_divider_view"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Edit Review"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

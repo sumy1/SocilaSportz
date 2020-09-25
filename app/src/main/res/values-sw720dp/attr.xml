@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">true</bool>
+    <string name="row_size">2</string>
+    <string name="column_size">3</string>
+</resources>

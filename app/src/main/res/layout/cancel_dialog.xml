@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/_400sdp"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:gravity="center"
+	android:id="@+id/item"
+	android:layout_gravity="center"
+	android:background="@android:color/transparent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/canvas_round_corner_gray"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/canvas_round_corner_blue">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_sport_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_start_vary_5"
+                android:layout_marginRight="@dimen/margin_start_vary_5"
+                android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Cancel Booking"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_regular"
+                />
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:tint="@color/white"/>
+        </RelativeLayout>
+
+
+		<com.socialsportz.View.PMTextView
+			android:id="@+id/tv_offline_msg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="@color/user_theme_color"
+			android:layout_marginStart="@dimen/margin_start_vary_10"
+			android:layout_centerInParent="true"
+			android:gravity="center_horizontal"
+			android:visibility="gone"
+			android:layout_marginTop="@dimen/margin_start_vary_8"
+			android:layout_marginEnd="@dimen/margin_start_vary_10"
+			android:layout_marginBottom="@dimen/margin_start_vary_8"
+			android:textSize="@dimen/_12sdp"
+			android:text="@string/offline_msg" />
+
+		<RelativeLayout
+			android:id="@+id/rl_online_msg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/top"
+			android:visibility="visible"
+			android:orientation="vertical">
+
+
+
+			<LinearLayout
+				android:id="@+id/top1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_8"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:layout_marginBottom="@dimen/margin_start_vary_8"
+				android:weightSum="4"
+				android:visibility="gone"
+				android:orientation="horizontal"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:elevation="@dimen/margin_start_vary_2"
+				android:padding="@dimen/margin_5dp">
+
+				<LinearLayout
+					android:id="@+id/ll_bookingId"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1.2"
+					android:orientation="horizontal">
+
+					<CheckBox
+						android:id="@+id/cb_main"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:layout_gravity="center_vertical"
+						></CheckBox>
+					<com.socialsportz.View.PMTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="center_horizontal"
+						android:layout_gravity="center_vertical"
+						android:textColor="@color/user_theme_color"
+						android:textSize="@dimen/_11sdp"
+						android:text="Sports" />
+				</LinearLayout>
+
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_batchSlot_time"
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="Slot Time"
+						android:layout_weight="1"
+						android:layout_gravity="center_vertical"
+						android:gravity="center_horizontal"
+						android:textColor="@color/user_theme_color"
+						android:textSize="@dimen/_11sdp" />
+				<com.socialsportz.View.PMTextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:text="Date"
+					android:gravity="center_horizontal"
+					android:layout_gravity="center_vertical"
+					android:layout_weight="1"
+					android:textColor="@color/user_theme_color"
+					android:textSize="@dimen/_11sdp" />
+					<com.socialsportz.View.PMTextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:text="Price"
+						android:gravity="center_horizontal"
+						android:layout_weight="0.8"
+						android:layout_gravity="center_vertical"
+						android:textColor="@color/user_theme_color"
+						android:textSize="@dimen/_11sdp" />
+
+			</LinearLayout>
+
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/rv_detailss"
+				android:layout_width="match_parent"
+				android:scrollbars="vertical"
+				android:layout_below="@+id/top1"
+				android:overScrollMode="never"
+				android:layout_above="@+id/below"
+				android:layout_height="match_parent"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+		<LinearLayout
+			android:id="@+id/below"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:orientation="vertical">
+
+
+			<LinearLayout
+				android:id="@+id/ll_cancel_total_msg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_10sdp"
+				android:layout_marginRight="@dimen/_10sdp"
+				android:gravity="right"
+				android:visibility="visible"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:orientation="horizontal">
+					<com.socialsportz.View.PMTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:textColor="@color/dim_grey"
+						android:textSize="@dimen/_10sdp"
+						android:text="@string/total_amnt" />
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginLeft="@dimen/_2sdp"
+						android:orientation="horizontal">
+						<ImageView
+							android:id="@+id/img_rupees_kit_p"
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:tint="@color/user_theme_color"
+							android:layout_gravity="center_vertical"
+							android:contentDescription="@string/app_desc"
+							android:src="@drawable/icon_rupees"></ImageView>
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_total_amnt"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0"
+							android:textColor="@color/user_theme_color"
+							android:textSize="@dimen/_10sdp" />
+					</LinearLayout>
+
+				</LinearLayout>
+				<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp"
+					android:text="@string/toal_cancellation_charges" />
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginLeft="@dimen/_2sdp"
+						android:orientation="horizontal">
+						<com.socialsportz.View.PMTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="(-)"
+							android:textColor="@color/user_theme_color"
+							android:textSize="@dimen/_10sdp" />
+
+						<ImageView
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:tint="@color/user_theme_color"
+							android:layout_gravity="center_vertical"
+							android:contentDescription="@string/app_desc"
+							android:src="@drawable/icon_rupees"></ImageView>
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_total_cancelletion_charge_amnt"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0"
+							android:textColor="@color/user_theme_color"
+							android:textSize="@dimen/_10sdp" />
+					</LinearLayout>
+
+			</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:orientation="horizontal">
+					<com.socialsportz.View.PMTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:textColor="@color/dim_grey"
+						android:textSize="@dimen/_10sdp"
+						android:text="@string/coupon_amnt" />
+
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginLeft="@dimen/_2sdp"
+						android:orientation="horizontal">
+						<com.socialsportz.View.PMTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="(-)"
+							android:textColor="@color/user_theme_color"
+							android:textSize="@dimen/_10sdp" />
+						<ImageView
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:tint="@color/user_theme_color"
+							android:layout_gravity="center_vertical"
+							android:contentDescription="@string/app_desc"
+							android:src="@drawable/icon_rupees"></ImageView>
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_coupan_amt"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0"
+							android:textColor="@color/user_theme_color"
+							android:textSize="@dimen/_10sdp" />
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<View
+					android:id="@+id/v3"
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/_2sdp"
+					tools:ignore="InnerclassSeparator"
+					android:layout_marginTop="@dimen/_2sdp"
+					android:background="@drawable/canvas_dotted_line_dim_red"></View>
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:layout_marginTop="@dimen/_2sdp"
+					android:orientation="horizontal">
+					<com.socialsportz.View.PMTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:textColor="@color/black"
+						android:textSize="@dimen/_10sdp"
+						android:text="@string/total_refund_amnt" />
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center_vertical"
+						android:layout_marginLeft="@dimen/_2sdp"
+						android:orientation="horizontal">
+						<ImageView
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:tint="@color/user_theme_color"
+							android:layout_gravity="center_vertical"
+							android:contentDescription="@string/app_desc"
+							android:src="@drawable/icon_rupees"></ImageView>
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_total_refund_amnt"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0"
+							android:textColor="@color/user_theme_color"
+							android:textSize="@dimen/_10sdp" />
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+			</LinearLayout>
+		<com.socialsportz.View.PREditText
+			android:id="@+id/et_message"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_40sdp"
+			android:layout_marginTop="@dimen/margin_20dp"
+			android:layout_marginStart="@dimen/margin_start_vary_10"
+			android:layout_marginEnd="@dimen/margin_start_vary_10"
+			android:background="@drawable/canvas_forgot_editext_bg_w"
+			android:drawableStart="@drawable/ic_message_24px"
+			android:drawablePadding="@dimen/margin_15dp"
+			android:paddingStart="@dimen/margin_10dp"
+			android:paddingEnd="@dimen/margin_10dp"
+			android:hint="@string/add_comment"
+			android:layout_above="@+id/below"
+			android:textColorHint="@color/dark_grey"
+			android:textColor="@color/dim_black"
+			android:singleLine="true"
+			android:inputType="textEmailAddress"
+			android:textSize="@dimen/_10sdp"/>
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_8"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="@dimen/margin_start_vary_8"
+				android:elevation="@dimen/margin_start_vary_2"
+				android:padding="@dimen/margin_5dp">
+
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_submit"
+					android:layout_width="@dimen/_90sdp"
+					android:layout_height="@dimen/_30sdp"
+					android:background="@drawable/canvas_ongo_btn_red"
+					android:gravity="center"
+					android:layout_centerHorizontal="true"
+					android:text="Cancel Now"
+					android:textColor="@color/white"
+					android:textSize="@dimen/_12sdp" />
+
+			</RelativeLayout>
+		</LinearLayout>
+
+		</RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

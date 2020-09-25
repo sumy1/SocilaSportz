@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.flyco.tablayout.SegmentTabLayout
+        android:id="@+id/segment_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_start_vary_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:paddingLeft="@dimen/ongo_padding"
+        android:paddingRight="@dimen/ongo_padding"
+        app:tl_textsize="@dimen/text_size_large"
+        app:tl_indicator_anim_enable="true"
+        app:tl_indicator_bounce_enable="false"
+        app:tl_indicator_color="@color/dim_red"
+        app:tl_tab_padding="20dp"
+        app:tl_bar_stroke_color="@color/dark_grey"/>
+
+    <com.socialsportz.Utils.CustomViewPager
+        android:id="@+id/page_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

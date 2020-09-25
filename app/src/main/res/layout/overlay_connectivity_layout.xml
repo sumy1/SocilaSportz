@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_connectivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/toolbar_height"
+    android:clickable="false"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5dp"
+        android:background="#90000000"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:animateLayoutChanges="true">
+
+        <com.socialsportz.View.PRTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Internet Connection"
+            android:textSize="@dimen/text_size_regular"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+

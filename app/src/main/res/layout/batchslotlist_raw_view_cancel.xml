@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/item_view"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginEnd="@dimen/_6sdp"
+	android:layout_marginStart="@dimen/_6sdp"
+	android:background="@drawable/canvas_time_active_row_bg"
+	android:elevation="@dimen/margin_start_vary_2"
+	android:orientation="horizontal">
+
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="@dimen/_5sdp">
+
+		<LinearLayout
+			android:id="@+id/main"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:paddingBottom="@dimen/margin_5dp"
+			android:paddingTop="@dimen/margin_5dp"
+			>
+
+
+			<LinearLayout
+				android:id="@+id/ll_bookingId"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:orientation="horizontal">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:orientation="horizontal">
+				<CheckBox
+					android:id="@+id/cb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:visibility="visible"
+					android:layout_gravity="center_vertical"
+					></CheckBox>
+
+					<LinearLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/_3sdp"
+						android:gravity="center_vertical"
+						android:layout_gravity="center_vertical"
+						android:orientation="horizontal">
+
+						<com.socialsportz.View.PMTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:textColor="@color/black"
+							android:textSize="@dimen/_10sdp"
+							android:text="Sport Name :" />
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_sportname"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="@dimen/_3sdp"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp"
+					android:text="Sports" />
+
+					</LinearLayout>
+				</LinearLayout>
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_canceled_sports"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/dim_grey"
+					android:visibility="gone"
+					android:textSize="@dimen/_11sdp"
+					android:text="Sports" />
+			</LinearLayout>
+
+			<LinearLayout
+
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/margin_3dp"
+				android:layout_gravity="center_vertical"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PMTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Time :"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/black"
+					android:textSize="@dimen/_10sdp" />
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_slot_time"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="@dimen/_3sdp"
+					android:text="9:00 AM-11:00 AM"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp" />
+			</LinearLayout>
+
+			<LinearLayout
+
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PMTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Date :"
+					android:textColor="@color/black"
+					android:textSize="@dimen/_10sdp" />
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_slote_date"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:layout_marginLeft="@dimen/_3sdp"
+					android:text="20-03-2020"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp" />
+			</LinearLayout>
+
+			<!--<LinearLayout
+				android:id="@+id/ll_plan"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.9"
+				android:orientation="vertical"
+				android:visibility="gone">
+
+				<com.vibescom.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="@string/plan"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/text_size_ideal" />
+
+				<com.vibescom.socialsportz.View.PMTextView
+					android:id="@+id/tv_plan"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center_horizontal"
+					android:text="Monthly"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size_micro" />
+			</LinearLayout>-->
+
+			<LinearLayout
+
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PMTextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:text="Price :"
+					android:textColor="@color/black"
+					android:textSize="@dimen/_10sdp" />
+				<ImageView
+					android:layout_width="@dimen/_15sdp"
+					android:layout_height="@dimen/_15sdp"
+					android:tint="@color/black"
+					android:src="@drawable/icon_rupees"></ImageView>
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_price"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_marginLeft="@dimen/_3sdp"
+					android:text="11"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp" />
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/ll_cancel_msg"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/main"
+			android:gravity="right"
+			android:visibility="gone"
+			android:orientation="vertical">
+			<View
+				android:id="@+id/v1"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/_2sdp"
+				tools:ignore="InnerclassSeparator"
+				android:layout_marginTop="@dimen/_2sdp"
+				android:background="@drawable/canvas_dotted_line_dim_red"></View>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="visible"
+				android:layout_marginTop="@dimen/_2sdp"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp"
+					android:text="@string/slot_cancelation_charge" />
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_slot_cancel_charge_amnt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/user_theme_color"
+					android:layout_marginLeft="@dimen/_2sdp"
+					android:textSize="@dimen/_10sdp"
+					android:text="" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp"
+					android:text="@string/slot_refaun_amnt" />
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_slot_refund_amnt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:textColor="@color/user_theme_color"
+					android:layout_marginLeft="@dimen/_2sdp"
+					android:textSize="@dimen/_10sdp"
+					android:text="" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<com.socialsportz.View.PRTextView
+			android:id="@+id/tv_cancel_status"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="@dimen/margin_start_vary_8"
+			android:paddingRight="@dimen/margin_start_vary_8"
+			android:layout_alignParentEnd="true"
+			android:layout_below="@+id/ll_cancel_msg"
+			android:visibility="gone"
+			android:layout_centerVertical="true"
+			android:text="cancelled"
+			android:textColor="@color/red"
+			android:textSize="@dimen/text_size_ideal" />
+
+
+	</RelativeLayout>
+
+
+</LinearLayout>

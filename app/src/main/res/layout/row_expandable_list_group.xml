@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_light">
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:src="@drawable/ic_date_range_grey"
+        android:tint="@color/theme_color"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_desc"/>
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/tv_date"
+        style="@style/TextView.InputLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_start_vary_8"
+        android:paddingTop="@dimen/margin_10dp"
+        android:paddingBottom="@dimen/margin_10dp"
+        android:paddingEnd="@dimen/margin_start_vary_8"
+        android:drawablePadding="@dimen/margin_10dp"
+        android:layout_gravity="center"
+        android:text="@string/st_date"
+        android:textColor="@color/theme_color"
+        android:elevation="@dimen/margin_start_vary_2"
+        android:textSize="@dimen/text_size_regular"/>
+
+
+</LinearLayout>

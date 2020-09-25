@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_5dp"
+    android:layout_marginBottom="@dimen/margin_5dp"
+    android:orientation="vertical"
+    android:background="@drawable/canvas_weekoff_days_selector">
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/tv_time_slot_batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_5dp"
+        android:gravity="center"
+        android:text="@string/slot_timing"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_vary_8"
+        android:layout_marginEnd="@dimen/margin_start_vary_8">
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_ideal"/>
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="5000/-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_ideal"/>
+
+
+    </RelativeLayout>
+</LinearLayout>
+

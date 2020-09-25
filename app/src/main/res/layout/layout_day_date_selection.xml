@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingTop="@dimen/margin_10dp"
+		android:paddingBottom="@dimen/margin_10dp"
+        android:orientation="vertical">
+
+        <com.socialsportz.View.PMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_15dp"
+            android:paddingBottom="@dimen/margin_15dp"
+            android:gravity="center"
+            android:textColor="@color/theme_color"
+			android:visibility="gone"
+            android:textSize="@dimen/text_size_large"
+            android:text="@string/select_open_close_timing"/>
+
+        <com.socialsportz.View.PRCheckBox
+            android:id="@+id/ch_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingStart="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:paddingEnd="0dp"
+            android:gravity="center"
+            android:button="@drawable/canvas_checkbox_selector"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:text="@string/select_all"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_large" />
+
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/dark_grey"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/dark_grey"/>
+
+        <com.socialsportz.View.PRTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_15dp"
+            android:layout_marginEnd="@dimen/margin_15dp"
+            android:text="@string/note_msg"
+            android:textColor="@color/dim_black"
+            android:textSize="@dimen/text_size_ideal"/>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

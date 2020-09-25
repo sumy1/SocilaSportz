@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/margin_3dp"
+    app:cardCornerRadius="@dimen/margin_start_vary_5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="@dimen/margin_10dp">
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_batch_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_regular"/>
+
+        <com.socialsportz.View.PREditText
+            android:id="@+id/et_batch_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:background="@drawable/canvas_batch_price_bg"
+            android:drawableStart="@drawable/ic_rupee"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:paddingStart="@dimen/margin_10dp"
+            android:paddingEnd="@dimen/margin_10dp"
+            android:hint="@string/batch_price"
+            android:textColorHint="@color/dark_grey"
+            android:textColor="@color/dim_black"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textSize="@dimen/text_size_regular"/>
+
+        <ImageButton
+            android:id="@+id/bt_delete"
+            android:layout_width="@dimen/margin_35dp"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/canvas_filter_img_bg_style"
+            android:src="@drawable/ic_delete_white"
+            android:contentDescription="@string/app_desc"/>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/canvas_doodle_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_start_vary_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_title"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_home"
+                android:tint="@color/dim_grey" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/achievement_title"
+                android:paddingStart="@dimen/negative_margin"
+                android:paddingEnd="0dp"
+                app:boxBackgroundColor="@android:color/transparent">
+
+                <com.socialsportz.View.PRMaterialEditText
+                    android:id="@+id/et_achievement_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:inputType="text"
+                    android:paddingBottom="@dimen/margin_3dp"
+                    android:textSize="@dimen/text_size_large" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_start_vary_10"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_type"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_gravity="bottom"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:padding="2dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/input"
+                android:tint="@color/dim_grey" />
+
+            <LinearLayout
+                android:id="@+id/select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="8dp">
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/type_hint"
+                    style="@style/TextView.InputLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/achievement_type" />
+
+                <com.socialsportz.Utils.DropDownView
+                    android:id="@+id/drop_type"
+                    style="@style/formDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+                    android:paddingStart="@dimen/margin_3dp"
+                    android:paddingEnd="@dimen/margin_3dp"
+                    android:paddingBottom="@dimen/margin_3dp"
+                    android:hint="Select Reward Type"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dim_grey" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.socialsportz.View.PRTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_image"
+            android:textColor="@color/dim_grey"
+            android:textSize="@dimen/text_size_ideal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <RelativeLayout
+                android:id="@+id/frame_image1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bank_banner_size"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lv_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/canvas_achievement_img_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_35dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:src="@drawable/gallery"
+                        android:tint="@color/white"
+                        android:contentDescription="@string/app_desc"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/bt_image1"
+                        android:layout_width="@dimen/margin_30dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:background="@drawable/canvas_red_round_bg"
+                        android:contentDescription="@string/app_desc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_3dp"
+                        android:src="@drawable/ic_close"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_image2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bank_banner_size"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_3dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lv_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/canvas_achievement_img_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_35dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:src="@drawable/gallery"
+                        android:tint="@color/white"
+                        android:contentDescription="@string/app_desc"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/bt_image2"
+                        android:layout_width="@dimen/margin_30dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:background="@drawable/canvas_red_round_bg"
+                        android:contentDescription="@string/app_desc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_3dp"
+                        android:src="@drawable/ic_close"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

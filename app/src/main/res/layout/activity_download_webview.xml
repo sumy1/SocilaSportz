@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="com.socialsportz.Activities.User.Activities.DownloadWebviewActivity">
+
+
+	<LinearLayout
+		android:id="@+id/profile_toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/margin_45dp"
+		android:orientation="horizontal"
+		android:background="@drawable/canvas_red_gradient">
+
+		<ImageButton
+			android:id="@+id/ib_back"
+			android:layout_width="@dimen/margin_40dp"
+			android:layout_height="match_parent"
+			android:background="@null"
+			android:layout_gravity="center_vertical"
+			android:contentDescription="@string/app_desc"
+			android:src="@drawable/ic_keyboard_arrow_left_white"
+			android:tint="@color/white" />
+
+		<com.socialsportz.View.PMTextView
+			android:id="@+id/tv_page_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:text="@string/edit_profile"
+			android:textColor="@color/white"
+			android:textSize="@dimen/text_size_xlarge" />
+	</LinearLayout>
+
+	<WebView
+		android:id="@+id/webinfo"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@+id/profile_toolbar"></WebView>
+
+</RelativeLayout>

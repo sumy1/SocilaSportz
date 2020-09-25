@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/gallery_vp_image_width"
+    android:layout_height="@dimen/gallery_vp_height"
+    android:padding="@dimen/margin_start_vary_2">
+
+    <ImageView
+        android:id="@+id/gallery_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:padding="2dip"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_desc"/>
+</FrameLayout>

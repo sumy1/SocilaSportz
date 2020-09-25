@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    android:background="@drawable/splashimage">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        android:paddingStart="@dimen/margin_45dp"
+        android:paddingEnd="@dimen/margin_45dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_desc"/>
+
+    <com.socialsportz.View.PMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:text="@string/app_desc"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_5dp"
+    android:layout_margin="@dimen/margin_5dp"
+    android:orientation="vertical"
+    android:background="@drawable/canvas_weekoff_days_selector">
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/tv_time_slot_batch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/shimmer_background"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_vary_8"
+        android:layout_marginEnd="@dimen/margin_start_vary_8">
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/shimmer_background">
+
+            <com.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:background="@color/shimmer_background">
+
+            <com.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+

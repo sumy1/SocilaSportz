@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/relative_rate_review_style"
+    app:cardCornerRadius="@dimen/margin_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/margin_start_vary_60"
+            android:layout_height="@dimen/margin_start_vary_60"
+            android:padding="2dp"
+            android:layout_gravity="start"
+            android:src="@drawable/man"
+            android:background="@drawable/profile_img_style"
+            android:elevation="@dimen/margin_3dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"/>
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profile"
+			android:layout_toLeftOf="@+id/recycler_enq_tv_date"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_enq_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kapil Rao"
+                android:textSize="@dimen/text_size_small"
+                android:textColor="#000"
+                android:padding="@dimen/margin_start_vary_2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:src="@drawable/ic_mail_outline"
+                    android:layout_gravity="center"
+                    android:tint="@color/theme_color"
+                    android:contentDescription="@string/app_desc"/>
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_enq_tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:text="raokapil01@gmail.com"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/dark_grey"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_phone_white"
+                    android:tint="@color/theme_color"
+                    android:contentDescription="@string/app_desc"/>
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_enq_tv_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_5dp"
+                    android:text="7564312532"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/review_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/iv_profile"
+            android:layout_marginBottom="@dimen/margin_10dp">
+
+            <!--<com.vibescom.socialsportz.View.PRTextView
+                android:id="@+id/recycler_rate_tv_review"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="Message :"
+                android:textSize="@dimen/text_size_regular"
+                android:textColor="@color/dark_grey"
+                android:padding="2dp"/>-->
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_enq_tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:text="@string/about_ns"
+                android:textSize="@dimen/text_size_ideal"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="#000"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/recycler_enq_tv_date"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:text="27 July 2019"
+            android:textSize="@dimen/text_size_ideal"
+            android:textColor="@color/theme_color"
+            android:padding="2dp"/>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

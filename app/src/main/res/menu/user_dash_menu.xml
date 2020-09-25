@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:itemBackground="@drawable/canvas_drawer_list_selector">
+
+    <group android:id="@+id/nav_group"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        android:enabled="true">
+        <item
+            android:id="@+id/action_dash"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard"
+            android:checked="true" />
+        <item
+            android:id="@+id/action_account"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="@string/account_info" />
+        <item
+            android:id="@+id/action_slot_batch"
+            android:icon="@drawable/ic_supervisor_account_black_24dp"
+            android:title="@string/change_password" />
+        <item
+            android:id="@+id/action_sport"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="@string/my_bookings"/>
+
+        <item
+            android:id="@+id/action_booking"
+            android:icon="@drawable/ic_bell"
+            android:title="@string/notifications" />
+
+        <item
+            android:id="@+id/action_registration"
+            android:icon="@drawable/ic_speaker_notes_black_24dp"
+            android:title="@string/news_letter" />
+
+        <item
+            android:id="@+id/action_logout"
+            android:icon="@drawable/ic_exit"
+            android:title="@string/logout" />
+
+    </group>
+
+
+</menu>

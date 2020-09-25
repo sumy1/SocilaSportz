@@ -1,0 +1,38 @@
+<style>
+th:before, th:after{display:none !important; opacity:0; pointer-events:none}
+thead{pointer-events:none}
+</style>
+<table id="notificationlist">
+<thead>
+	<th class="text-left"></th>
+	<th class="text-right"></th>
+</thead>
+<?php $i=0; if (isset($notification_list) && $notification_list!='') {
+	foreach ($notification_list as $value) { $i++; ?>
+
+	<tr>
+		<td style="display: none;"><?=$i;?></td>
+	<td class="media">
+
+		<h5 class="title mt-0 mb-1 col-sm-12"><?=$value->email_notification_activity;?> <br>
+		<!-- <span class="mailid"><?=$value->booking_email;?></span><br> -->
+			<span class="desc"><?=$value->email_notification_message;?></span>
+		</h5>
+		
+		
+		
+	</td>
+	<td style="border-bottom: 1px solid #efeeee;" ><small class="float-right"><?=date('d-m-Y',strtotime($value->created_on));?></small></td>
+</tr>
+		
+	<?php }
+} ?>
+
+
+<tbody>
+	
+</tbody>
+</table>
+<script>
+	$('#notificationlist').DataTable();
+</script>

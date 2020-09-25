@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:elevation="@dimen/margin_start_vary_2"
+    android:background="@drawable/canvas_time_active_row_bg">
+
+    <View
+        android:id="@+id/color_view"
+        android:layout_width="3dp"
+        android:layout_height="@dimen/timing_divider_height"
+        android:layout_gravity="center"
+        android:background="@drawable/canvas_green_divider_bg"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_start_vary_8">
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/dim_black"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_opening_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/opening"
+            android:textColor="@color/dim_grey"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_closing_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/closing"
+            android:textColor="@color/dim_grey"
+            android:textSize="@dimen/text_size_normal" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

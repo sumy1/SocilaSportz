@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/canvas_doodle_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_start_vary_10"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_type"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:padding="2dp"
+                android:src="@drawable/facility"
+                android:layout_gravity="bottom"
+                android:scaleType="fitCenter"
+                android:tint="@color/dim_grey"/>
+
+            <LinearLayout
+                android:id="@+id/select_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:orientation="vertical">
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/type_hint"
+                    style="@style/TextView.InputLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_sport" />
+
+                <com.socialsportz.Utils.DropDownView
+                    style="@style/formDropDown"
+                    android:id="@+id/drop_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/margin_3dp"
+                    android:paddingEnd="@dimen/margin_3dp"
+                    android:paddingBottom="@dimen/margin_3dp"
+                    android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+                    android:hint="@string/sport_name_hint"
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"/>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/dim_grey"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_court"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:src="@drawable/input"
+                android:layout_gravity="bottom"
+                android:scaleType="fitCenter"
+                android:tint="@color/dim_grey"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:paddingStart="@dimen/negative_margin"
+                android:paddingEnd="0dp"
+                android:hint="@string/court_no">
+
+                <com.socialsportz.View.PRMaterialEditText
+                    android:id="@+id/et_no_courts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:paddingBottom="@dimen/margin_3dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_indoor"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:src="@drawable/input"
+                android:layout_gravity="bottom"
+                android:scaleType="fitCenter"
+                android:tint="@color/dim_grey"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:paddingStart="@dimen/negative_margin"
+                android:paddingEnd="0dp"
+                android:hint="@string/indoor_court">
+
+                <com.socialsportz.View.PRMaterialEditText
+                    android:id="@+id/et_indoor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:paddingBottom="@dimen/margin_3dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_outdoor"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:src="@drawable/input"
+                android:layout_gravity="bottom"
+                android:scaleType="fitCenter"
+                android:tint="@color/dim_grey"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@android:color/transparent"
+                android:paddingStart="@dimen/negative_margin"
+                android:paddingEnd="0dp"
+                android:hint="@string/outdoor_court">
+
+                <com.socialsportz.View.PRMaterialEditText
+                    android:id="@+id/et_outdoor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_large"
+                    android:paddingBottom="@dimen/margin_3dp"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

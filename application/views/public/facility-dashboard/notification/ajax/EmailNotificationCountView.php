@@ -1,0 +1,1 @@
+<?php if($notification_count) echo $notification_count;?>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:id="@+id/item"
+    android:layout_gravity="center"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/canvas_round_corner_white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/canvas_round_corner_blue">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:text="Become a Partner"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="visible"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close"
+            android:tint="@color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+			android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top"
+			android:layout_centerVertical="true"
+			android:layout_above="@+id/btn_submit"
+            android:orientation="vertical">
+
+			<androidx.appcompat.widget.AppCompatImageButton
+				android:id="@+id/img_error"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@null"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:layout_centerHorizontal="true"
+				android:src="@drawable/ic_error_outline_24px"
+				/>
+
+			<com.socialsportz.View.PRTextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginRight="@dimen/_10sdp"
+				android:layout_marginLeft="@dimen/_20sdp"
+				android:layout_below="@+id/img_error"
+				android:layout_marginTop="@dimen/_10sdp"
+				android:text="@string/doing"
+				android:textColor="@color/dim_grey"
+				android:textSize="@dimen/_12sdp"
+				android:visibility="visible"/>
+
+        </RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/_15sdp"
+			android:layout_marginLeft="@dimen/_10sdp"
+			android:layout_marginRight="@dimen/_20sdp"
+			android:layout_below="@+id/middle">
+		<com.socialsportz.View.PMButton
+			android:id="@+id/btn_yes"
+			android:layout_width="@dimen/_70sdp"
+			android:layout_height="@dimen/_40sdp"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:layout_marginStart="@dimen/_20sdp"
+			android:layout_marginRight="@dimen/_5sdp"
+			android:layout_alignParentStart="true"
+			android:layout_marginBottom="@dimen/_10sdp"
+			android:background="@drawable/canvas_enguire_btn_bg"
+			android:text="Yes"
+			android:textColor="@color/white"
+			android:textSize="@dimen/_14sdp"/>
+
+			<com.socialsportz.View.PMButton
+				android:id="@+id/btn_no"
+				android:layout_width="@dimen/_70sdp"
+				android:layout_height="@dimen/_40sdp"
+				android:layout_marginTop="@dimen/_5sdp"
+				android:layout_marginBottom="@dimen/_10sdp"
+				android:layout_marginRight="@dimen/_10sdp"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:layout_alignParentEnd="true"
+				android:background="@drawable/canvas_enguire_btn_bg_blue"
+				android:text="No"
+				android:textColor="@color/white"
+				android:textSize="@dimen/_14sdp"/>
+
+		</RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

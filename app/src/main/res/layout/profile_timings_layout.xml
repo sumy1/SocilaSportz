@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/margin_10dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_start_vary_8"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|top"
+                    android:text="@string/timings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/img_btn_edit_time"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_marginStart="@dimen/margin_3dp"
+                    android:layout_marginTop="@dimen/profile_ib_margin_top_vary_5"
+                    android:padding="@dimen/margin_3dp"
+                    android:src="@drawable/ic_edit"
+                    android:scaleType="centerInside"
+                    android:background="@null"
+                    android:tint="@color/theme_color"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_start_vary_8"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:layout_marginBottom="@dimen/margin_start_vary_2"
+                android:padding="@dimen/margin_start_vary_8"
+                android:elevation="@dimen/margin_start_vary_2"
+                android:background="@drawable/canvas_timing_header_bg"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/day"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/opening"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/closing"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_regular" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_timing"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/margin_start_vary_10"
+                    android:layout_marginEnd="@dimen/margin_start_vary_10"
+                    android:layout_marginBottom="@dimen/margin_start_vary_2"
+                    android:clipToPadding="false" />
+
+                <LinearLayout
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/empty_players"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PRTextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginStart="@dimen/margin_start_vary_10"
+                        android:layout_marginEnd="@dimen/margin_start_vary_10"
+                        android:gravity="center"
+                        android:text="@string/timing_empty"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_small"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

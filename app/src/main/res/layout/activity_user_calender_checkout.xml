@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/canvas_doodle_bg"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--focusStealer, to avoid NestedScrollingView to scroll due to dynamically created views that take the focus-->
+    <View
+        android:layout_width="0px" android:layout_height="0px" android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:orientation="horizontal"
+        android:background="@color/user_theme_color">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="@dimen/margin_40dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:paddingLeft="@dimen/padding_5dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_desc"
+            android:src="@drawable/ic_keyboard_arrow_left_white"
+            android:tint="@color/white" />
+
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="Booking Details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            tools:ignore="RelativeOverlap" />
+		<ImageView
+			android:id="@+id/img"
+			android:layout_width="@dimen/_70sdp"
+			android:layout_height="@dimen/_50sdp"
+			android:layout_marginLeft="@dimen/_10sdp"
+			android:layout_gravity="right"
+			android:layout_alignParentEnd="true"
+			android:layout_marginBottom="@dimen/_5sdp"
+			android:layout_marginTop="@dimen/_5sdp"
+			android:src="@drawable/logo"
+			android:contentDescription="@string/app_desc"></ImageView>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/canvas_booking_details_img_bg"
+            android:elevation="@dimen/margin_3dp"
+            android:layout_marginLeft="@dimen/margin_start_vary_10"
+            android:layout_marginTop="@dimen/margin_start_vary_8"
+            android:padding="@dimen/margin_start_vary_8"
+            android:layout_marginRight="@dimen/margin_start_vary_10"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_start_vary_2">
+
+            <!--<com.vibescom.socialsportz.View.PMTextView
+                android:id="@+id/tv_batch_slot_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:background="@drawable/canvas_booking_details_tv_color_brown"
+                android:padding="@dimen/margin_start_vary_2"
+                android:paddingStart="@dimen/margin_start_vary_5"
+                android:paddingEnd="@dimen/margin_start_vary_5"
+                android:text="Premium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_small" />-->
+
+            <com.socialsportz.View.PMTextView
+                android:id="@+id/tv_fac_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facility Test"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/margin_8dp"
+                android:orientation="horizontal">
+                <com.socialsportz.View.PMTextView
+					android:id="@+id/tv_sport_event"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports:"
+                    android:textColor="@color/black_semi_transparent"
+                    android:textSize="@dimen/_11sdp" />
+                <com.socialsportz.View.PMTextView
+                    android:id="@+id/tv_sports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_3dp"
+                    android:layout_marginLeft="@dimen/margin_3dp"
+                    android:text="Cricket"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <!--<com.vibescom.socialsportz.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sports_name"
+                android:textSize="@dimen/text_size_small" />-->
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:layout_above="@+id/relate_total_tv">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:id="@+id/profile_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_vary_10"
+                    android:layout_marginTop="@dimen/margin_start_vary_8"
+                    android:layout_marginEnd="@dimen/margin_start_vary_10"
+                    android:background="@drawable/canvas_booking_details_img_bg"
+                    android:orientation="vertical">
+
+
+
+                   <!-- <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_start_vary_10"
+                        android:orientation="vertical"
+                        android:padding="@dimen/margin_5dp">
+                        <LinearLayout
+                            android:id="@+id/ly_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_start_vary_8"
+                            android:orientation="vertical">
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/username"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/text_size_ideal" />
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:id="@+id/tvz_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Anil"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/email_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ly_name"
+                            android:layout_marginStart="@dimen/margin_start_vary_8"
+                            android:orientation="vertical">
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/email_id"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/text_size_ideal" />
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mail"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/phone_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/email_view"
+                            android:layout_marginStart="@dimen/margin_start_vary_8"
+                            android:orientation="vertical">
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/country"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:id="@+id/tv_country"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="India"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ly_gender"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@+id/email_view"
+                            android:gravity="end"
+                            android:layout_marginEnd="@dimen/margin_start_vary_8"
+                            android:orientation="vertical">
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/gender"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:id="@+id/tv_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="Male"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/address_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@+id/email_view"
+                            android:gravity="end"
+                            android:layout_below="@+id/ly_gender"
+                            android:layout_marginEnd="@dimen/margin_start_vary_8"
+                            android:orientation="vertical">
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/phone_hint"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/mobile_number"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/loca"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_toEndOf="@+id/email_view"
+                            android:gravity="end"
+                            android:layout_below="@+id/address_view"
+                            android:layout_marginEnd="@dimen/margin_start_vary_8"
+                            android:orientation="vertical">
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="@string/location"
+                                android:textColor="@color/dark_grey"
+                                android:textSize="@dimen/text_size_small" />
+
+                            <com.vibescom.socialsportz.View.PMTextView
+                                android:id="@+id/tv_location"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="end"
+                                android:text="Noida"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_small" />
+                        </LinearLayout>
+                    </RelativeLayout>-->
+                </LinearLayout>
+
+
+
+
+
+               <!-- <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/canvas_booking_details_img_bg"
+                    android:elevation="@dimen/margin_3dp"
+                    android:layout_marginLeft="@dimen/margin_start_vary_10"
+                    android:layout_marginTop="@dimen/margin_start_vary_8"
+                    android:padding="@dimen/margin_start_vary_8"
+                    android:layout_marginRight="@dimen/margin_start_vary_10"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/margin_start_vary_2">
+
+                    &lt;!&ndash;<com.vibescom.socialsportz.View.PMTextView
+                        android:id="@+id/tv_batch_slot_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:background="@drawable/canvas_booking_details_tv_color_brown"
+                        android:padding="@dimen/margin_start_vary_2"
+                        android:paddingStart="@dimen/margin_start_vary_5"
+                        android:paddingEnd="@dimen/margin_start_vary_5"
+                        android:text="Premium"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />&ndash;&gt;
+
+                    <com.vibescom.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Slot"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/text_size_ideal" />
+                    <com.vibescom.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/text_size_ideal" />
+                    <com.vibescom.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/dim_grey"
+                        android:textSize="@dimen/text_size_ideal" />
+
+
+
+
+                </LinearLayout>-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_book_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="@dimen/margin_start_vary_2"
+                    android:layout_marginRight="@dimen/margin_start_vary_2"
+                    android:layout_marginBottom="4dp"
+					android:visibility="visible"
+                    android:clipToPadding="false"/>
+
+				<LinearLayout
+					android:id="@+id/ll_event_details"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="4dp"
+					android:layout_marginLeft="@dimen/margin_start_vary_2"
+					android:layout_marginRight="@dimen/margin_start_vary_2"
+					android:visibility="gone"
+					android:layout_marginBottom="4dp"
+					android:orientation="vertical">
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_eventAvailable"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"
+						android:text="@string/event_date"
+						android:visibility="gone"
+						android:textColor="@color/user_theme_color"
+						android:textSize="@dimen/text_size_normal"/>
+
+					<androidx.cardview.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/margin_8dp"
+						android:layout_marginStart="@dimen/margin_10dp"
+						android:layout_marginEnd="@dimen/margin_10dp"
+						app:cardCornerRadius="@dimen/margin_5dp"
+						app:cardBackgroundColor="@color/white">
+
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent">
+
+							<com.socialsportz.View.PMTextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:text="@string/event_date"
+								android:textColor="@color/user_theme_color"
+								android:textSize="@dimen/text_size_normal"/>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:paddingBottom="@dimen/margin_3dp"
+								android:orientation="horizontal">
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical"
+									android:layout_weight="1"
+									android:gravity="center">
+									<com.socialsportz.View.PMTextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="@dimen/margin_start_vary_2"
+										android:text="@string/event_start_date"
+										android:textColor="@color/dark_grey"
+										android:textSize="@dimen/text_size_micro"/>
+									<com.socialsportz.View.PMTextView
+										android:id="@+id/tv_start_date"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="27 Aug 2019"
+										android:textSize="@dimen/text_size_small"
+										android:textColor="@color/dim_black"/>
+								</LinearLayout>
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical"
+									android:layout_weight="1"
+									android:gravity="center">
+									<com.socialsportz.View.PMTextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="@dimen/margin_start_vary_2"
+										android:text="@string/event_end_date"
+										android:textColor="@color/dark_grey"
+										android:textSize="@dimen/text_size_micro"/>
+									<com.socialsportz.View.PMTextView
+										android:id="@+id/tv_end_date"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="27 Aug 2019"
+										android:textSize="@dimen/text_size_small"
+										android:textColor="@color/dim_black"/>
+								</LinearLayout>
+							</LinearLayout>
+
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+					<androidx.cardview.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/margin_10dp"
+						android:layout_marginStart="@dimen/margin_10dp"
+						android:layout_marginEnd="@dimen/margin_10dp"
+						app:cardCornerRadius="@dimen/margin_8dp"
+						app:cardBackgroundColor="@color/white">
+
+						<LinearLayout android:orientation="vertical"
+							android:layout_width="match_parent"
+							android:layout_height="match_parent">
+
+							<com.socialsportz.View.PMTextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:text="@string/event_timings"
+								android:textColor="@color/user_theme_color"
+								android:textSize="@dimen/text_size_normal"/>
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:layout_marginBottom="@dimen/margin_3dp"
+								android:orientation="horizontal">
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical"
+									android:layout_weight="0.8"
+									android:gravity="center">
+									<com.socialsportz.View.PMTextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="@dimen/margin_start_vary_2"
+										android:text="@string/event_start_time"
+										android:textColor="@color/dark_grey"
+										android:textSize="@dimen/text_size_micro"/>
+									<com.socialsportz.View.PMTextView
+										android:id="@+id/tv_start_time"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="@string/day_time_hint"
+										android:textSize="@dimen/text_size_small"
+										android:textColor="@color/dim_black"/>
+								</LinearLayout>
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:orientation="vertical"
+									android:layout_weight="0.8"
+									android:gravity="center">
+									<com.socialsportz.View.PMTextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="@dimen/margin_start_vary_2"
+										android:text="@string/event_end_time"
+										android:textColor="@color/dark_grey"
+										android:textSize="@dimen/text_size_micro"/>
+									<com.socialsportz.View.PMTextView
+										android:id="@+id/tv_end_time"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:text="@string/day_time_hint"
+										android:textSize="@dimen/text_size_small"
+										android:textColor="@color/dim_black"/>
+								</LinearLayout>
+							</LinearLayout>
+
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+					<androidx.cardview.widget.CardView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/margin_10dp"
+						android:layout_marginStart="@dimen/margin_10dp"
+						android:layout_marginEnd="@dimen/margin_10dp"
+						app:cardCornerRadius="@dimen/margin_8dp"
+						android:visibility="gone"
+						android:layout_marginBottom="@dimen/margin_start_vary_10"
+						app:cardBackgroundColor="@color/white">
+
+							<LinearLayout
+								android:layout_width="match_parent"
+								android:layout_height="wrap_content"
+								android:padding="@dimen/margin_start_vary_5"
+								android:orientation="horizontal">
+
+								<LinearLayout
+									android:layout_width="match_parent"
+									android:layout_height="wrap_content"
+									android:gravity="left"
+									android:layout_marginLeft="@dimen/margin_start_vary_5"
+									android:orientation="horizontal"
+									>
+									<com.socialsportz.View.PMTextView
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:padding="@dimen/margin_start_vary_2"
+										android:text="@string/price"
+										android:textColor="@color/dark_grey"
+										android:textSize="@dimen/text_size_small"/>
+									<com.socialsportz.View.PMTextView
+										android:id="@+id/tve_price"
+										android:layout_width="wrap_content"
+										android:layout_height="wrap_content"
+										android:layout_marginLeft="@dimen/profile_ib_margin_top_vary_5"
+										android:text=""
+										android:textSize="@dimen/text_size_small"
+										android:textColor="@color/red"/>
+								</LinearLayout>
+
+
+						</LinearLayout>
+					</androidx.cardview.widget.CardView>
+
+				</LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_vary_10"
+                    android:layout_marginBottom="@dimen/margin_start_vary_8"
+                    android:layout_marginEnd="@dimen/margin_start_vary_10"
+                    android:background="@drawable/canvas_booking_details_img_bg"
+                    android:orientation="vertical">
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:text="Amount Details"
+						android:visibility="gone"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp">
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+							android:layout_centerVertical="true"
+                            android:text="Sub Total Amount"
+                            android:textSize="@dimen/_11sdp" />
+
+						<LinearLayout
+							android:id="@+id/ll_amount"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:layout_gravity="center_vertical"
+							android:scaleType="centerCrop"
+							android:contentDescription="@string/app_desc"
+							android:src="@drawable/icon_rupees"></ImageView>
+                        <com.socialsportz.View.PMTextView
+                            android:id="@+id/tv_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+						</LinearLayout>
+
+						<com.socialsportz.View.PMTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:layout_below="@+id/ll_amount"
+							android:text="@string/all_tasex_msg"
+							android:visibility="gone"
+							android:textColor="@color/dim_grey"
+							android:textSize="@dimen/_8sdp" />
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@color/light_grey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp">
+
+                        <com.socialsportz.View.PREditText
+                            android:id="@+id/et_appy_coupan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:layout_toLeftOf="@+id/tv_apply"
+                            android:background="@drawable/canvas_avail_red_bg"
+                            android:paddingLeft="@dimen/_5sdp"
+							android:paddingRight="@dimen/_5sdp"
+							android:singleLine="true"
+							android:ellipsize="end"
+                            android:hint="Coupon code"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+
+                        <com.socialsportz.View.PMTextView
+                            android:id="@+id/tv_apply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:layout_marginLeft="-2dp"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp"
+                            android:background="@drawable/canvas_red_gradient"
+                            android:text="APPLY"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_11sdp" />
+
+
+
+                    </RelativeLayout>
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_coupan_applyed"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:text="@string/all_tasex_msg"
+						android:layout_marginStart="@dimen/margin_20dp"
+						android:visibility="gone"
+						android:textColor="@color/green"
+						android:textSize="@dimen/_9sdp" />
+                    <!--<View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@color/light_grey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp">
+
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="VAS"
+                            android:textSize="@dimen/text_size_regular" />
+
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:id="@+id/tv_vas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toStartOf="@+id/inr_vas"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_regular" />
+
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:id="@+id/inr_vas"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/margin_5dp"
+                            android:text="INR"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_regular" />
+                    </RelativeLayout>-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@color/light_grey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp">
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Coupon Discounts"
+                            android:textSize="@dimen/_11sdp" />
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:orientation="horizontal">
+
+							<ImageView
+								android:layout_width="@dimen/_11sdp"
+								android:layout_height="@dimen/_11sdp"
+								android:layout_gravity="center_vertical"
+								android:contentDescription="@string/app_desc"
+								android:src="@drawable/icon_rupees"></ImageView>
+
+                        <com.socialsportz.View.PMTextView
+                            android:id="@+id/tv_add_charges"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+						</LinearLayout>
+                    </RelativeLayout>
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/margin_20dp"
+						android:layout_marginTop="@dimen/margin_10dp"
+						android:layout_marginEnd="@dimen/margin_20dp">
+
+						<com.socialsportz.View.PMTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:text="Convenience Fee"
+							android:textSize="@dimen/_11sdp" />
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:contentDescription="@string/app_desc"
+							android:layout_gravity="center_vertical"
+							android:src="@drawable/icon_rupees"></ImageView>
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_convenience_fee"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0"
+							android:textColor="@color/black"
+							android:textSize="@dimen/_11sdp" />
+						</LinearLayout>
+
+					</RelativeLayout>
+					<RelativeLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/margin_20dp"
+						android:layout_marginEnd="@dimen/margin_20dp">
+
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_with_tax"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentStart="true"
+							android:text="(with tax 18)"
+							android:textSize="@dimen/_11sdp" />
+
+						<LinearLayout
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentEnd="true"
+							android:orientation="horizontal">
+
+						<ImageView
+							android:layout_width="@dimen/_11sdp"
+							android:layout_height="@dimen/_11sdp"
+							android:contentDescription="@string/app_desc"
+							android:layout_gravity="center_vertical"
+							android:src="@drawable/icon_rupees"></ImageView>
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_convenience_taxes"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="0"
+							android:textColor="@color/black"
+							android:textSize="@dimen/_11sdp" />
+						</LinearLayout>
+					</RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@color/light_grey" />
+
+
+					<com.socialsportz.View.PMTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:layout_marginTop="@dimen/_5sdp"
+						android:text="* Round off the nearest figure"
+						android:layout_marginLeft="@dimen/_10sdp"
+						android:textColor="@color/user_theme_color"
+						android:textSize="@dimen/_9sdp" />
+
+                 <!--   <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_20dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginEnd="@dimen/margin_20dp"
+                        android:layout_marginBottom="@dimen/margin_20dp">
+
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="Discount"
+                            android:textSize="@dimen/text_size_regular" />
+
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:id="@+id/tv_discount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_regular" />
+
+                    </RelativeLayout>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/relate_total_tv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_above="@+id/btn_paynow"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@drawable/canvas_green_bg_shape_rectangle"
+                android:gravity="center">
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Total Payable"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_16sdp"
+                    android:layout_toStartOf="@+id/tv_total"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_rupees_white"
+                   />
+
+
+                <com.socialsportz.View.PMTextView
+                    android:id="@+id/tv_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_20dp"
+                    android:layout_centerVertical="true"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <com.socialsportz.View.PMButton
+            android:id="@+id/btn_paynow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/canvas_red_gradient_btn_bg"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginBottom="@dimen/margin_10dp"
+            android:text="@string/pay_noww"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

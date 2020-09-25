@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginStart="@dimen/margin_10dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:padding="@dimen/margin_8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/canvas_weekoff_days_selector">
+
+		<RelativeLayout
+			android:id="@+id/main"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_time_slot_batch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/slot_timing"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_ideal"
+            tools:ignore="RelativeOverlap" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:orientation="horizontal">
+			<com.socialsportz.View.PRTextView
+				android:id="@+id/tv_time_slot_available"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="@string/available"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_size_ideal"
+				tools:ignore="RelativeOverlap" />
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_time_slot_type"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:layout_marginLeft="@dimen/_3sdp"
+					android:text="Normal"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size_ideal"
+					tools:ignore="RelativeOverlap" />
+			</LinearLayout>
+
+		</LinearLayout>
+        <LinearLayout
+            android:id="@+id/max_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:background="@drawable/canvas_round_corner_red"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <com.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Max : "
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ideal"/>
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="50"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ideal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="@dimen/margin_5dp"
+            android:background="@drawable/canvas_round_corner_red"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <!--<com.vibescom.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Rs"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_ideal"/>-->
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="5000"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_large"/>
+        </LinearLayout>
+
+		</RelativeLayout>
+
+		<View
+			android:id="@+id/v1"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/_1sdp"
+			android:layout_marginTop="@dimen/_3sdp"
+			android:layout_below="@+id/main"
+			android:background="@color/light_grey"></View>
+		<LinearLayout
+			android:id="@+id/ll_des"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/v1"
+			android:layout_marginTop="@dimen/_3sdp"
+			android:orientation="vertical">
+			<com.socialsportz.View.PRTextView
+				android:id="@+id/tv_time_slot_des_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:gravity="center"
+				android:text="@string/slot_court_descc"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_size_ideal"
+				tools:ignore="RelativeOverlap" />
+
+			<com.socialsportz.View.PRTextView
+				android:id="@+id/tv_time_slot_des"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:layout_gravity="center_horizontal"
+				android:text="hjfusafsakhfsa fsahfksa fjsakf safjkaskfsa mfsa"
+				android:textColor="@color/dim_grey"
+				android:textSize="@dimen/text_size_micro"
+				tools:ignore="RelativeOverlap" />
+
+		</LinearLayout>
+
+    </RelativeLayout>
+
+    <com.socialsportz.Utils.GridRecyclerView
+        android:id="@+id/rv_batch_slot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_vary_10"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:layout_marginTop="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_start_vary_10"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/batch_slot_avail_width"
+        android:overScrollMode="never"
+        android:visibility="gone"/>
+
+</LinearLayout>

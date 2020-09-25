@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_start_vary_10"
+            android:orientation="vertical"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/radio_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin_8dp">
+
+                    <com.socialsportz.View.PRRadioButton
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/margin_3dp"
+                        android:paddingEnd="0dp"
+                        android:checked="true"
+                        android:text="@string/male_text"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="@dimen/text_size_normal"
+                        android:button="@drawable/canvas_radio_btn_selector"/>
+
+                    <com.socialsportz.View.PRRadioButton
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/margin_3dp"
+                        android:paddingEnd="0dp"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:text="@string/female_text"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="@dimen/text_size_normal"
+                        android:button="@drawable/canvas_radio_btn_selector"/>
+
+                    <com.socialsportz.View.PRRadioButton
+                        style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                        android:id="@+id/radio_trans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/margin_3dp"
+                        android:paddingEnd="0dp"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:text="@string/other_text"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="@dimen/text_size_normal"
+                        android:button="@drawable/canvas_radio_btn_selector"/>
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_person"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_person"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/negative_margin"
+                        android:paddingEnd="0dp"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:hint="@string/fullname_hint">
+
+                        <com.socialsportz.View.PRMaterialEditText
+                            android:id="@+id/et_fullname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_large"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="textPersonName"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_phone"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_phone_white"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:paddingStart="@dimen/negative_margin"
+                        android:paddingEnd="0dp"
+                        android:hint="@string/phone_hint">
+
+                        <com.socialsportz.View.PRMaterialEditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_large"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="phone"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_mail"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_email"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:paddingStart="@dimen/negative_margin"
+                        android:paddingEnd="0dp"
+                        android:hint="@string/email_id_hint">
+
+                        <com.socialsportz.View.PRMaterialEditText
+                            android:id="@+id/et_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_large"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="textEmailAddress"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/text_layout_city"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<androidx.appcompat.widget.AppCompatImageView
+						android:id="@+id/iv_city"
+						android:layout_width="@dimen/margin_25dp"
+						android:layout_height="@dimen/margin_25dp"
+						android:layout_marginEnd="@dimen/margin_3dp"
+						android:src="@drawable/ic_location"
+						android:layout_gravity="bottom"
+						android:scaleType="fitCenter"
+						android:tint="@color/dim_grey"/>
+
+					<LinearLayout
+						android:id="@+id/city_layout"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:paddingTop="8dp"
+						android:orientation="vertical">
+
+						<com.socialsportz.View.PRTextView
+							android:id="@+id/tv_city"
+							style="@style/TextView.InputLabel"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="@string/location" />
+
+						<com.socialsportz.View.PRTextView
+							android:id="@+id/tv_city_name"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:text="@string/location"
+							android:textSize="@dimen/text_size_large"
+							android:paddingBottom="@dimen/margin_3dp"
+							android:textColor="@color/black"
+							android:background="@android:color/transparent"/>
+
+						<View
+							android:id="@+id/divider"
+							android:layout_width="match_parent"
+							android:layout_height="1dp"
+							android:background="@color/dim_grey"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_area"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_home"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:paddingStart="@dimen/negative_margin"
+                        android:paddingEnd="0dp"
+                        android:hint="@string/city">
+
+                        <com.socialsportz.View.PRMaterialEditText
+                            android:id="@+id/et_sub_ares"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_large"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="textPostalAddress"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+
+                <!--<LinearLayout
+					android:id="@+id/city_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_city"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_location"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:boxBackgroundColor="@android:color/transparent"
+                        android:paddingStart="@dimen/negative_margin"
+                        android:paddingEnd="0dp"
+                        android:hint="@string/city">
+
+                        <com.vibescom.socialsportz.View.PMTextView
+                            android:id="@+id/et_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_large"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="text"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_pincode"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_pin"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/negative_margin"
+                        android:paddingEnd="0dp"
+                        android:hint="@string/pincode">
+
+                        <com.socialsportz.View.PRMaterialEditText
+                            android:id="@+id/et_pincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_size_large"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:background="@android:color/transparent"
+                            android:inputType="number"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iv_type"
+                        android:layout_width="@dimen/margin_25dp"
+                        android:layout_height="@dimen/margin_25dp"
+                        android:layout_marginEnd="@dimen/margin_3dp"
+                        android:src="@drawable/ic_all_out_black_24dp"
+                        android:layout_gravity="bottom"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/dim_grey"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:orientation="vertical">
+
+                        <com.socialsportz.View.PRTextView
+                            android:id="@+id/type_pay"
+                            style="@style/TextView.InputLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/payment_type" />
+
+                        <com.socialsportz.Utils.DropDownView
+                            style="@style/formDropDown"
+                            android:id="@+id/drop_pay_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/margin_3dp"
+                            android:paddingEnd="@dimen/margin_3dp"
+                            android:paddingBottom="@dimen/margin_3dp"
+                            android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+                            android:hint="@string/select_type"
+                            android:text="Cash"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"
+                            android:background="@android:color/transparent"/>
+
+                        <View
+                            android:id="@+id/divider_pay"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/dim_grey"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/booking_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_info"
+                    android:drawablePadding="@dimen/margin_5dp"
+                    android:text="@string/booking_details"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/text_size_large" />
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:drawableEnd="@drawable/ic_arrow_right_grey"
+                    android:text="@string/see"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/text_size_normal"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:layout_marginBottom="@dimen/margin_3dp"
+                    android:padding="@dimen/margin_start_vary_8"
+                    android:elevation="@dimen/margin_start_vary_2"
+                    android:background="@drawable/canvas_timing_header_bg"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="2"
+                        android:text="@string/timings"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:layout_weight="1"
+                        android:text="@string/price_txt"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|center"
+                        android:gravity="center"
+                        android:text="Remove"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_regular" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/margin_start_vary_2"
+                    android:clipToPadding="false" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/margin_start_vary_8"
+        android:background="@color/white"
+        android:elevation="@dimen/margin_5dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount Payable"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/text_size_large"/>
+
+            <LinearLayout
+                android:id="@+id/amount_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_rupee"
+                        android:tint="@color/theme_color"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_total_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5000"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_xxlarge"/>
+                </LinearLayout>
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:visibility="gone"
+                    android:textColor="@color/dim_grey"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_10dp">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Date : "
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/text_size_large"/>
+
+            <com.socialsportz.View.PMTextView
+                android:id="@+id/tv_booking_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tv_text"
+                android:text="@string/st_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"/>
+
+        </RelativeLayout>
+
+        <com.socialsportz.View.PMButton
+            android:id="@+id/btn_book"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ongo_btn_height"
+            android:background="@drawable/canvas_forgot_btn_bg"
+            android:textAllCaps="false"
+            android:text="@string/book"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_regular"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

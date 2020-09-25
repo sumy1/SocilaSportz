@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:padding="@dimen/padding_15dp"
+    android:background="#fff"
+    android:gravity="start"
+    android:orientation="vertical">
+
+    <com.socialsportz.View.PMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_20dp"
+        android:text="@string/nav_title"
+        android:textStyle="bold"
+		android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#e3000000"
+        android:textSize="@dimen/text_size_xlarge" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/nav_header_profile"
+        android:layout_height="@dimen/nav_header_profile"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_5dp"
+        android:visibility="gone"
+        android:src="@drawable/man"/>
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/name"
+		android:layout_marginTop="@dimen/margin_25dp"
+        android:textSize="@dimen/text_size_regular"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <com.socialsportz.View.PRTextView
+        android:id="@+id/tv_user_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:visibility="gone"
+        android:text="@string/mail"
+        android:textSize="@dimen/text_size_normal"/>
+
+</LinearLayout>

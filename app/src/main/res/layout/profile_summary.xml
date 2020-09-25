@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/margin_10dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginTop="@dimen/margin_start_vary_8"
+                android:text="@string/personal_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="@dimen/margin_start_vary_2"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginTop="@dimen/margin_start_vary_8"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:background="@drawable/canvas_booking_details_img_bg"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_start_vary_8">
+
+                    <LinearLayout
+                        android:id="@id/name_lay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.socialsportz.View.PMTextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/theme_color"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <androidx.appcompat.widget.AppCompatImageButton
+                            android:id="@+id/bt_edit"
+                            android:layout_width="@dimen/margin_25dp"
+                            android:layout_height="@dimen/margin_20dp"
+                            android:layout_marginStart="@dimen/margin_3dp"
+                            android:layout_marginTop="@dimen/profile_ib_margin_top"
+                            android:padding="@dimen/margin_3dp"
+                            android:src="@drawable/ic_edit"
+                            android:scaleType="centerInside"
+                            android:background="@null"
+                            android:tint="@color/theme_color"/>
+
+                    </LinearLayout>
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name_lay"
+                        android:text=""
+                        android:textColor="@color/brown"
+                        android:textSize="@dimen/text_size_regular" />
+
+                    <com.socialsportz.View.PRButton
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:id="@+id/tv_change_pass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/password_btn_width"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="@dimen/margin_start_vary_8"
+                        android:paddingEnd="@dimen/margin_start_vary_8"
+                        android:background="@drawable/canvas_tv_change_password_background"
+                        android:textColor="@color/quantum_brown"
+                        android:text="@string/change_password"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/text_size_ideal"
+                        tools:ignore="RelativeOverlap" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin_start_vary_8"
+                    android:background="@color/light_grey" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_start_vary_10"
+                    android:orientation="vertical"
+                    android:padding="@dimen/margin_5dp">
+
+                    <LinearLayout
+                        android:id="@+id/email_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_start_vary_8"
+                        android:orientation="vertical">
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/email_id"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/text_size_ideal" />
+
+                        <com.socialsportz.View.PMTextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/phone_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email_view"
+                        android:layout_marginStart="@dimen/margin_start_vary_8"
+                        android:orientation="vertical">
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mobile"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <com.socialsportz.View.PMTextView
+                            android:id="@+id/tv_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/address_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_toEndOf="@+id/email_view"
+                        android:gravity="end"
+                        android:layout_marginEnd="@dimen/margin_start_vary_8"
+                        android:orientation="vertical">
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:text="@string/address"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/text_size_small" />
+
+						<com.socialsportz.View.PMTextView
+							android:id="@+id/tv_address"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:gravity="end"
+							android:text=""
+							android:textColor="@color/black"
+							android:textSize="@dimen/text_size_small" />
+					</LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.socialsportz.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginTop="@dimen/margin_start_vary_8"
+                android:text="@string/profile_status"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_regular" />
+
+
+			<!--<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_8"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:elevation="@dimen/margin_start_vary_2"
+				android:background="@drawable/canvas_booking_details_img_bg">
+
+				<com.vibescom.socialsportz.View.PMTextView
+					android:id="@+id/tv_status_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:text="@string/profile"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_complete"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text="@string/completed"
+						android:textSize="@dimen/text_size_small" />
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_pending"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text="@string/pending"
+						android:textSize="@dimen/text_size_small" />
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_rejected"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:text="@string/rejected"
+						android:textSize="@dimen/text_size_small" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_8"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:elevation="@dimen/margin_start_vary_2"
+				android:background="@drawable/canvas_booking_details_img_bg">
+
+				<com.vibescom.socialsportz.View.PMTextView
+					android:id="@+id/tv_status_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:text="@string/profile"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_complete"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text="@string/completed"
+						android:textSize="@dimen/text_size_small" />
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_pending"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text="@string/pending"
+						android:textSize="@dimen/text_size_small" />
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_rejected"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:text="@string/rejected"
+						android:textSize="@dimen/text_size_small" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_8"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:elevation="@dimen/margin_start_vary_2"
+				android:background="@drawable/canvas_booking_details_img_bg">
+
+				<com.vibescom.socialsportz.View.PMTextView
+					android:id="@+id/tv_status_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:text="@string/profile"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:orientation="horizontal">
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_complete"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text="@string/completed"
+						android:textSize="@dimen/text_size_small" />
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_pending"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text="@string/pending"
+						android:textSize="@dimen/text_size_small" />
+
+					<com.vibescom.socialsportz.View.PMTextView
+						android:id="@+id/tv_rejected"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:layout_weight="1"
+						android:gravity="center"
+						android:text="@string/rejected"
+						android:textSize="@dimen/text_size_small" />
+				</LinearLayout>
+			</LinearLayout>-->
+
+
+
+			//...old code..here...
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_pStatus"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:gravity="center"
+					android:padding="@dimen/_4sdp"
+					android:text="@string/profile"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendingp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="@dimen/_4sdp"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_status_namef"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:padding="@dimen/_4sdp"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:text="Facility/Academy Details"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendingf"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_gravity="center_horizontal"
+						android:padding="@dimen/_4sdp"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+			android:orientation="vertical">
+
+			<com.socialsportz.View.PMTextView
+				android:id="@+id/tv_status_nameb"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="top|center"
+				android:background="@drawable/canvas_profile_status_bg"
+				android:gravity="center"
+				android:padding="@dimen/_4sdp"
+				android:text="Bank Details"
+				android:textColor="@color/theme_color"
+				android:textSize="@dimen/text_size_regular" />
+
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/margin_1dp"
+				android:layout_gravity="center"
+				android:layout_marginBottom="@dimen/margin_start_vary_8"
+				android:background="@color/light_grey" />
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:gravity="center"
+				android:layout_gravity="center_horizontal"
+				android:orientation="horizontal">
+
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_pendingb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginEnd="@dimen/margin_start_vary_10"
+					android:layout_marginStart="@dimen/margin_start_vary_10"
+					android:padding="@dimen/_4sdp"
+					android:gravity="center"
+					android:layout_weight="1"
+					android:text=""
+					android:textSize="@dimen/text_size_small" />
+
+			</LinearLayout>
+
+
+		</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_status_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:padding="@dimen/_4sdp"
+					android:text="Upload Documents"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendingu"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:padding="@dimen/_4sdp"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			//new code added heere..
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:layout_marginTop="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_sportStatus"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:gravity="center"
+					android:padding="@dimen/_4sdp"
+					android:text="@string/sports_details"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendngSports"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="@dimen/_4sdp"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_statusAmenity"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:padding="@dimen/_4sdp"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:text="Amenity Details"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendingAmenity"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:gravity="center"
+						android:layout_gravity="center_horizontal"
+						android:padding="@dimen/_4sdp"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_statusTiming"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:padding="@dimen/_4sdp"
+					android:text="Timing Details"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendingTiming"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:padding="@dimen/_4sdp"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_start_vary_10"
+				android:layout_marginStart="@dimen/margin_start_vary_10"
+				android:layout_marginEnd="@dimen/margin_start_vary_10"
+				android:background="@drawable/canvas_booking_details_img_bg"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_statusGallery"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="top|center"
+					android:background="@drawable/canvas_profile_status_bg"
+					android:gravity="center"
+					android:padding="@dimen/_4sdp"
+					android:text="Gallery"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_regular" />
+
+				<View
+					android:layout_width="match_parent"
+					android:layout_height="@dimen/margin_1dp"
+					android:layout_gravity="center"
+					android:layout_marginBottom="@dimen/margin_start_vary_8"
+					android:background="@color/light_grey" />
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginBottom="@dimen/margin_start_vary_10"
+					android:gravity="center"
+					android:layout_gravity="center_horizontal"
+					android:orientation="horizontal">
+
+
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_pendinguGallery"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginEnd="@dimen/margin_start_vary_10"
+						android:layout_marginStart="@dimen/margin_start_vary_10"
+						android:padding="@dimen/_4sdp"
+						android:gravity="center"
+						android:layout_weight="1"
+						android:text=""
+						android:textSize="@dimen/text_size_small" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+
+			<!--<androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"/>-->
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

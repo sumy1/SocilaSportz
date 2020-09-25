@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/canvas_doodle_bg"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin_8dp">
+
+            <com.socialsportz.View.PRRadioButton
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:id="@+id/switch_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_3dp"
+                android:paddingEnd="0dp"
+                android:text="@string/male_text"
+                android:textColor="@color/black_semi_transparent"
+                android:textSize="@dimen/text_size_normal"
+                android:button="@drawable/canvas_radio_btn_selector"/>
+
+            <com.socialsportz.View.PRRadioButton
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:id="@+id/switch_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_3dp"
+                android:paddingEnd="0dp"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:text="@string/female_text"
+                android:textColor="@color/black_semi_transparent"
+                android:textSize="@dimen/text_size_normal"
+                android:button="@drawable/canvas_radio_btn_selector"/>
+
+            <com.socialsportz.View.PRRadioButton
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:id="@+id/switch_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/margin_3dp"
+                android:paddingEnd="0dp"
+                android:layout_marginStart="@dimen/margin_5dp"
+                android:text="@string/other_text"
+                android:textColor="@color/black_semi_transparent"
+                android:textSize="@dimen/text_size_normal"
+                android:button="@drawable/canvas_radio_btn_selector"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_start_vary_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_person"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:src="@drawable/ic_person_outline"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/dim_grey"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/negative_margin"
+                    android:paddingEnd="0dp"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:hint="@string/fullname_hint">
+
+                    <com.socialsportz.View.PRMaterialEditText
+                        android:id="@+id/et_fullname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Anugrag Desai"
+                        android:textSize="@dimen/text_size_large"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPersonName"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_mail"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:src="@drawable/ic_email"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/dim_grey"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:paddingStart="@dimen/negative_margin"
+                    android:paddingEnd="0dp"
+                    android:hint="@string/email_id_hint">
+
+                    <com.socialsportz.View.PRMaterialEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="anurag.desai@gmail.com"
+                        android:textSize="@dimen/text_size_large"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:background="@android:color/transparent"
+                        android:inputType="textEmailAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:src="@drawable/ic_phone_white"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/dim_grey"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:paddingStart="@dimen/negative_margin"
+                    android:paddingEnd="0dp"
+                    android:hint="@string/phone_hint">
+
+                    <com.socialsportz.View.PRMaterialEditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_number"
+                        android:textSize="@dimen/text_size_large"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:background="@android:color/transparent"
+                        android:inputType="phone"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+				<androidx.appcompat.widget.AppCompatImageView
+					android:id="@+id/iv_address"
+					android:layout_width="wrap_content"
+					android:layout_height="@dimen/margin_25dp"
+					android:layout_gravity="bottom"
+					android:layout_marginEnd="@dimen/margin_3dp"
+					android:scaleType="fitCenter"
+					android:src="@drawable/ic_location"
+					android:tint="@color/dim_grey" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:paddingStart="@dimen/negative_margin"
+                    android:paddingEnd="0dp"
+                    android:hint="@string/location">
+
+                    <com.socialsportz.View.PRMaterialEditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:text="@string/full_address"
+                        android:textSize="@dimen/text_size_large"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPostalAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_area"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:src="@drawable/ic_home"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/dim_grey"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@android:color/transparent"
+                    android:paddingStart="@dimen/negative_margin"
+                    android:paddingEnd="0dp"
+                    android:hint="@string/subarea">
+
+                    <com.socialsportz.View.PRMaterialEditText
+                        android:id="@+id/et_sub_ares"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mayur Vihar"
+                        android:textSize="@dimen/text_size_large"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="textPostalAddress"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/text_layout_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_city"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:src="@drawable/ic_home"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/dim_grey"/>
+
+                <LinearLayout
+                    android:id="@+id/city_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:orientation="vertical">
+
+                    <com.socialsportz.View.PRTextView
+                        android:id="@+id/tv_city"
+                        style="@style/TextView.InputLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city" />
+
+                    <com.socialsportz.View.PRTextView
+                        android:id="@+id/tv_city_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/delhi"
+                        android:textSize="@dimen/text_size_large"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:textColor="@color/black"
+                        android:background="@android:color/transparent"/>
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/dim_grey"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_pincode"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_marginEnd="@dimen/margin_3dp"
+                    android:src="@drawable/ic_pin"
+                    android:layout_gravity="bottom"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/dim_grey"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/negative_margin"
+                    android:paddingEnd="0dp"
+                    android:hint="@string/pincode">
+
+                    <com.socialsportz.View.PRMaterialEditText
+                        android:id="@+id/et_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="110096"
+                        android:maxLength="6"
+                        android:textSize="@dimen/text_size_large"
+                        android:paddingBottom="@dimen/margin_3dp"
+                        android:background="@android:color/transparent"
+                        android:inputType="number"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

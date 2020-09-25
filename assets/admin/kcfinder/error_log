@@ -1,0 +1,4 @@
+[29-Jul-2017 07:01:37 America/Chicago] PHP Warning:  filetype(): Lstat failed for /proc/self/fd/pipe:[673464538] in /home/just2minute/public_html/admin/kcfinder/lib/helper_dir.php on line 129
+[29-Jul-2017 07:01:37 America/Chicago] PHP Warning:  filetype(): Lstat failed for /proc/self/fd/pipe:[673464537] in /home/just2minute/public_html/admin/kcfinder/lib/helper_dir.php on line 129
+[29-Jul-2017 07:01:37 America/Chicago] PHP Warning:  filetype(): Lstat failed for /proc/self/fd/pipe:[673464539] in /home/just2minute/public_html/admin/kcfinder/lib/helper_dir.php on line 129
+[29-Jul-2017 07:01:44 America/Chicago] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 72 bytes) in /home/just2minute/public_html/admin/kcfinder/lib/helper_dir.php on line 64

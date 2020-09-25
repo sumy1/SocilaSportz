@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_start_vary_10"
+        android:layout_marginBottom="@dimen/margin_10dp">
+
+        <LinearLayout
+            android:id="@+id/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:orientation="horizontal">
+            <com.socialsportz.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|top"
+                android:text="@string/gallery"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/margin_1dp"
+                android:textSize="@dimen/text_size_regular" />
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/ib_edit_gallery"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_20dp"
+                android:layout_marginStart="@dimen/margin_3dp"
+                android:layout_marginTop="@dimen/profile_ib_margin_top"
+                android:background="@null"
+                android:padding="@dimen/margin_3dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_edit"
+                android:tint="@color/theme_color"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_fac"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gallery_banner_height"
+            android:layout_below="@id/header_layout"
+            android:layout_marginTop="@dimen/margin_start_vary_5"
+            android:layout_marginBottom="@dimen/margin_start_vary_10"
+            android:scaleType="fitXY"
+            android:src="@drawable/placeholder_300"
+            android:contentDescription="@string/app_desc"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/gallery_vp_height"
+            android:layout_below="@+id/iv_fac"
+            android:paddingStart="@dimen/margin_start_vary_5"
+            android:paddingEnd="@dimen/margin_start_vary_5"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

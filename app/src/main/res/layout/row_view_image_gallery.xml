@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/relative_rate_review_style"
+    android:layout_marginStart="@dimen/margin_3dp"
+    android:layout_marginEnd="@dimen/margin_3dp"
+    android:layout_marginBottom="@dimen/margin_3dp"
+    app:cardCornerRadius="@dimen/margin_8dp"
+    app:cardElevation="@dimen/margin_3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_banner"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/running_event"
+            android:background="@drawable/canvas_image_top_curve_bg"
+            android:contentDescription="@string/app_desc"/>
+
+       <!-- <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_banner"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/rate_layout"
+                android:padding="@dimen/margin_start_vary_8"
+                android:orientation="vertical">
+
+                <com.vibescom.socialsportz.View.PRTextView
+                    android:id="@+id/tv_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Round On Marathon"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <com.vibescom.socialsportz.View.PRTextView
+                    android:id="@+id/tv_venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noida Cricket Stadium, Noida"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rate_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingStart="@dimen/margin_8dp"
+                android:paddingEnd="@dimen/margin_8dp"
+                android:orientation="horizontal"
+                android:background="@drawable/canvas_light_theme_btn_bg">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:progressTint="@color/yellow"
+                    android:numStars="1"
+                    android:stepSize="1.0"
+                    android:rating="1.0" />
+
+                <com.vibescom.socialsportz.View.PRTextView
+                    android:id="@+id/tv_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.8"
+                    android:textColor="@color/user_theme_color"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,313 @@
+.business-profile__container{
+	padding: 1rem 0 1rem;
+	min-height: 527px;
+}
+.disable-click{
+	pointer-events: none !important;
+	cursor: not-allowed;
+}
+.span_element{
+	span.error{
+		margin-top: 1.4rem !important;
+		margin-left: 0 !important;
+		@include respond-to($tab-md) {
+			bottom: -10px;
+		}
+	}
+}
+
+.small-text{
+	font-size: 15px;
+}
+.data-container-all{
+	// padding: 1rem 0;
+}
+.main_nav_data{
+	text-align: center;
+	min-height: 100px;
+	position: relative;
+	.detials{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 100%;
+		h1{
+			font-size: 20px;
+			text-transform: uppercase;
+		}
+		p{
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+	}
+	
+}
+.terms_condi{
+	padding-left: 0.2rem;
+	.form-check-label{
+		font-size: 13px;
+	}
+}
+.tabs__list{
+	li{
+		width: 33.33%;
+		a{
+
+		}
+	}
+	.active{
+		a{
+			color: #495057;
+			background-color: #fff;
+			border-color: #dee2e6 #dee2e6 #fff;
+			// border: 1px solid transparent;
+			// border-top-left-radius: .25rem;
+			// border-top-right-radius: .25rem;
+		}
+	}
+}
+.detials_comp{
+	padding: 30px 0;
+	// min-height: 30em;
+
+	.img-sucees{
+		img{
+			width: 100px;
+			@include respond-to($phone) {
+				width: 60px;
+			}
+		}
+	}
+}
+.form-group{
+	position: relative;
+	
+}
+.form-actions{
+	padding: 15px;
+	background: #fff;
+	.btn{
+
+	}
+}
+.btn-link{
+	font-size: 14px;
+	color: $grey;
+	text-decoration: underline;
+}
+.main-img-container{
+	margin-bottom: 1rem;
+}
+.main-title-upload-image{
+	h4{
+		font-size: 13px;
+		font-weight: 600;
+		text-align: center;
+		min-height: 30px;
+	}
+	p{
+		font-size: 10px;
+		font-weight: 500;
+		text-align: center;
+		margin-bottom: 7px;
+	}
+}
+.review__profile{
+	h1{
+		font-size: 2.5rem;
+		margin-bottom: 1.2rem;
+		margin-top: 3rem;
+		font-weight: 500;
+		span{
+			font-size: 2.1rem;
+		}
+	}
+	h3{
+		margin-bottom: 1.2rem;
+		font-weight: 300;
+	}
+}
+.hoverd{
+	background-color: $blue;
+	border-color: $blue;	
+	color:#fff;
+}
+.complete-profile{
+	.detials_comp{
+		padding: 2rem 0 3rem;
+		h1{
+			font-size: 26px;
+			margin-top: 1.5rem;
+			@include respond-to($phone) {
+				font-size: 18px;
+			}
+			@include respond-to($i-phone) {
+				font-size: 14px;
+			}
+		}
+		h3{
+			font-size: 20px;
+			@include respond-to($phone) {
+				font-size: 16px;
+			}
+			@include respond-to($i-phone) {
+				font-size: 13px;
+			}
+		}
+
+	}
+}
+.or-text{
+	color: $grey;
+	margin-top: 1rem;
+}
+.paymoney{
+	display: inline-block !important;
+	font-weight: 800;
+	color: $blue;
+}
+.ysebank{
+	position: relative;
+	top: -2px;
+}
+
+.list_upload_img{
+	width: 100%;
+	li{
+		width: 19%;
+		margin-left: 0px;
+		@include respond-to($tab-md) {
+			width: 48%;
+		}
+		@include respond-to($tablet-portrait) {
+			width: 45%;
+		}
+		@include respond-to($large-phone) {
+			width: 45%;
+		}
+		@include respond-to($i-phone) {
+			width: 100%;
+		}
+	}
+}
+.bmd-form-group .checkbox label, .bmd-form-group .radio label, .bmd-form-group label {
+	font-size: 0.8rem;
+}
+
+.fileHolder input{line-height:200px;font-size:200px;position:absolute;opacity:0;z-index:10;}
+.fileHolder{position:relative;overflow:hidden;background-color:#ffffff;color:#ecf0f1;width: 90%;height: 130px;border: 2px dashed #ccc;border-radius: 5px;margin:0 auto;}
+.fileHolder label{position:absolute;z-index:5;opacity:0.8;cursor:pointer;background-color:$blue;text-transform:capitalize;top:0;left:0;right:0;bottom:0;margin:auto;text-align:center;width:115px;height: 30px;font-size: 12px;line-height: 30px;border-radius: 4px;}
+
+.product_img input{line-height:200px;font-size:200px;position:absolute;opacity:0;z-index:10;}
+.product_img{position:relative;overflow:hidden;background-color:#ffffff;color:#ecf0f1;width: 90%;height: 150px;border: 2px dashed #ccc;border-radius: 5px;margin:0 auto;}
+.product_img label{position:absolute;z-index:5;opacity:0.8;cursor:pointer;background-color:$blue;text-transform:uppercase;top:0;left:0;right:0;bottom:0;margin:auto;text-align:center;width:130px;height: 30px;font-size: 12px;line-height: 30px;border-radius: 4px;}
+
+// Step Form
+.step_menu{
+	li{
+		width: 16.65%;
+		@include respond-to($tab-md) {
+			width: 33.33% !important;
+		}
+		@include respond-to($phone) {
+			width: 49.99% !important;
+		}
+		&:first-child{
+			a{
+				margin-left: 0;
+			}
+		}
+		&:last-child{
+			a{
+				margin-right: 0;
+			}
+		}
+		a{
+			background: #7799ff;
+			color: #fff;
+			text-align: center;
+			display: block;
+			width: auto;
+			min-height: 80px;
+			margin: 0.5rem 0.3rem;
+			font-size: 14px;
+			padding: 1rem 0.5rem 0.5rem;
+			text-decoration: none;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			@include respond-to($tab-md) {
+				min-height: auto !important;
+				padding: 3px 10px 2px !important;
+			}
+			@include respond-to($phone) {
+				min-height: 55px !important;
+			}
+			.list-group-item-heading{
+				font-size: 20px;
+				@include respond-to($i-phone) {
+					font-size: 18px !important;
+				}
+				span{
+					font-size: 14px;
+					@include respond-to($i-phone) {
+						font-size: 13px !important;
+					}
+				}
+			}
+			.list-group-item-text{
+				font-size: 11px;
+				margin-bottom: 5px;
+			}
+		}
+	}
+	.active{
+		a{
+			background: #4169e1;
+			color: #fff;
+			cursor: default;
+			text-align: center;
+			text-decoration: none;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+	}
+	.disabled{
+		a{
+			background: #fff;
+			box-shadow: 0 1px 3px;
+			color: #aaa;
+			cursor: default;
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+		}
+	}
+}
+
+.content_step{
+	padding: 0 30px;
+	background: #fff;
+	border: 1px solid transparent;
+	border-color: #fff #dee2e6 #dee2e6 #dee2e6;
+	position: relative;
+	@include respond-to($i-phone) {
+		padding: 0 15px !important;
+	}
+	.business_detail_buttons{		
+		text-align: right;
+		@include respond-to($tablet-portrait) {
+			margin-top: 1rem;
+		}
+	}
+}
+.img-thanks{
+	img{
+		width: 150px;
+		@include respond-to($i-phone) {
+			padding: 0 15px !important;
+		}
+	}
+}

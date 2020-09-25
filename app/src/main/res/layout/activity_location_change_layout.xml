@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/window_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_35dp"
+            android:gravity="center_vertical"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/canvas_edittext_round_bg"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PREditText
+                android:id="@+id/search_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Search Location"
+                android:singleLine="true"
+                android:layout_toStartOf="@+id/clear"
+                android:imeOptions="actionSearch"
+                android:background="@null"
+                android:drawableStart="@drawable/ic_search"
+                android:drawableTint="@color/theme_color"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:paddingLeft="@dimen/margin_10dp"
+                android:paddingRight="@dimen/margin_10dp"/>
+            <ImageView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_close"
+                android:tint="@color/theme_color"
+                android:paddingStart="@dimen/padding_5dp"
+                android:paddingEnd="@dimen/padding_5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@string/app_desc"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_grant_access"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_10dp"
+            android:layout_below="@+id/search_layout"
+            android:visibility="gone">
+            <ImageView
+                android:id="@+id/iv_auto_address"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="10dp"
+                android:layout_centerVertical="true"
+                android:tint="@color/blue"
+                android:src="@drawable/ic_gps"
+                android:contentDescription="@string/app_desc"/>
+
+            <com.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iv_auto_address"
+                android:layout_centerVertical="true"
+                android:text="Get Current Location"
+                android:textSize="@dimen/text_size_xlarge"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/btn_grant_access"
+            android:background="@color/window_background"
+            android:layout_marginTop="@dimen/margin_5dp"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/powered_by_google"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:padding="@dimen/margin_10dp"-->
+            <!--android:src="@drawable/powered_by_google_light"-->
+            <!--android:contentDescription="@string/app_desc"/>-->
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

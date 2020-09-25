@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_2sdp"
+		android:layout_marginLeft="@dimen/_2sdp"
+		android:layout_marginRight="@dimen/_2sdp"
+        android:elevation="@dimen/_2sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="@dimen/_5sdp"
+			android:paddingBottom="@dimen/_5sdp"
+			android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/ll_weight"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:weightSum="3"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.2"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="@dimen/_2sdp"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_sb_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/slot"
+					android:layout_gravity="center"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_11sdp" />
+
+
+				<LinearLayout
+					android:id="@+id/ll_batchTime"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:visibility="gone"
+					android:orientation="vertical"
+					>
+
+					<com.socialsportz.View.PRTextView
+						android:id="@+id/tv_batchStime"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="29 Aug 2019"
+						android:gravity="center_horizontal"
+						android:textStyle="bold"
+						android:textSize="@dimen/_10sdp"
+						android:textColor="@color/user_theme_color"
+						/>
+
+					<com.socialsportz.View.PRTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="to"
+						android:textStyle="bold"
+						android:layout_gravity="center"
+						android:layout_marginTop="-3dp"
+						android:textSize="@dimen/_10sdp"
+						android:textColor="@color/user_theme_color"/>
+
+					<com.socialsportz.View.PRTextView
+						android:id="@+id/tv_batchEtime"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="9:00am to 11:00am"
+						android:gravity="center_horizontal"
+						android:layout_marginTop="-2dp"
+						android:textSize="@dimen/_10sdp"
+						android:textStyle="bold"
+						android:textColor="@color/user_theme_color"
+						/>
+
+				</LinearLayout>
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_slot_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:text="9:00 AM-11:00 AM "
+					android:layout_marginLeft="@dimen/margin_3dp"
+					android:textColor="@color/user_theme_color"
+					android:textSize="@dimen/_10sdp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1.4"
+				android:layout_gravity="center_vertical"
+				android:id="@+id/ll_plan"
+				android:visibility="gone"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/plan"
+					android:layout_gravity="center"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp" />
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_plan"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:text="MONTHLY"
+					android:textAllCaps="true"
+					android:textColor="@color/user_theme_color"
+					android:textSize="@dimen/_10sdp" />
+			</LinearLayout>
+			<LinearLayout
+
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.9"
+				android:layout_gravity="center_vertical"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/date"
+					android:layout_gravity="center"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp" />
+
+				<com.socialsportz.View.PMTextView
+					android:id="@+id/tv_slote_date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:gravity="center_horizontal"
+					android:text="20-03-2020"
+					android:textColor="@color/user_theme_color"
+					android:textSize="@dimen/_10sdp" />
+			</LinearLayout>
+			<LinearLayout
+                 android:id="@+id/tv_price_set"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.8"
+				android:layout_gravity="center_vertical"
+				android:orientation="vertical">
+
+				<com.socialsportz.View.PMTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/price"
+					android:layout_gravity="center"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/_10sdp" />
+
+				<LinearLayout
+					android:id="@+id/ll_amount"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_width="@dimen/_11sdp"
+						android:layout_height="@dimen/_11sdp"
+						android:layout_gravity="center_vertical"
+						android:scaleType="centerCrop"
+						android:contentDescription="@string/app_desc"
+						android:src="@drawable/icon_rupees"></ImageView>
+					<com.socialsportz.View.PMTextView
+						android:id="@+id/tv_price"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="0"
+						android:textColor="@color/black"
+						android:textSize="@dimen/_11sdp" />
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+			<ImageView
+				android:id="@+id/img_delete"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_delete_outline_24px"
+				android:padding="@dimen/_2sdp"
+				android:visibility="visible"
+				android:layout_marginLeft="-3dp"
+				android:layout_gravity="center_vertical"></ImageView>
+
+
+		</LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/ll_type"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingLeft="@dimen/_14sdp"
+				android:paddingRight="@dimen/_8sdp"
+				android:layout_below="@+id/main"
+				android:orientation="horizontal">
+				<com.socialsportz.View.PRTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerVertical="true"
+					android:text="Type:"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/text_size_ideal" />
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_category_type"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="@dimen/_5sdp"
+					android:layout_centerVertical="true"
+					android:text="Normal"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size_ideal" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+ </RelativeLayout>

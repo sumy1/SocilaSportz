@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/user_toolbar_dashboard" />
+
+    <FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="start"
+        app:menu="@menu/my_navigation_items"
+        android:background="@color/white"
+        app:itemRippleColor="@color/gradient_red_end"
+        app:itemTextColor="@color/canvas_menu_text_color"
+        app:itemIconTint="@color/canvas_menu_icon_color"
+        app:labelVisibilityMode="labeled"
+        app:itemHorizontalTranslationEnabled="true"/>
+
+
+</RelativeLayout>

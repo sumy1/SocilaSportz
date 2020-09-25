@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/margin_3dp"
+    app:cardCornerRadius="@dimen/margin_start_vary_5">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/white"
+		android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingStart="@dimen/margin_8dp"
+            android:paddingEnd="@dimen/margin_8dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_timing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fc_detail_timing"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_regular" />
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/st_date"
+                android:textColor="@color/dim_grey"
+                android:textSize="@dimen/text_size_micro"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:paddingTop="@dimen/margin_5dp"
+            android:paddingEnd="@dimen/margin_start_vary_8"
+            android:paddingStart="@dimen/margin_start_vary_0"
+            android:orientation="horizontal">
+            <com.socialsportz.View.PRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Rs"
+                android:textColor="@color/dim_black"
+                android:textSize="@dimen/text_size_regular"/>
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="@color/dim_black"
+                android:textSize="@dimen/text_size_regular"/>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/bt_delete"
+            android:layout_width="@dimen/margin_35dp"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:src="@drawable/ic_delete_white"
+            android:tint="@color/theme_color"
+            android:contentDescription="@string/app_desc"/>
+
+    </LinearLayout>
+
+
+		<LinearLayout
+			android:id="@+id/slot_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="@dimen/_8sdp"
+			android:paddingBottom="@dimen/_8sdp"
+			android:visibility="visible"
+			android:orientation="horizontal">
+			<com.socialsportz.View.PRTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/typee"
+				android:textColor="@color/black"
+				android:textSize="@dimen/text_size_regular" />
+
+			<com.socialsportz.View.PRTextView
+				android:id="@+id/tv_type"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Nprmal"
+				android:layout_marginLeft="@dimen/_5sdp"
+				android:textColor="@color/dim_grey"
+				android:textSize="@dimen/text_size_regular" />
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/batch_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="@dimen/_8sdp"
+			android:visibility="gone"
+			android:layout_marginRight="@dimen/_8sdp"
+			>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentStart="true"
+				android:orientation="vertical">
+				<com.socialsportz.View.PRTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/typee"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size_regular" />
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_type_batch"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Normal"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/text_size_regular" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentEnd="true"
+				android:orientation="vertical">
+				<com.socialsportz.View.PRTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="@string/package_name"
+					android:textColor="@color/black"
+					android:textSize="@dimen/text_size_regular" />
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_package_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Monthly"
+					android:textColor="@color/dim_grey"
+					android:textSize="@dimen/text_size_regular" />
+			</LinearLayout>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

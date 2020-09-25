@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dash_background"
+    android:gravity="center"
+    android:fitsSystemWindows="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/margin_20dp"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginEnd="@dimen/margin_20dp"
+        android:layout_marginBottom="@dimen/margin_40dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:background="@color/white"
+            app:cardCornerRadius="@dimen/margin_10dp"
+            app:cardElevation="@dimen/margin_3dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_40dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/user_text"
+                        android:textColor="@color/theme_color"
+                        android:textSize="16dp" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_user"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/canvas_edit_bg_profile"
+                        android:drawableStart="@drawable/canvas_user_round_icon"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:hint="Aarav Malhotra"
+                        android:padding="@dimen/margin_10dp" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/email_hint"
+                        android:textColor="@color/theme_color"
+                        android:textSize="16dp" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/canvas_edit_bg_profile"
+                        android:drawableStart="@drawable/canvas_email_round_icon"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:hint="abc@gmail.com"
+                        android:padding="@dimen/margin_10dp" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/contact_number"
+                        android:textColor="@color/theme_color"
+                        android:textSize="16dp" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/canvas_edit_bg_profile"
+                        android:drawableStart="@drawable/canvas_phone_round_icon"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:hint="91 8780679532"
+                        android:padding="@dimen/margin_10dp" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/address"
+                        android:textColor="@color/theme_color"
+                        android:textSize="16dp" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/canvas_edit_bg_profile"
+                        android:drawableStart="@drawable/canvas_location_round_icon"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:hint="Republic crossing,phase1"
+                        android:padding="@dimen/margin_10dp" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/city"
+                        android:textColor="@color/theme_color"
+                        android:textSize="16dp" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/canvas_edit_bg_profile"
+                        android:drawableStart="@drawable/canvas_home_round_icon"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:hint="Noida Up"
+                        android:padding="@dimen/margin_10dp" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_pin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/pincode"
+                        android:textColor="@color/theme_color"
+                        android:textSize="16dp" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_pincode"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginBottom="@dimen/margin_10dp"
+                        android:background="@drawable/canvas_edit_bg_profile"
+                        android:drawableStart="@drawable/canvas_pincode_round_icon"
+                        android:drawablePadding="@dimen/margin_5dp"
+                        android:hint="201301"
+                        android:padding="@dimen/margin_10dp" />
+
+                    <com.socialsportz.View.PMButton
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="@drawable/profile_button_style"
+                        android:padding="@dimen/margin_5dp"
+                        android:text="Submit"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </ScrollView>
+        </com.google.android.material.card.MaterialCardView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/profile_img_style"
+            android:elevation="@dimen/margin_3dp"
+            android:padding="2dp"
+            android:src="@drawable/man" />
+    </FrameLayout>
+
+</RelativeLayout>

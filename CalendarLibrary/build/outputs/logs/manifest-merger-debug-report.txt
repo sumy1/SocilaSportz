@@ -1,0 +1,9 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AudioRecordProject\socialsportz\CalendarLibrary\AndroidManifest.xml:1:1-3:12
+INJECTED from D:\AudioRecordProject\socialsportz\CalendarLibrary\AndroidManifest.xml:1:1-3:12
+INJECTED from D:\AudioRecordProject\socialsportz\CalendarLibrary\AndroidManifest.xml:1:1-3:12
+	package
+		ADDED from D:\AudioRecordProject\socialsportz\CalendarLibrary\AndroidManifest.xml:1:11-46
+		INJECTED from D:\AudioRecordProject\socialsportz\CalendarLibrary\AndroidManifest.xml
+		INJECTED from D:\AudioRecordProject\socialsportz\CalendarLibrary\AndroidManifest.xml

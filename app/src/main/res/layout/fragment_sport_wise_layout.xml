@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:elevation="@dimen/margin_start_vary_2">
+
+        <com.socialsportz.Utils.DropDownView
+            style="@style/formDropDown"
+            android:id="@+id/drop_sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_start_vary_8"
+            android:elevation="@dimen/margin_start_vary_2"
+            android:layout_margin="@dimen/margin_start_vary_10"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+            android:hint="@string/select_sport"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/black"
+            android:background="@drawable/relative_rate_review_style"/>
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:text="@string/calendar_hint"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_size_micro"/>
+
+
+        <com.stacktips.view.CustomCalendarView
+            android:id="@+id/calenderView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <GridLayout
+            android:id="@+id/legend_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alignmentMode="alignBounds"
+            android:columnCount="3"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="@dimen/margin_8dp"
+                    android:layout_height="@dimen/margin_8dp"
+                    android:background="@color/green" />
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_3dp"
+                    android:text="@string/available"
+                    android:textColor="@color/dim_black"
+                    android:textSize="@dimen/text_size_mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="@dimen/margin_8dp"
+                    android:layout_height="@dimen/margin_8dp"
+                    android:background="@color/red" />
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_3dp"
+                    android:text="@string/full"
+                    android:textColor="@color/dim_black"
+                    android:textSize="@dimen/text_size_mini" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="@dimen/margin_8dp"
+                    android:layout_height="@dimen/margin_8dp"
+                    android:background="@color/orange" />
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_3dp"
+                    android:text="@string/partially"
+                    android:textColor="@color/dim_black"
+                    android:textSize="@dimen/text_size_mini" />
+
+            </LinearLayout>
+        </GridLayout>
+
+        <!--<devs.mulham.horizontalcalendar.HorizontalCalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:textColorNormal="@color/dark_grey"
+            app:colorMiddleTextSelected="@color/theme_color"
+            app:textColorSelected="@color/black"
+            app:sizeBottomText="@dimen/text_size_regular"
+            app:sizeMiddleText="@dimen/text_size_xxlarge"/>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout">
+
+        <com.socialsportz.Utils.GridRecyclerView
+            android:id="@+id/rv_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"
+            android:clipToPadding="false"
+            android:columnWidth="@dimen/batch_slot_avail_width"
+            android:overScrollMode="never"
+            android:visibility="gone"/>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:duration="800">
+
+            <!-- Adding 7 rows of placeholders -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+                <include layout="@layout/row_view_shimmer_avail" />
+            </LinearLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+        <LinearLayout
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--<ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/empty_players"
+                android:contentDescription="@string/app_desc"/>
+-->
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/tv_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:gravity="center"
+                android:text="@string/batch_slot_empty"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/text_size_small"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

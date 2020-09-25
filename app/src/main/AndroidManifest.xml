@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	package="com.socialsportz">
+
+	<application
+		android:name=".ApplicationManager"
+		android:allowBackup="true"
+		android:appComponentFactory="whateverString"
+		android:fullBackupContent="false"
+		android:hardwareAccelerated="true"
+		android:icon="@mipmap/ic_launcher"
+		android:label="@string/app_name"
+		android:largeHeap="true"
+		android:requestLegacyExternalStorage="true"
+		android:roundIcon="@mipmap/ic_launcher_round"
+		android:supportsRtl="true"
+		android:theme="@style/AppTheme"
+		tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+		tools:replace="android:appComponentFactory"
+		tools:targetApi="28">
+		<activity android:name="com.socialsportz.Activities.User.Activities.DownloadWebviewActivity"></activity>
+		<activity android:name="com.socialsportz.Activities.InitialScreenActivity" />
+		<activity android:name="com.socialsportz.Activities.StatusActivity" />
+		<activity android:name="com.socialsportz.Activities.WebViewActivity" />
+		<activity android:name="com.socialsportz.Activities.User.Activities.AcademySeeAllActivity" />
+		<activity android:name="com.socialsportz.Activities.User.Activities.EventSeeAllActivity" />
+		<activity android:name="com.socialsportz.Activities.User.Activities.FacilitySeeAllActivity" />
+		<activity
+			android:name="com.socialsportz.Activities.SplashActivity"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.AcademyDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<activity android:name="com.socialsportz.Activities.User.Activities.SeeAllActivity" />
+		<activity android:name="com.socialsportz.Activities.User.Activities.MyCartActivity" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.UserCalenderCheckoutActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.UserCalaenderBookingActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.UserfinalBookingDetails"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.MyEnquireActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.NotificationActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.MyReviewsActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.WelcomeActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.SignInActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.SignUpActivity"
+			android:screenOrientation="portrait"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.FacilityOnGoActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.FacilityDashboardActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.BatchSlotBookingDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustResize" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.EventBookingDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustResize" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.FacAcaAddingActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.EventDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustResize" />
+		<activity
+			android:name="com.socialsportz.Activities.Facility.FacilityBookActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme.Dashboard"
+			android:windowSoftInputMode="adjustResize" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.UserDashboardActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.EditProfileActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.FacilityDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.EventDetailActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.SearchActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<activity
+			android:name="com.socialsportz.Activities.User.Activities.SearchListingActivity"
+			android:screenOrientation="portrait"
+			android:theme="@style/AppTheme"
+			android:windowSoftInputMode="adjustPan" />
+		<!--
+<activity android:name=".Activities.User.UserBookSlotBatchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan"/>
+        -->
+		<!--
+<activity android:name=".Activities.AddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+        -->
+		<activity
+			android:name="com.facebook.FacebookActivity"
+			android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+			android:label="@string/app_name" /> <!-- *********************Facebook meta data**************** -->
+		<activity
+			android:name="com.facebook.CustomTabActivity"
+			android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+
+				<data android:scheme="@string/fb_login_protocol_scheme" />
+			</intent-filter>
+		</activity>
+
+		<meta-data
+			android:name="com.facebook.sdk.ApplicationId"
+			android:value="@string/facebook_app_id" />
+		<meta-data
+			android:name="io.fabric.ApiKey"
+			android:value="e50bff5171268072b7ac4f72b0f744402158df67" />
+		<meta-data
+			android:name="com.google.android.gms.version"
+			android:value="@integer/google_play_services_version" />
+		<meta-data
+			android:name="com.google.android.geo.API_KEY"
+			android:value="@string/google_maps_key" />
+
+		<!--
+<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCCYoyC8-jS8MGzKrvCmxuDQl6v1cWKKms"/>
+        -->
+		<!--<meta-data
+			android:name="com.google.android.geo.API_KEY"
+			android:value="AIzaSyAVKveAVvc3HB4A5-xJJ0sqc4zvUN1Ds58" />-->
+
+		<provider
+			android:name="androidx.core.content.FileProvider"
+			android:authorities="${applicationId}.provider"
+			android:exported="false"
+			android:grantUriPermissions="true">
+			<meta-data
+				android:name="android.support.FILE_PROVIDER_PATHS"
+				android:resource="@xml/provider_paths" />
+		</provider>
+
+		<receiver
+			android:name="com.socialsportz.Broadcast.ReachableManager"
+			android:enabled="true">
+			<intent-filter>
+				<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+			</intent-filter>
+		</receiver>
+
+		<service
+			android:name="com.socialsportz.Services.GPSTracker"
+			android:exported="false" />
+
+	</application>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+</manifest>

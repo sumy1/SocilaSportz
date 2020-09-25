@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/achievement_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_10dp"
+        android:orientation="vertical">
+
+        <com.socialsportz.View.PMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_3dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:text="@string/achievement_title"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.socialsportz.View.PREditText
+            android:id="@+id/et_achievement_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/canvas_form_round_bg"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:drawableStart="@drawable/canvas_user_round_icon"
+            android:hint="@string/achievement_hint"
+            android:inputType="text"
+            android:paddingEnd="@dimen/margin_10dp"
+            android:paddingStart="@dimen/margin_5dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/half_black"
+            android:textSize="@dimen/text_size_regular" />
+
+        <com.socialsportz.View.PMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_3dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="@string/achievement_type"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <com.socialsportz.Utils.DropDownView
+            style="@style/formDropDown"
+            android:id="@+id/et_achievement_type"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/canvas_form_round_bg"
+            android:drawableStart="@drawable/canvas_home_round_icon"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+            android:drawablePadding="@dimen/margin_10dp"
+            android:paddingStart="@dimen/margin_5dp"
+            android:paddingEnd="@dimen/margin_10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/achievement_type_hint"
+            android:textColorHint="@color/half_black"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_regular" />
+
+        <com.socialsportz.View.PMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_3dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_8dp"
+            android:text="@string/upload_image"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/text_size_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/frame_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="@dimen/margin_3dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lv_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/canvas_dotted_curved_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_35dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:src="@drawable/gallery"
+                        android:tint="@color/theme_color"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PRTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/image1"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_image1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/bt_image1"
+                        android:layout_width="@dimen/margin_30dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:background="@drawable/canvas_red_round_bg"
+                        android:contentDescription="@string/app_desc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_3dp"
+                        android:src="@drawable/ic_close"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frame_image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/margin_3dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/lv_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/canvas_dotted_curved_bg"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_35dp"
+                        android:layout_height="@dimen/margin_35dp"
+                        android:src="@drawable/gallery"
+                        android:tint="@color/theme_color"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PRTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/image2"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/iv_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/bt_image2"
+                        android:layout_width="@dimen/margin_30dp"
+                        android:layout_height="@dimen/margin_30dp"
+                        android:background="@drawable/canvas_red_round_bg"
+                        android:contentDescription="@string/app_desc"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:padding="@dimen/margin_3dp"
+                        android:src="@drawable/ic_close"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

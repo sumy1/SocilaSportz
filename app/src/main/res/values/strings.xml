@@ -1,0 +1,1155 @@
+<resources>
+	<integer-array name="country_value">
+		<item>44</item>
+		<item>1</item>
+		<item>213</item>
+		<item>376</item>
+		<item>244</item>
+		<item>1264</item>
+		<item>1268</item>
+		<item>54</item>
+		<item>374</item>
+		<item>297</item>
+		<item>61</item>
+		<item>43</item>
+		<item>994</item>
+		<item>1242</item>
+		<item>973</item>
+		<item>880</item>
+		<item>1246</item>
+		<item>375</item>
+		<item>32</item>
+		<item>501</item>
+		<item>229</item>
+		<item>1441</item>
+		<item>975</item>
+		<item>591</item>
+		<item>387</item>
+		<item>267</item>
+		<item>55</item>
+		<item>673</item>
+		<item>359</item>
+		<item>226</item>
+		<item>257</item>
+		<item>855</item>
+		<item>237</item>
+		<item>1</item>
+		<item>238</item>
+		<item>1345</item>
+		<item>236</item>
+		<item>56</item>
+		<item>86</item>
+		<item>57</item>
+		<item>269</item>
+		<item>242</item>
+		<item>682</item>
+		<item>506</item>
+		<item>385</item>
+		<item>53</item>
+		<item>90392</item>
+		<item>357</item>
+		<item>42</item>
+		<item>45</item>
+		<item>253</item>
+		<item>1809</item>
+		<item>1809</item>
+		<item>593</item>
+		<item>20</item>
+		<item>503</item>
+		<item>240</item>
+		<item>291</item>
+		<item>372</item>
+		<item>251</item>
+		<item>500</item>
+		<item>298</item>
+		<item>679</item>
+		<item>358</item>
+		<item>33</item>
+		<item>594</item>
+		<item>689</item>
+		<item>241</item>
+		<item>220</item>
+		<item>7880</item>
+		<item>49</item>
+		<item>233</item>
+		<item>350</item>
+		<item>30</item>
+		<item>299</item>
+		<item>1473</item>
+		<item>590</item>
+		<item>671</item>
+		<item>502</item>
+		<item>224</item>
+		<item>245</item>
+		<item>592</item>
+		<item>509</item>
+		<item>504</item>
+		<item>852</item>
+		<item>36</item>
+		<item>354</item>
+		<item>91</item>
+		<item>62</item>
+		<item>98</item>
+		<item>964</item>
+		<item>353</item>
+		<item>972</item>
+		<item>39</item>
+		<item>1876</item>
+		<item>81</item>
+		<item>962</item>
+		<item>7</item>
+		<item>254</item>
+		<item>686</item>
+		<item>850</item>
+		<item>82</item>
+		<item>965</item>
+		<item>996</item>
+		<item>856</item>
+		<item>371</item>
+		<item>961</item>
+		<item>266</item>
+		<item>231</item>
+		<item>218</item>
+		<item>417</item>
+		<item>370</item>
+		<item>352</item>
+		<item>853</item>
+		<item>389</item>
+		<item>261</item>
+		<item>265</item>
+		<item>60</item>
+		<item>960</item>
+		<item>223</item>
+		<item>356</item>
+		<item>692</item>
+		<item>596</item>
+		<item>222</item>
+		<item>269</item>
+		<item>52</item>
+		<item>691</item>
+		<item>373</item>
+		<item>377</item>
+		<item>976</item>
+		<item>1664</item>
+		<item>212</item>
+		<item>258</item>
+		<item>95</item>
+		<item>264</item>
+		<item>674</item>
+		<item>977</item>
+		<item>31</item>
+		<item>687</item>
+		<item>64</item>
+		<item>505</item>
+		<item>227</item>
+		<item>234</item>
+		<item>683</item>
+		<item>672</item>
+		<item>670</item>
+		<item>47</item>
+		<item>968</item>
+		<item>680</item>
+		<item>507</item>
+		<item>675</item>
+		<item>595</item>
+		<item>51</item>
+		<item>63</item>
+		<item>48</item>
+		<item>351</item>
+		<item>1787</item>
+		<item>974</item>
+		<item>262</item>
+		<item>40</item>
+		<item>7</item>
+		<item>250</item>
+		<item>378</item>
+		<item>239</item>
+		<item>966</item>
+		<item>221</item>
+		<item>381</item>
+		<item>248</item>
+		<item>232</item>
+		<item>65</item>
+		<item>421</item>
+		<item>386</item>
+		<item>677</item>
+		<item>252</item>
+		<item>27</item>
+		<item>34</item>
+		<item>94</item>
+		<item>290</item>
+		<item>1869</item>
+		<item>1758</item>
+		<item>249</item>
+		<item>597</item>
+		<item>268</item>
+		<item>46</item>
+		<item>41</item>
+		<item>963</item>
+		<item>886</item>
+		<item>7</item>
+		<item>66</item>
+		<item>228</item>
+		<item>676</item>
+		<item>1868</item>
+		<item>216</item>
+		<item>90</item>
+		<item>7</item>
+		<item>993</item>
+		<item>1649</item>
+		<item>688</item>
+		<item>256</item>
+		<item>44</item>
+		<item>380</item>
+		<item>971</item>
+		<item>598</item>
+		<item>1</item>
+		<item>7</item>
+		<item>678</item>
+		<item>379</item>
+		<item>58</item>
+		<item>84</item>
+		<item>1284</item>
+		<item>1340</item>
+		<item>681</item>
+		<item>969</item>
+		<item>967</item>
+		<item>260</item>
+		<item>263</item>
+	</integer-array>
+	<string name="app_name">Social Sportz</string>
+	<string name="app_desc">Be Social &amp; Play Healthy</string>
+
+	<string name="app_started">Get Started with Social Sportz</string>
+	<string name="facebook_app_id">536756080402701</string>
+
+	<string name="fb_login_protocol_scheme">fb536756080402701</string>
+
+	//App Menu Fields
+	<string name="google_key">AIzaSyAl8n3WN8hX_-AALYN9knmr4ZrtXbfX-RA</string>
+	<string name="navigation_drawer_open">Open</string>
+
+	//Empty view Text
+	<string name="navigation_drawer_close">Close</string>
+	<string name="facility_empty">Facility/Academy Yet To Be Added!</string>
+	<string name="sports_empty">Sports Yet To Be Added!</string>
+	<string name="amenity_empty">Amenity Yet To Be Added!</string>
+	<string name="achieve_empty">Achievements Yet To Be Added!</string>
+	<string name="timing_empty">Facility Timing Yet To Be Added!</string>
+	<string name="batch_slot_empty">Batch/Slot Yet To Be Added!</string>
+	<string name="events_empty">Events Yet To Be Added!</string>
+	<string name="offline_booking_empty">Offline Booking Yet To Be Added!</string>
+	<string name="booking_empty">Booking Yet To Be Added!</string>
+	<string name="review_empty">Review Yet To Be Received!</string>
+	<string name="enquiry_empty">Enquiry Yet To Be Received!</string>
+	<string name="notification_empty">Notifications Yet To Be Received!</string>
+	<string name="favroute_empty">Favourite Yet To Be Received!</string>
+	<string name="email_alert_empty">Email Alert Yet To Be Received!</string>
+	<string name="event_dash">No Latest Events!</string>
+	<string name="academy_empty">Academy Yet To Be Added!</string>
+	<string name="facility_empty_list">Facility Yet To Be Added!</string>
+
+	//Common Fields
+	<string name="enquiry_dash">No Latest Enquiry!</string>
+	<string name="ok">OK</string>
+	<string name="edit_txt">Edit</string>
+	<string name="delete_txt">Delete</string>
+	<string name="see_all">See All</string>
+	<string name="add">Add</string>
+	<string name="add_new">+ Add</string>
+	<string name="book">Book Now</string>
+	<string name="Rs">\u20B9</string>
+
+	<string name="Rss">(-)</string>
+	<string name="Rsss">(-)\u20B9 0</string>
+	<string name="price_txt">Price</string>
+	<string name="price_hint">\u20B9 5000</string>
+	<string name="see">See</string>
+	<string name="hide">Hide</string>
+	<string name="checkout">Checkout</string>
+
+	//Sign-In and Sign-Up strings
+	<string name="action">Action</string>
+	<string name="fullname_hint">Fullname</string>
+	<string name="contact_person_name">Contact Person Name</string>
+	<string name="contact_person_email">Contact Person Email</string>
+	<string name="contact_person_number">Contact Person Number</string>
+	<string name="email_hint">Email</string>
+	<string name="email_id_hint">Email Address</string>
+	<string name="phone_hint">Phone Number</string>
+	<string name="password_hint">Password</string>
+	<string name="con_password_hint">Confirm Password</string>
+	<string name="address_hint">Enter Address</string>
+	<string name="subarea_hint">Enter SubArea</string>
+	<string name="forgot_password">Forgot Password?</string>
+	<string name="sign_up_txt">SignUp</string>
+	<string name="login_txt">Login</string>
+	<string name="signin_text">Login to Social Sportz</string>
+	<string name="signup_user_text">Register as Player</string>
+	<string name="signup_owner_text">Register as Partner</string>
+	<string name="login_have_account">Don\'t have an account?</string>
+	<string name="signup_txt">SIGNUP</string>
+	<string name="login_or">OR</string>
+	<string name="login_sign_up_with">SignUp With</string>
+	<string name="login_sign_up_withh">Only Player</string>
+
+	//Error Validations
+	<string name="sign_up_condition">By signing, I agree to all Terms and Conditions of Social Sportz</string>
+	<string name="error_invalid_email">This email id is invalid</string>
+	<string name="error_invalid_credential">Invalid Input</string>
+	<string name="error_invalid_password">This password is too short</string>
+	<string name="error_invalid_phone">This phone is incorrect</string>
+
+	//Forgot Password Dialog
+	<string name="error_cannot_be_empty">Field can not be empty!</string>
+	<string name="forgot">Forgot</string>
+	<string name="your_password">Your Password</string>
+	<string name="forgot_password_msg">Link has been sent to your Email Address</string>
+	<string name="forgot_password_desc">Need your registered email address to send reset password request</string>
+
+	//Reset Password Dialog
+	<string name="forgot_submit">Submit</string>
+	<string name="reset_password">Reset Password</string>
+	<string name="old_password">Old Password</string>
+	<string name="new_password">New Password</string>
+	<string name="confirm_password">Confirm Password</string>
+
+	//Congratulations Dialog
+	<string name="reset_submit">Reset Password</string>
+	<string name="congratulation">CONGRATULATIONS</string>
+	<string name="your_mobile_verified">Your Account has been verified successfully</string>
+	<string name="continue_profile">Click continue to complete your profile</string>
+
+	//Mobile Otp Dialog
+	<string name="continue_txt">Continue</string>
+	<string name="thanks_txt">Thanks for Signing Up!</string>
+	<string name="thanks_desc">We have send a verification code to your email &amp; mobile</string>
+	<string name="thanks_descc">Thank you ! Your feedback has been submitted.</string>
+	<string name="otp_msg">Enter the otp sent to your mobile number</string>
+	<string name="laert_msg">When pressing the back button all selected slot/batch will be removed!</string>
+	<string name="expire_otp">OTP will expire in</string>
+	<string name="enter_otp">Enter OTP</string>
+	<string name="verify_otp">Verify OTP</string>
+
+	//Welcome Screen Dialog
+	<string name="resend_otp">Resend OTP</string>
+	<string name="thanks_msg">Thank you for sharing interest in Social Sportz!</string>
+	<string name="thanks_msgg">Thank you!</string>
+	<string name="welcome_msg">Your account will be activated shortly.</string>
+	<string name="welcome_review">Your details are under review.</string>
+
+	//Basic App Fields
+	<string name="continue_dashboard">Continue To Dashboard</string>
+	<string name="user_text">User</string>
+	<string name="owner_text">Facility/Academy</string>
+	<string name="facility">Facility</string>
+
+	//Gender Fields
+	<string name="academy">Academy</string>
+	<string name="gender_text">GENDER</string>
+	<string name="male_text">MALE</string>
+	<string name="female_text">FEMALE</string>
+
+	//OnGo Profile Fields
+	<string name="other_text">OTHER</string>
+	<string name="profile_status">Profile Status</string>
+	<string name="profile_is">Profile</string>
+	<string name="profile_to">completed</string>
+	<string name="profile_desc">Your Profile is 100% complete</string>
+	<string name="profile_complete">Complete Profile</string>
+	<string name="do_it_later">Do This Later</string>
+	<string name="next">NEXT</string>
+
+	//Profile Fields
+	<string name="prev">PREV</string>
+	<string name="full_name">FullName</string>
+	<string name="email_id">Email Id</string>
+	<string name="contact_number">Contact Number</string>
+	<string name="alternate_contact">Alternate Contact Number</string>
+	<string name="locality">Locality</string>
+	<string name="houseno_flatno_floor">House No/Flat No/Floor No</string>
+	<string name="address">Address</string>
+	<string name="subarea">Colony/Street/Locality</string>
+	<string name="gaddrr">City/State/Country</string>
+	<string name="city">City</string>
+	<string name="pincode">Pincode</string>
+
+	<string name="gender">Gender</string>
+	<string name="fullname_ht">Contact Person Name</string>
+	<string name="emailid_hint">Contact Person Email</string>
+	<string name="contact_hint">Enter 10 Digit Mobile No</string>
+	<string name="locality_hint">Enter Locality</string>
+	<string name="pr_address_hint">Enter Address</string>
+	<string name="city_hint">Enter City</string>
+
+	//Facility or Academy Fields
+	<string name="pincode_hint">Enter Pincode</string>
+	<string name="facility_name">Facility Name</string>
+	<string name="facility_namee">Facility Name:</string>
+	<string name="academy_name">Academy Name</string>
+	<string name="open_close_timing">Open/Close Timings</string>
+	<string name="description">Description</string>
+	<string name="event_description">Event Description</string>
+	<string name="achievement_if_any">Achievement (If Any)</string>
+	<string name="achievement">Achievement</string>
+	<string name="upload_logo">Upload Logo</string>
+	<string name="upload_banner">Upload Banner</string>
+	<string name="add_banner">Add Banner</string>
+	<string name="add_logo">Add Logo</string>
+	<string name="save_text">Save</string>
+	<string name="save_n_continue">Save &amp; Continue</string>
+
+	<string name="save_n_create">Save &amp; Create</string>
+	<string name="achievement_title">Reward Title</string>
+	<string name="achievement_type">Reward Type</string>
+	<string name="upload_image">Upload Image</string>
+	<string name="image1">Image1</string>
+
+	<string name="image2">Image2</string>
+	<string name="facility_name_hint">Enter Facility Name</string>
+	<string name="academy_name_hint">Enter Academy Name</string>
+	<string name="time_hint">Open/Close Time</string>
+	<string name="description_hint">Enter Facility Description</string>
+	<string name="achievement_hint">Enter Achievements Title</string>
+	<string name="achievement_type_hint">Enter Achievements Type</string>
+	<string name="add_achievement">Add Achievement</string>
+	<string name="view_achievement">View Achievement</string>
+
+	//Facility or Academy Sport Fields
+	<string name="add_sport">+ Add Sport</string>
+	<string name="sport">Sport</string>
+	<string name="select_fac">Select Facility/Academy</string>
+	<string name="select_type">Select Type</string>
+	<string name="type">Type</string>
+	<string name="typee">Type:</string>
+	<string name="sports_name">Sport Name</string>
+	<string name="sports_namee">Sport Name:</string>
+	<string name="sport_name_hint">Select Sport</string>
+	<string name="court_no">No of Courts</string>
+	<string name="number_hint">Number</string>
+	<string name="court_type">Select Court</string>
+	<string name="court_hint">Enter Number</string>
+	<string name="indoor_court">Indoor Courts</string>
+	<string name="outdoor_court">Outdoor Courts</string>
+	<string name="kit_avail">Kit Available</string>
+
+	<string name="price_per_day">Price/Day</string>
+	<string name="indoor_n_outdoor">Indoor/Outdoor</string>
+	<string name="indoor_kir_price">Indoor Kit Price</string>
+
+	//Bank Fields
+	<string name="outdoor_kit_price">Outdoor Kit Price</string>
+	<string name="ifsc_code">IFSC Code</string>
+	<string name="ifsc_hint">Enter IFSC Code</string>
+	<string name="bank_name">Bank Name</string>
+	<string name="bank_name_hint">Enter Bank Name</string>
+	<string name="bank_branch">Bank Branch</string>
+	<string name="bank_branch_hint">Enter Branch Address</string>
+	<string name="account_name">Account Name</string>
+	<string name="account_name_hint">Enter Account Name</string>
+	<string name="account_number">Account Number</string>
+	<string name="account_number_hint">Enter Account Number</string>
+	<string name="type_of_account">Type of Account</string>
+	<string name="type_account_hint">Select Account Type</string>
+	<string name="pan_hint">Enter PAN Number</string>
+	<string name="gst_hint">Enter GST Number</string>
+
+	<string name="cin_hint">Enter CIN Number</string>
+	<string name="gst_number">GST Number</string>
+	<string name="upload_gst_number">Upload GST No</string>
+	<string name="pan_number">PAN Number</string>
+	<string name="upload_pan_number">Upload PAN No</string>
+	<string name="cin_number">CIN Number</string>
+	<string name="upload_cin_number">Upload CIN No</string>
+	<string name="business_address_proof">Address Proof</string>
+	<string name="upload_address_proof">Upload Proof</string>
+	<string name="cancelled_cheque">Cancelled Cheque</string>
+
+	<string name="upload_cancelled_cheques">Upload Cheque</string>
+	<string name="sorry_msg">Sorry,your bank details are not valid !</string>
+
+	//Facility or Academy Timing Fields
+	<string name="request_note">Please enter your valid bank details.</string>
+	<string name="choose_hrs">Choose Hours</string>
+	<string name="select_open_close_timing">Select days with open and close timings</string>
+	<string name="closed">Closed</string>
+	<string name="day_time_hint">9:00 AM</string>
+	<string name="day_time_open">7:00 AM</string>
+	<string name="day_time_close">9:00 PM</string>
+	<string name="sunday">Sunday</string>
+	<string name="monday">Monday</string>
+	<string name="tuesday">Tuesday</string>
+	<string name="wednesday">Wednesday</string>
+	<string name="thursday">Thursday</string>
+	<string name="friday">Friday</string>
+	<string name="saturday">Saturday</string>
+	<string name="close">Close</string>
+	<string name="done">Done</string>
+
+	//Fac Menu Fields
+	<string name="note_msg">Note : Special hours and Holiday schedules are not included.</string>
+	<string name="nav_title">Menu</string>
+	<string name="name">Vishwas Singh</string>
+	<string name="mail">vishwas.singh@gmail.com</string>
+
+	<string name="number">9845098450</string>
+	<string name="dashboard">Dashboard</string>
+	<string name="account_info">My Profile</string>
+	<string name="slot_n_batch">Slots/Batches</string>
+	<string name="sport_booking">My Bookings</string>
+	<string name="booking">Bookings</string>
+	<string name="booking_detail">All Bookings</string>
+	<string name="event_booking">Event Bookings</string>
+	<string name="events">Events</string>
+	<string name="my_events">My Events</string>
+	<string name="rating_n_review">Review Summary</string>
+	<string name="enquiry">Enquiries</string>
+	<string name="notifications">Notifications</string>
+	<string name="email_alert">Email Alerts</string>
+	<string name="statistics">Statistics</string>
+
+	//user menu fields
+	<string name="logout">Logout</string>
+	<string name="my_bookings">Bookings</string>
+	<string name="news_letter">News Letter</string>
+
+
+	//CCAVENUE PAYMENT..
+
+
+	<string name="access_code">AVVX91HD81CH59XVHC</string>
+
+	<string name="pay_button">Pay</string>
+
+	<string name="merchant_id">44167</string>
+
+	<string name="currency">Currency</string>
+
+	<string name="amount">Amount</string>
+
+	<string name="redirect_url">Redirect Url</string>
+
+	<string name="cancel_url">Cancel Url</string>
+
+	<string name="rsa_url">RSA Key Url</string>
+
+	//Dashboard Fields
+	<string name="favorites">Favorites</string>
+	<string name="total_booking">Total Booking</string>
+	<string name="available_booking">Available Booking</string>
+	<string name="trial_booking">Trial Booking</string>
+	<string name="today_enquiry">Today Enquiry</string>
+	<string name="revenue_stats">Revenue Statistics</string>
+	<string name="booking_stats">Booking Statistics</string>
+	<string name="slot_n_batch_avail">Book Now</string>
+	<string name="select_date">Select Date</string>
+	<string name="select_time">Select Time</string>
+	<string name="search_txt">Search</string>
+
+	<string name="book_txt">Book Now</string>
+	<string name="indira_g">Indira Gandhi Stadium</string>
+	<string name="nehru_stadium">Nehru Stadium</string>
+	<string name="firoj_s_stdm">Firoj Ssah Kotla Stadium</string>
+	<string name="noida_stdm">Noida Stadium</string>
+	<string name="noida_stdmm">Enter your Locality</string>
+	//Batch/Slot
+	<string name="greek_park">Greek Park, Kanpur, India</string>
+	<string name="batch_slot">Batch/Slot</string>
+	<string name="select_sport">Select Sport</string>
+	<string name="select_sportt">Please Select Sport</string>
+	<string name="select_amenities">Select Amenities</string>
+	<string name="select_rating">Select Rating</string>
+	<string name="select_location">Select Location</string>
+	<string name="football">Football</string>
+	<string name="max_book">Max Booking:</string>
+	<string name="max_book_no">25</string>
+	<string name="price">Price</string>
+	<string name="price_500">500</string>
+	<string name="start_time">Start Time</string>
+	<string name="end_time">End Time</string>
+
+	<string name="hh_mm_ss">9:00 am</string>
+	<string name="start_date">Start Date</string>
+	<string name="end_date">End Date</string>
+
+	//Booking Fields
+	<string name="payment_type">Payment Type</string>
+	<string name="payment_done">Payment Done</string>
+
+	//Event Fields
+	<string name="payment_pending">Payment Pending</string>
+	<string name="upcoming_events">Latest Events</string>
+	<string name="confirmed_booking">Confirmed Booked</string>
+
+	//Rating and Review Fields
+	<string name="max_booking">Max Booking</string>
+	<string name="Rating_n_Reviews">Rating and Reviews</string>
+	<string name="total_reviews">Total Reviews</string>
+	<string name="avg_rating">Average Rating</string>
+	<string name="latest_enquiry">Latest Enquiries</string>
+	<string name="report_abuse">Report Abuse</string>
+
+	//Sport Array
+	<string name="review_submitted">Review has Reported</string>
+
+	<!--Permissions-->
+	<string name="ask_permission_text">Ask Permission</string>
+	<string name="discard_text">Discard</string>
+	<string name="location_permission_required_text">Location permission is required for better User experience!</string>
+
+	//Profile Tab Fields
+	<string name="profile">Profile</string>
+	<string name="facility_detail">Facility/Academic Details</string>
+	<string name="bank_detail">Bank Details</string>
+	<string name="timing">Opening Closing Timing</string>
+	<string name="gallery">Facility/Academy Gallery</string>
+
+	//Profile Page Titles
+	<string name="personal_info">Personal Information</string>
+	<string name="fc_detail">Facility Detail</string>
+	<string name="ac_detail">Academy Detail</string>
+	<string name="achievement_detail">Achievement Details</string>
+	<string name="timings">Timings</string>
+	<string name="sport_detail">Sport Detail</string>
+	<string name="amenities_detail">Amenity Detail</string>
+	<string name="sport_gallery">Gallery</string>
+
+	//Profile Status
+	<string name="complete_status">Complete</string>
+	<string name="pending_status">Pending</string>
+	<string name="rejected_status">Rejected</string>
+
+	//Page Titles
+	<string name="booking_details">Booking Details</string>
+	<string name="event_details">Event Details</string>
+	<string name="select_amenity">Select Amenities</string>
+	<string name="edit_profile">Edit Profile</string>
+	<string name="edit_bank">Edit Bank</string>
+	<string name="edit_sport">Edit Sport</string>
+	<string name="booking_batch_slot">Book Batch/Slot</string>
+
+	//Profile Summary Fields
+	<string name="u_name">Kapil Rao</string>
+	<string name="male">Male</string>
+	<string name="female">Female</string>
+	<string name="other">Other</string>
+	<string name="mobile">Mobile Number</string>
+	<string name="mobile_number">9573689432</string>
+	<string name="full_address">E-22, Sector 8\nMayur Vihar,Delhi\n 110096</string>
+	<string name="change_password">Change Password</string>
+	<string name="email_verified">Email Verified</string>
+	<string name="email_unverified">Email Un-Verified</string>
+	<!--Status-->
+	<string name="completed">Completed</string>
+	<string name="doc">Upcoming Documents</string>
+	<string name="in_review">In Review</string>
+	<string name="pending">Pending</string>
+	<string name="rejected">Rejected</string>
+
+	// Facility or Academy Detail Fields
+	<string name="noida_stadium">Noida Stadium</string>
+	<string name="noida_venue">Noida Cricket Stadium, Noida</string>
+	<string name="fc_detail_timing">6:00 AM &#8211; 7:00 PM</string>
+	<string name="slot_date">29th December</string>
+	<string name="slot_timing">7:00 AM &#8211; 6:00 PM</string>
+	<string name="weekoff">Week Off</string>
+	<string name="week_off_day">Sat,Sun,Mon,Tue,Wed,thur</string>
+	<string name="about_ns"><div style="text-align: center">Noida Cricket Stadium, also known as Noida Stadium Complex, is a cricket stadium in Noida, India.
+        It is located in Sector 21A of Noida, Uttar Pradesh. As of April 2017,the playing area and the stands for the stadium
+        have been built, with the seating and media facilities still being completed.</div></string>
+	<string name="area">Area</string>
+	<string name="rio">Rio Olympics</string>
+	<string name="wrestling">Wrestling</string>
+	<string name="delhi">Delhi</string>
+	<string name="mayur_vihar">Mayur Vihar</string>
+	<string name="pc_number">843311</string>
+
+	//Bank Detail Fields
+	<string name="ifsc_code_number">ICICI023458</string>
+	<string name="ac_number">12345678</string>
+	<string name="bank_branch_name">Noida Sector-8</string>
+	<string name="bank_name_txt">ICICI Bank</string>
+	<string name="ac_type">Account Type</string>
+	<string name="ac_type_txt">Saving</string>
+	<string name="other_detail">Other Details</string>
+	<string name="document">Documents</string>
+	<string name="gst_number_txt">22AAAA0000A1Z5</string>
+	<string name="pan_number_txt">AELPU5278H</string>
+	<string name="cin_numbertxt">U67190TN2014PTC096978</string>
+	<string name="gst_doc">GST Doc</string>
+	<string name="pan_card">Pan Card</string>
+	<string name="cin_doc">CIN Doc</string>
+
+
+	//Timing Detail Fields
+	<string name="day">Day</string>
+	<string name="opening">Opening</string>
+	<string name="closing">Closing</string>
+
+	//Event Detail Fields
+	<string name="mob">Mobile</string>
+	<string name="email">Email</string>
+	<string name="mail_txt">abc_temporary@gmail.com</string>
+	<string name="round_marathon">Round On Marathon</string>
+	<string name="booking_date">Booking Date</string>
+	<string name="event_date">Event Date</string>
+	<string name="event_timing">Time</string>
+	<string name="st_date">Start Date</string>
+	<string name="ed_date">End Date</string>
+	<string name="from">From</string>
+	<string name="to">To</string>
+	<string name="start">Start</string>
+	<string name="end">End</string>
+	<string name="venue">Venue</string>
+	<string name="fee">Fees</string>
+	<string name="fees">Event Price</string>
+	<string name="str_12">12</string>
+	<string name="max_particpants">Max Participants</string>
+
+	//Add Event Fields
+	<string name="eventName">Event Name</string>
+	<string name="event_start_date">Start Date</string>
+	<string name="event_end_date">End Date</string>
+	<string name="event_start_time">Start Time</string>
+	<string name="event_end_time">End Time</string>
+	<string name="start_enrollment_date">Start Enrollment Date</string>
+	<string name="end_enrollment_date">End Enrollment Date</string>
+	<string name="event_price">Event Price</string>
+	<string name="max_participants">Max Participants</string>
+	<string name="event_venue">Event Venue</string>
+	<string name="organizer">Organiser</string>
+	<string name="event_city">Event City</string>
+	<string name="event_desc">Event Description</string>
+	<string name="event_rules">Event Rules</string>
+	<string name="event_banner">Event Banner</string>
+	<string name="event_gallery">Event Gallery</string>
+	<string name="event_amenity">Event Amenities</string>
+	<string name="about_desc"><div style="text-align: center">Noida Cricket Stadium, also known as Noida Stadium Complex, is a cricket stadium in Noida, India.
+        It is located in Sector 21A of Noida, Uttar Pradesh.</div></string>
+
+	//Add Slot Fields
+	<string name="slot_start_date">Slot Start Date</string>
+	<string name="slot_end_date">Slot End Date</string>
+	<string name="slot_start_time">Slot Start Time</string>
+	<string name="slot_end_time">Slot End Time</string>
+	<string name="select_category">Select Category</string>
+	<string name="slot_price">Slot Price</string>
+	<string name="slot_max_participants">Max Participants</string>
+	<string name="slot_court_type">Court Type</string>
+	<string name="slot_court_desc">Court Description</string>
+	<string name="slot_court_descc">Slot Description</string>
+	<string name="batch_court_descc">Batch Description</string>
+	<string name="slot_working_days">Working Days</string>
+	<string name="kit_price">Kit Price</string>
+
+	//Add Batch Fields
+	<string name="batch_start_date">Batch Start Date</string>
+	<string name="batch_end_date">Batch End Date</string>
+	<string name="batch_start_time">Batch Start Time</string>
+	<string name="batch_end_time">Batch End Time</string>
+	<string name="batch_max_students">Max Students</string>
+	<string name="batch_is_trial">Is Trail Available</string>
+	<string name="batch_select_plan">Batch Type</string>
+	<string name="batch_package">Package</string>
+	<string name="batch_price">Batch Price</string>
+	<string name="batch_working_days">Working Days</string>
+
+	//Working Days
+	<string name="mon">MON</string>
+	<string name="tue">TUE</string>
+	<string name="wed">WED</string>
+	<string name="thu">THU</string>
+	<string name="fri">FRI</string>
+	<string name="sat">SAT</string>
+	<string name="sun">SUN</string>
+
+	<string name="date">Date</string>
+	<string name="clear_filter">Clear Filter</string>
+	<string name="select_all">Select All</string>
+
+	<string name="calendar_hint">Please select sport for calendar data</string>
+	<string name="available">Available</string>
+	<string name="full">Booked</string>
+	<string name="partially">Partially</string>
+
+	<string name="create_account">Create Account</string>
+
+
+	<string name="terms">I accept the</string>
+
+	//edit user
+	<string name="conditions">Terms &amp; Condition</string>
+	<string name="fav_sports">Favourite Sports</string>
+	<string name="my_reviews">My Reviews</string>
+
+	//profile
+	<string name="my_enquiries">My Enquiries</string>
+	<string name="setting">Settings</string>
+	<string name="faq">FAQ</string>
+	<string name="choose_loc_msg">Let\'s search the nearest venue for sports activities</string>
+	<string name="choose_location">Choose Location</string>
+
+	//search page
+	<string name="find_location">Find Your Location</string>
+	<string name="sports">Sports</string>
+	<string name="event">Event</string>
+	<string name="search_listing">Search Listing</string>
+	<string name="filter_by">Filter By</string>
+
+	<string name="sort_by">Sort By</string>
+	<string name="near_facility">Near By Facilities</string>
+	<string name="featured_events">Featured Events</string>
+
+	//user dash
+	<string name="near_academy">Learn By Academy</string>
+	<string name="get_description">Description</string>
+	<string name="get_direction">Get Direction</string>
+
+	//Facility Detail
+	<string name="get_gallery">View Gallery</string>
+	<string name="open_close_time">Open/Close Timings</string>
+	<string name="sports_avail">Sports Available</string>
+	<string name="amenity_avail">Amenities Available</string>
+	<string name="add_enquiry">Enquiry</string>
+	<string name="add_book">Book Now</string>
+	<string name="things_note">Notes</string>
+	<string name="achievement_tab">Achievement</string>
+
+	<string name="review_tab">Reviews</string>
+	<string name="description_tab">Description</string>
+	<string name="rules_tab">Event Rules</string>
+	<string name="event_contact">Event Contact Details</string>
+	<string name="event_hint_date">Event Date</string>
+
+	<string name="event_hint_enrollment">Enroll Date</string>
+	<string name="event_timings">Event Timing</string>
+	<string name="clear_list">Clear List</string>
+	<string name="book_batch_slot">Book Batch/Slot</string>
+
+	<string name="book_slot">Book Slot</string>
+	<string name="select_slot">Select Slot</string>
+	<string name="select_batch">Select Batch</string>
+	<string name="kit_price_desc">Kit Price is not included in Slot Price</string>
+	<string name="kit_available">Kit Available : </string>
+	<string name="add_to_cart">Add to Cart</string>
+	<string name="added_text">Added</string>
+	<string name="discount_price">Discount Price</string>
+	<string name="google_maps_key">AIzaSyAl8n3WN8hX_-AALYN9knmr4ZrtXbfX-RA</string>
+
+
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="subject">Subject</string>
+
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="message">Message</string>
+	<string name="enquiry_addred_succesfully">Enquiry added sucessfully</string>
+	<string name="enquiry_addred_succesfullyy">Sports added sucessfully</string>
+	<string name="reviews">Reviews</string>
+	<string name="update">Update</string>
+	<string name="apply_filter">APPLY FILTERS</string>
+	<string name="username">User Name</string>
+	<string name="country">Country</string>
+	<string name="location">Location</string>
+	<string name="fullAddress">Full Address</string>
+	<string name="location_hint">Enter Location</string>
+	<string name="fullAddress_hint">Enter Full Address</string>
+	<string name="select_pacakage">Select Package</string>
+	<string name="pay_now">Pay Now</string>
+	<string name="pay_noww">Proceed to pay</string>
+	<string name="slot">Slot</string>
+	<string name="batch">Batch</string>
+	<string name="mycart">My Cart</string>
+	<string name="delete_alert_msg">Are you sure want to remove?</string>
+	<string name="remove">Remove</string>
+	<string name="cancel">Cancel</string>
+	<string name="booked">Booked</string>
+	<string name="trial_avail">Trial Available :</string>
+	<string name="login_as_player">Login as Player</string>
+	<string name="login_as_patner">Login as Partner</string>
+	<string name="write_review">Write a Review</string>
+	<string name="plan">Plan</string>
+	<string name="error_password_not_match">Confirm password and New Password not match</string>
+	<string name="change">Change</string>
+	<string name="no_reviews">No Reviews</string>
+	<string name="not_achievment">Achievement not available</string>
+	<string name="total">Total</string>
+	<string name="active">Active</string>
+	<string name="deactive">Inactive</string>
+	<string name="cancel_booking">Cancel Booking</string>
+	<string name="submit">Submit</string>
+	<string name="add_comment">Reason for cancellation</string>
+	<string name="slot_cancelation_charge">Slot Cancellation Charge:</string>
+	<string name="event_cancelation_charge">Event Cancellation Charge:</string>
+	<string name="slot_refaun_amnt">Slot Refund Amount:</string>
+	<string name="event_refaun_amnt">Event Refund Amount:</string>
+	<string name="total_refund_amnt">Total Refund Amount:</string>
+	<string name="total_amnt">Total Amount:</string>
+	<string name="toal_cancellation_charges">Total Cancellation Charge:</string>
+	<string name="coupon_amnt">Coupon Amount:</string>
+	<string name="offline_msg">This booking is offline, kindly cotact to your concerned Facility/Academy</string>
+
+	<string name="offline_msgg">This booking is offline, kindly cotact to your concerned Event</string>
+	<string name="all_tasex_msg">Your Coupon has applied</string>
+	<string name="character_limit">300 Character(s)Remaining</string>
+	<string name="package_name">Package</string>
+	<string name="categories">Categories</string>
+	<string name="age_categories">Age Category</string>
+	<string name="award_price">Award/Prize</string>
+
+
+	<string name="categoriess">Categories :</string>
+	<string name="age_categoriess">Age Category :</string>
+	<string name="award_pricee">Award/Prize :</string>
+	<string name="booking_type">Booking Type*</string>
+	<string name="please_select">Please Select</string>
+	<string name="sports_details">Sports Details</string>
+	<string name="isarchive">Is Archive?</string>
+	<string name="resion_for_archive">Reason for Archive</string>
+	<string name="archieve">Archive</string>
+	<string name="archive_type">Archive Type</string>
+	<string name="becom_partner">Become a Partner</string>
+	<string name="doing">By doing this,You will get logout from user and have to sign up as a partner with another email id.</string>
+	<string-array name="sports">
+		<item>Aerobics</item>
+		<item>Archery</item>
+		<item>Athletics</item>
+		<item>Badminton</item>
+		<item>BasketBall</item>
+		<item>Bowling</item>
+		<item>Boxing</item>
+		<item>Chess</item>
+		<item>Cricket</item>
+		<item>Diving</item>
+		<item>Football</item>
+		<item>Golf</item>
+		<item>Lawn Tennis</item>
+		<item>Squash</item>
+		<item>Shooting</item>
+		<item>Skating</item>
+		<item>Swimming</item>
+		<item>Table Tennis</item>
+		<item>VolleyBall</item>
+		<item>Wrestling</item>
+		<item>Weight Lifting</item>
+	</string-array>
+	<string-array name="country_code">
+		<item>"UK (+44)"</item>
+		<item>"USA (+1)"</item>
+		<item>"Algeria (+213)"</item>
+		<item>"Andorra (+376)"</item>
+		<item>"Angola (+244)"</item>
+		<item>"Anguilla (+1264)"</item>
+		<item>"Antigua &amp; Barbuda (+1268)"</item>
+		<item>"Argentina (+54)"</item>
+		<item>"Armenia (+374)"</item>
+		<item>"Aruba (+297)"</item>
+		<item>"Australia (+61)"</item>
+		<item>"Austria (+43)"</item>
+		<item>"Azerbaijan (+994)"</item>
+		<item>"Bahamas (+1242)"</item>
+		<item>"Bahrain (+973)"</item>
+		<item>"Bangladesh (+880)"</item>
+		<item>"Barbados (+1246)"</item>
+		<item>"Belarus (+375)"</item>
+		<item>"Belgium (+32)"</item>
+		<item>"Belize (+501)"</item>
+		<item>"Benin (+229)"</item>
+		<item>"Bermuda (+1441)"</item>
+		<item>"Bhutan (+975)"</item>
+		<item>"Bolivia (+591)"</item>
+		<item>"Bosnia Herzegovina (+387)"</item>
+		<item>"Botswana (+267)"</item>
+		<item>"Brazil (+55)"</item>
+		<item>"Brunei (+673)"</item>
+		<item>"Bulgaria (+359)"</item>
+		<item>"Burkina Faso (+226)"</item>
+		<item>"Burundi (+257)"</item>
+		<item>"Cambodia (+855)"</item>
+		<item>"Cameroon (+237)"</item>
+		<item>"Canada (+1)"</item>
+		<item>"Cape Verde Islands (+238)"</item>
+		<item>"Cayman Islands (+1345)"</item>
+		<item>"Central African Republic (+236)"</item>
+		<item>"Chile (+56)"</item>
+		<item>"China (+86)"</item>
+		<item>"Colombia (+57)"</item>
+		<item>"Comoros (+269)"</item>
+		<item>"Congo (+242)"</item>
+		<item>"Cook Islands (+682)"</item>
+		<item>"Costa Rica (+506)"</item>
+		<item>"Croatia (+385)"</item>
+		<item>"Cuba (+53)"</item>
+		<item>"Cyprus North (+90392)"</item>
+		<item>"Cyprus South (+357)"</item>
+		<item>"Czech Republic (+42)"</item>
+		<item>"Denmark (+45)"</item>
+		<item>"Djibouti (+253)"</item>
+		<item>"Dominica (+1809)"</item>
+		<item>"Dominican Republic (+1809)"</item>
+		<item>"Ecuador (+593)"</item>
+		<item>"Egypt (+20)"</item>
+		<item>"El Salvador (+503)"</item>
+		<item>"Equatorial Guinea (+240)"</item>
+		<item>"Eritrea (+291)"</item>
+		<item>"Estonia (+372)"</item>
+		<item>"Ethiopia (+251)"</item>
+		<item>"Falkland Islands (+500)"</item>
+		<item>"Faroe Islands (+298)"</item>
+		<item>"Fiji (+679)"</item>
+		<item>"Finland (+358)"</item>
+		<item>"France (+33)"</item>
+		<item>"French Guiana (+594)"</item>
+		<item>"French Polynesia (+689)"</item>
+		<item>"Gabon (+241)"</item>
+		<item>"Gambia (+220)"</item>
+		<item>"Georgia (+7880)"</item>
+		<item>"Germany (+49)"</item>
+		<item>"Ghana (+233)"</item>
+		<item>"Gibraltar (+350)"</item>
+		<item>"Greece (+30)"</item>
+		<item>"Greenland (+299)"</item>
+		<item>"Grenada (+1473)"</item>
+		<item>"Guadeloupe (+590)"</item>
+		<item>"Guam (+671)"</item>
+		<item>"Guatemala (+502)"</item>
+		<item>"Guinea (+224)"</item>
+		<item>"Guinea - Bissau (+245)"</item>
+		<item>"Guyana (+592)"</item>
+		<item>"Haiti (+509)"</item>
+		<item>"Honduras (+504)"</item>
+		<item>"Hong Kong (+852)"</item>
+		<item>"Hungary (+36)"</item>
+		<item>"Iceland (+354)"</item>
+		<item>"India (+91)"</item>
+		<item>"Indonesia (+62)"</item>
+		<item>"Iran (+98)"</item>
+		<item>"Iraq (+964)"</item>
+		<item>"Ireland (+353)"</item>
+		<item>"Israel (+972)"</item>
+		<item>"Italy (+39)"</item>
+		<item>"Jamaica (+1876)"</item>
+		<item>"Japan (+81)"</item>
+		<item>"Jordan (+962)"</item>
+		<item>"Kazakhstan (+7)"</item>
+		<item>"Kenya (+254)"</item>
+		<item>"Kiribati (+686)"</item>
+		<item>"Korea North (+850)"</item>
+		<item>"Korea South (+82)"</item>
+		<item>"Kuwait (+965)"</item>
+		<item>"Kyrgyzstan (+996)"</item>
+		<item>"Laos (+856)"</item>
+		<item>"Latvia (+371)"</item>
+		<item>"Lebanon (+961)"</item>
+		<item>"Lesotho (+266)"</item>
+		<item>"Liberia (+231)"</item>
+		<item>"Libya (+218)"</item>
+		<item>"Liechtenstein (+417)"</item>
+		<item>"Lithuania (+370)"</item>
+		<item>"Luxembourg (+352)"</item>
+		<item>"Macao (+853)"</item>
+		<item>"Macedonia (+389)"</item>
+		<item>"Madagascar (+261)"</item>
+		<item>"Malawi (+265)"</item>
+		<item>"Malaysia (+60)"</item>
+		<item>"Maldives (+960)"</item>
+		<item>"Mali (+223)"</item>
+		<item>"Malta (+356)"</item>
+		<item>"Marshall Islands (+692)"</item>
+		<item>"Martinique (+596)"</item>
+		<item>"Mauritania (+222)"</item>
+		<item>"Mayotte (+269)"</item>
+		<item>"Mexico (+52)"</item>
+		<item>"Micronesia (+691)"</item>
+		<item>"Moldova (+373)"</item>
+		<item>"Monaco (+377)"</item>
+		<item>"Mongolia (+976)"</item>
+		<item>"Montserrat (+1664)"</item>
+		<item>"Morocco (+212)"</item>
+		<item>"Mozambique (+258)"</item>
+		<item>"Myanmar (+95)"</item>
+		<item>"Namibia (+264)"</item>
+		<item>"Nauru (+674)"</item>
+		<item>"Nepal (+977)"</item>
+		<item>"Netherlands (+31)"</item>
+		<item>"New Caledonia (+687)"</item>
+		<item>"New Zealand (+64)"</item>
+		<item>"Nicaragua (+505)"</item>
+		<item>"Niger (+227)"</item>
+		<item>"Nigeria (+234)"</item>
+		<item>"Niue (+683)"</item>
+		<item>"Norfolk Islands (+672)"</item>
+		<item>"Northern Marianas (+670)"</item>
+		<item>"Norway (+47)"</item>
+		<item>"Oman (+968)"</item>
+		<item>"Palau (+680)"</item>
+		<item>"Panama (+507)"</item>
+		<item>"Papua New Guinea (+675)"</item>
+		<item>"Paraguay (+595)"</item>
+		<item>"Peru (+51)"</item>
+		<item>"Philippines (+63)"</item>
+		<item>"Poland (+48)"</item>
+		<item>"Portugal (+351)"</item>
+		<item>"Puerto Rico (+1787)"</item>
+		<item>"Qatar (+974)"</item>
+		<item>"Reunion (+262)"</item>
+		<item>"Romania (+40)"</item>
+		<item>"Russia (+7)"</item>
+		<item>"Rwanda (+250)"</item>
+		<item>"San Marino (+378)"</item>
+		<item>"Sao Tome &amp; Principe (+239)"</item>
+		<item>"Saudi Arabia (+966)"</item>
+		<item>"Senegal (+221)"</item>
+		<item>"Serbia (+381)"</item>
+		<item>"Seychelles (+248)"</item>
+		<item>"Sierra Leone (+232)"</item>
+		<item>"Singapore (+65)"</item>
+		<item>"Slovak Republic (+421)"</item>
+		<item>"Slovenia (+386)"</item>
+		<item>"Solomon Islands (+677)"</item>
+		<item>"Somalia (+252)"</item>
+		<item>"South Africa (+27)"</item>
+		<item>"Spain (+34)"</item>
+		<item>"Sri Lanka (+94)"</item>
+		<item>"St. Helena (+290)"</item>
+		<item>"St. Kitts (+1869)"</item>
+		<item>"St. Lucia (+1758)"</item>
+		<item>"Sudan (+249)"</item>
+		<item>"Suriname (+597)"</item>
+		<item>"Swaziland (+268)"</item>
+		<item>"Sweden (+46)"</item>
+		<item>"Switzerland (+41)"</item>
+		<item>"Syria (+963)"</item>
+		<item>"Taiwan (+886)"</item>
+		<item>"Tajikstan (+7)"</item>
+		<item>"Thailand (+66)"</item>
+		<item>"Togo (+228)"</item>
+		<item>"Tonga (+676)"</item>
+		<item>"Trinidad &amp; Tobago (+1868)"</item>
+		<item>"Tunisia (+216)"</item>
+		<item>"Turkey (+90)"</item>
+		<item>"Turkmenistan (+7)"</item>
+		<item>"Turkmenistan (+993)"</item>
+		<item>"Turks &amp; Caicos Islands (+1649)"</item>
+		<item>"Tuvalu (+688)"</item>
+		<item>"Uganda (+256)"</item>
+		<item>"UK (+44)"</item>
+		<item>"Ukraine (+380)"</item>
+		<item>"United Arab Emirates (+971)"</item>
+		<item>"Uruguay (+598)"</item>
+		<item>"USA (+1)"</item>
+		<item>"Uzbekistan (+7)"</item>
+		<item>"Vanuatu (+678)"</item>
+		<item>"Vatican City (+379)"</item>
+		<item>"Venezuela (+58)"</item>
+		<item>"Vietnam (+84)"</item>
+		<item>"Virgin Islands - British (+1284)"</item>
+		<item>"Virgin Islands - US (+1340)"</item>
+		<item>"Wallis &amp; Futuna (+681)"</item>
+		<item>"Yemen (North)(+969)"</item>
+		<item>"Yemen (South)(+967)"</item>
+		<item>"Zambia (+260)"</item>
+		<item>"Zimbabwe (+263)"</item>
+
+	</string-array>
+
+</resources>

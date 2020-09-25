@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/margin_10dp">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_start_vary_8"
+            android:layout_marginBottom="@dimen/margin_start_vary_8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|top"
+                    android:text="@string/amenities_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_regular" />
+
+				<androidx.appcompat.widget.AppCompatImageButton
+					android:id="@+id/ib_edit_amenity"
+					android:layout_width="@dimen/margin_25dp"
+					android:layout_height="@dimen/margin_20dp"
+					android:layout_marginStart="@dimen/margin_3dp"
+					android:layout_marginTop="@dimen/profile_ib_margin_top_vary_5"
+					android:background="@null"
+					android:padding="@dimen/margin_3dp"
+					android:scaleType="centerInside"
+					android:src="@drawable/ic_edit"
+					android:tint="@color/theme_color" />
+			</LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.socialsportz.View.PMTextView
+                    android:id="@+id/tv_empty_amenity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/amenity_empty"
+                    android:textColor="@color/dark_grey"
+                    android:layout_marginTop="@dimen/margin_start_vary_8"
+                    android:layout_marginStart="@dimen/margin_start_vary_10"
+                    android:layout_marginEnd="@dimen/margin_start_vary_10"
+                    android:layout_marginBottom="@dimen/margin_start_vary_8"
+                    android:textSize="@dimen/text_size_ideal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_amenity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="false"
+                    android:layout_marginBottom="@dimen/margin_start_vary_8"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.socialsportz.View.PMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_vary_10"
+                    android:layout_marginEnd="@dimen/margin_start_vary_10"
+                    android:gravity="bottom"
+                    android:text="@string/sport_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <com.socialsportz.View.PMButton
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:id="@+id/btn_sport"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_start_vary_25"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_start_vary_10"
+                    android:background="@drawable/canvas_light_theme_btn_bg"
+                    android:paddingEnd="@dimen/margin_10dp"
+                    android:paddingStart="@dimen/margin_10dp"
+                    android:text="@string/add_sport"
+                    android:textAllCaps="false"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/text_size_ideal"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_sport"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_start_vary_10"
+                android:layout_marginTop="@dimen/margin_start_vary_8"
+                android:clipToPadding="false" />
+                <LinearLayout
+                    android:id="@+id/empty_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/empty_players"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PRTextView
+                        android:id="@+id/tv_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_5dp"
+                        android:layout_marginStart="@dimen/margin_start_vary_10"
+                        android:layout_marginEnd="@dimen/margin_start_vary_10"
+                        android:gravity="center"
+                        android:text="@string/sports_empty"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_small"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/note_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_start_vary_10"
+        android:textColor="@color/dim_grey"
+        android:textSize="@dimen/text_size_regular" />
+
+</LinearLayout>

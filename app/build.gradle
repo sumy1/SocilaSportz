@@ -1,0 +1,177 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.socialsportz"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 10
+        versionName "1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    /*buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }*/
+
+
+    buildTypes {
+        release {
+            android {
+                lintOptions {
+                    checkReleaseBuilds false
+                    // Or, if you prefer, you can continue to check for errors in release builds,
+                    // but continue the build even when errors are found:
+                    abortOnError false
+
+                    disable 'InvalidPackage'
+
+                }
+
+                packagingOptions {
+                    exclude 'META-INF/services/javax.annotation.processing.Processor'
+                }
+            }
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+
+        buildTypes.each {
+            it.buildConfigField 'String', 'THE_MOVIE_DB_API_TOKEN', AppKey
+        }
+    }
+
+
+    compileOptions {                        //To Enable java 1.8 feature.
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    configurations {
+        cleanedAnnotations
+        compile.exclude group: 'org.jetbrains', module: 'annotations'
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.1.0-alpha09'
+    /*implementation 'androidx.appcompat:appcompat:1.0.0-alpha1'
+    implementation 'com.google.android.material:material:1.0.0-beta01'*/
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    /**
+     * To Implement list view that reuse the view
+     */
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    /**
+     * To Implement multi-dexing for application
+     */
+    implementation 'androidx.multidex:multidex:2.0.1'
+    /**
+     * To Implement make image view circle
+     */
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    /**
+     * Custom Type Tab Layout Library
+     */
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.ogaclejapan.smarttablayout:library:2.0.0@aar'
+    /**
+     * Steps View Library for processes
+     */
+    implementation 'com.shuhart.stepview:stepview:1.5.0'
+    /**
+     * Bar chart Library for statistics view
+     */
+    implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    /**
+     * A powerful image downloading and caching library for Android
+     */
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+    /**
+     * Rating and Review View library for Android
+     */
+    implementation 'com.github.Inconnu08:android-ratingreviews:1.2.0'
+    /**
+     * Floating action button library for Android
+     */
+    implementation 'com.getbase:floatingactionbutton:1.10.1'
+    /**
+     * Retrofit Api for API and server tasks.
+     */
+    implementation 'com.squareup.okhttp:okhttp-urlconnection:2.0.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    /**
+     * Google service for Google Places.
+     */
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+    /**
+     * Google Auth for Google Sign In.
+     */
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    /**
+     * Facebook login for Facebook Sign In.
+     */
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.facebook.shimmer:shimmer:0.1.0@aar'
+    /**
+     * Custom Loader library for Android
+     */
+    implementation project(':AnimatedLoadingIndicator')
+    implementation project(":imagezoom")
+    implementation 'com.mickaelcalatr:sportloadingview:1.2.0'
+    /**
+     * Arc Navigation View library for Android
+     */
+    implementation project(':arcnavigationview')
+    /**
+     * Ticket Type Row View library for Android
+     */
+    implementation project(':ticketview')
+    /**
+     * Horizontal Calendar library for Android
+     */
+    implementation project(':horizontalcalendar')
+    /**
+     * Custom Calendar library for Android
+     */
+    implementation project(':CalendarLibrary')
+
+    implementation 'com.jakewharton:butterknife:8.8.1'
+
+    implementation 'com.android.volley:volley:1.1.0'
+
+    implementation 'com.github.mancj:SlideUp-Android:2.2.8'
+    implementation 'com.github.clans:fab:1.6.4'
+    implementation "androidx.core:core-ktx:+"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+/*sfsdgfgdd*/
+    implementation 'com.github.Shashank02051997:FancyGifDialog-Android:1.2'
+    implementation 'com.borjabravo:readmoretextview:2.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    //implementation 'com.github.PhilJay:MPAndroidChart:v2.2.4'
+    implementation 'com.github.lecho:hellocharts-library:1.5.8@aar'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'com.github.MikeOrtiz:TouchImageView:3.0.1'
+}
+repositories {
+    mavenCentral()
+}

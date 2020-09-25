@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.socialsportz.View.PRCheckBox
+        android:id="@+id/ch_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginBottom="@dimen/margin_8dp"
+        android:gravity="center"
+        android:text="@string/sunday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_large" />
+
+    <com.socialsportz.View.PRTextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/text_size_regular"
+        android:text="@string/closed"
+        tools:ignore="RelativeOverlap" />
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ch_day"
+        android:layout_marginTop="@dimen/margin_8dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/time_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+
+            <com.socialsportz.View.PRButton
+                android:id="@+id/btn_open_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_35dp"
+                android:text="@string/day_time_open"
+                android:textColor="@color/dim_black"
+                android:textSize="@dimen/text_size_regular"
+                android:background="@drawable/canvas_time_btn_selector" />
+
+            <com.socialsportz.View.PMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20dp"
+                android:layout_marginEnd="@dimen/margin_20dp"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_large"/>
+
+            <com.socialsportz.View.PRButton
+                android:id="@+id/btn_close_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/margin_35dp"
+                android:text="@string/day_time_close"
+                android:textColor="@color/dim_black"
+                android:textSize="@dimen/text_size_regular"
+                android:background="@drawable/canvas_time_btn_selector"/>
+
+        </LinearLayout>
+        
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:itemBackground="@drawable/canvas_drawer_list_selector">
+
+    <group
+        android:menuCategory="container"
+        android:enabled="true">
+
+        <item
+            android:id="@+id/action_nehru"
+            android:icon="@drawable/ic_games_black_24dp"
+            android:title="@string/nehru_stadium"/>
+
+        <item
+            android:id="@+id/action_noida"
+            android:icon="@drawable/ic_games_black_24dp"
+            android:title="@string/noida_stdm" />
+
+        <item
+            android:id="@+id/action_indira"
+            android:icon="@drawable/ic_games_black_24dp"
+            android:title="@string/indira_g" />
+
+        <item
+            android:id="@+id/action_greek"
+            android:icon="@drawable/ic_games_black_24dp"
+            android:title="@string/greek_park" />
+    </group>
+
+
+</menu>

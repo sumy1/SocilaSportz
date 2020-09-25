@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_grey"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:layout_marginTop="@dimen/margin_start_vary_8"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"
+            android:layout_marginBottom="@dimen/margin_start_vary_8"
+            android:background="@drawable/canvas_booking_details_img_bg"
+            android:elevation="@dimen/margin_start_vary_2"
+            android:padding="@dimen/margin_5dp">
+
+            <!--<de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/margin_start_vary_80"
+                android:layout_height="@dimen/margin_start_vary_80"
+                android:background="@drawable/profile_img_style"
+                android:elevation="@dimen/margin_3dp"
+                android:padding="2dp"
+                android:src="@drawable/man" />-->
+
+            <LinearLayout
+                android:id="@+id/name_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginEnd="@dimen/margin_10dp">
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/u_name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_regular" />
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_email_verify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:text="@string/email_unverified"
+                    android:gravity="end"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_size_regular" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profile_lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/name_lay"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:orientation="vertical">
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mail"
+                    android:textSize="@dimen/text_size_regular" />
+				<RelativeLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+					<com.socialsportz.View.PRTextView
+						android:id="@+id/tv_mobile"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentStart="true"
+						android:text="7469868396346"
+						android:textSize="@dimen/text_size_regular" />
+
+					<com.socialsportz.View.PRTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:layout_centerVertical="true"
+						android:textColor="@color/red"
+						android:layout_marginBottom="-5dp"
+						android:layout_marginRight="@dimen/margin_start_vary_5"
+						android:text="Add Facility/Academy"
+						android:textSize="@dimen/text_size_micro" />
+				</RelativeLayout>
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profile 30% completed"
+                    android:textSize="@dimen/text_size_small" />
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:layout_width="@dimen/progress_width"
+                    android:layout_height="wrap_content"
+                    android:progress="30"
+                    android:max="100" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.ogaclejapan.smarttablayout.SmartTabLayout
+        android:id="@+id/tl_9"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/top_layout"
+        android:clipToPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@color/dark_grey"
+        app:stl_defaultTabTextColor="@color/white"
+        app:stl_defaultTabTextHorizontalPadding="18dp"
+        app:stl_dividerColor="@android:color/transparent"
+        app:stl_dividerThickness="0dp"
+        app:stl_indicatorColor="@color/theme_color"
+        app:stl_indicatorCornerRadius="18dp"
+        app:stl_indicatorGravity="center"
+        app:stl_indicatorInterpolation="smart"
+        app:stl_indicatorThickness="36dp"
+        app:stl_underlineColor="@android:color/transparent"
+        app:stl_underlineThickness="0dp"
+        app:stl_defaultTabTextAllCaps="false"
+        app:stl_defaultTabTextSize="@dimen/text_size_regular"
+        app:stl_defaultTabBackground="@android:color/transparent"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_below="@+id/tl_9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/fab_menu_margin_top"
+        android:layout_marginEnd="@dimen/fab_menu_margin_end"
+        fab:menu_animationDelayPerItem="55"
+        fab:menu_backgroundColor="@android:color/transparent"
+        fab:menu_buttonSpacing="0dp"
+        fab:menu_colorNormal="#da3c2f"
+        fab:menu_colorPressed="#dc4b3f"
+        fab:menu_colorRipple="#99d4d4d4"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add"
+        fab:menu_labels_colorNormal="#333"
+        fab:menu_labels_colorPressed="#444"
+        fab:menu_labels_colorRipple="#66efecec"
+        fab:menu_labels_cornerRadius="3dp"
+        fab:menu_labels_ellipsize="none"
+        fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        fab:menu_labels_margin="0dp"
+        fab:menu_labels_maxLines="-1"
+        fab:menu_labels_padding="@dimen/margin_8dp"
+        fab:menu_labels_position="left"
+        fab:menu_labels_showShadow="true"
+        fab:menu_labels_singleLine="false"
+        fab:menu_labels_textColor="@color/white"
+        fab:menu_labels_textSize="@dimen/text_size_small"
+        fab:menu_openDirection="down"
+        fab:menu_shadowColor="@color/bluish_grey"
+        fab:menu_shadowRadius="1dp"
+        fab:menu_shadowXOffset="1dp"
+        fab:menu_shadowYOffset="1dp"
+        fab:menu_showShadow="true"
+        tools:ignore="RelativeOverlap">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_games_white"
+            fab:fab_label="Add Facility"
+            fab:fab_size="mini" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_school_white"
+            fab:fab_label="Add Academy"
+            fab:fab_size="mini" />
+    </com.github.clans.fab.FloatingActionMenu>
+
+</RelativeLayout>

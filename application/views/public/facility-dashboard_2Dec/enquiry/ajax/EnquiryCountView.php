@@ -1,0 +1,1 @@
+﻿<?=$total_enquiry_count?>

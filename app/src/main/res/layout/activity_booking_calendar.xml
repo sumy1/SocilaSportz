@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_45dp"
+        android:orientation="horizontal"
+        android:background="@color/trans_grey">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="@dimen/margin_40dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_desc"
+            android:src="@drawable/ic_keyboard_arrow_left_white"
+            android:tint="@color/white" />
+
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_page_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/book_batch_slot"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xlarge"
+            tools:ignore="RelativeOverlap" />
+
+        <FrameLayout
+            android:layout_width="@dimen/margin_30dp"
+            android:layout_height="@dimen/margin_30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/bell"
+                android:layout_width="@dimen/margin_25dp"
+                android:layout_height="@dimen/margin_25dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/shopping_cart"
+                android:tint="@color/white"
+                android:contentDescription="@string/app_desc"
+                android:background="@null"/>
+
+            <com.socialsportz.View.PMTextView
+                android:id="@+id/tv_count"
+                android:layout_width="@dimen/margin_15dp"
+                android:layout_height="@dimen/margin_15dp"
+                android:gravity="center"
+                android:layout_gravity="end"
+                android:text="10"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_mini"
+                android:background="@drawable/canvas_count_round_bg"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>-->
+
+
+</LinearLayout>

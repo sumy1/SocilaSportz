@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvListing"
+        android:layout_marginTop="@dimen/margin_15dp"
+        android:layout_width="match_parent"
+        android:layout_above="@id/btn_save"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:overScrollMode="never"/>
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_players"
+            android:contentDescription="@string/app_desc"/>
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"
+            android:gravity="center"
+            android:text="@string/facility_empty"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+    <com.socialsportz.View.PMButton
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_35dp"
+        android:layout_margin="@dimen/ongo_padding"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/canvas_forgot_btn_bg"
+        android:textAllCaps="false"
+        android:text="@string/save_n_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_regular"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_dashboard"
+        android:title="@string/dashboard"
+        android:icon="@drawable/ic_dashboard" />
+    <item android:id="@+id/action_book"
+        android:title="@string/my_bookings"
+        android:icon="@drawable/open_book" />
+    <item android:id="@+id/action_favorite"
+        android:title="@string/favorites"
+        android:icon="@drawable/favorite_heart" />
+    <item android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:icon="@drawable/man_user" />
+
+</menu>

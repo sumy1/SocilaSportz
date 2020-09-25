@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginLeft="@dimen/_5sdp"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:id="@+id/ly1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <CheckBox
+            android:id="@+id/cb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="visible"
+            android:backgroundTint="@color/dim_grey"
+            android:layout_marginLeft="-2dp"/>
+        <ImageView
+            android:id="@+id/iv_sp1"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/app_desc"/>
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_sp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cjsjsasa"
+			android:gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/_8sdp"/>
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/margin_start_vary_2"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_sp2"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:contentDescription="@string/app_desc"/>
+
+        <com.vibescom.socialsportz.View.PRTextView
+            android:id="@+id/tv_sp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_vary_2"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ly3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/margin_start_vary_2"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_sp3"
+            android:layout_width="@dimen/margin_20dp"
+            android:layout_height="@dimen/margin_20dp"
+            android:contentDescription="@string/app_desc"/>
+
+        <com.vibescom.socialsportz.View.PRTextView
+            android:id="@+id/tv_sp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_start_vary_2"
+            android:textColor="@color/brown"
+            android:textSize="@dimen/text_size_small"/>
+    </LinearLayout>-->
+
+
+</LinearLayout>

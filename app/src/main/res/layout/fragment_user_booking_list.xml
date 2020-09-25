@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_background">
+
+
+
+	<LinearLayout
+		android:id="@+id/top"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+
+		<com.socialsportz.View.PRTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin_5dp"
+			android:layout_marginStart="@dimen/margin_start_vary_10"
+			android:layout_marginEnd="@dimen/margin_start_vary_10"
+			android:gravity="center"
+			android:text="@string/booking_type"
+			android:textColor="@color/red"
+			android:textSize="@dimen/text_size_small"/>
+
+	<com.socialsportz.Utils.DropDownView
+		style="@style/formDropDown"
+		android:id="@+id/booking_type_drop"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/_30sdp"
+		android:paddingStart="@dimen/_8sdp"
+		android:paddingEnd="@dimen/_8sdp"
+		android:elevation="@dimen/_2sdp"
+		android:layout_marginTop="@dimen/_2sdp"
+		android:layout_marginBottom="@dimen/_2sdp"
+		android:layout_marginStart="@dimen/_10sdp"
+		android:layout_marginEnd="@dimen/_10sdp"
+		android:layout_alignParentEnd="true"
+		android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+		android:hint="@string/please_select"
+		android:textSize="@dimen/_10sdp"
+		android:textColor="@color/black"
+		android:background="@drawable/relative_rate_review_style"/>
+
+	</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_booking_list"
+        android:layout_width="match_parent"
+		android:layout_below="@+id/top"
+		android:layout_marginTop="@dimen/_3sdp"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+		android:layout_below="@+id/top"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:duration="800">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/row_view_shimmer_event" />
+            <include layout="@layout/row_view_shimmer_event" />
+            <include layout="@layout/row_view_shimmer_event" />
+            <include layout="@layout/row_view_shimmer_event" />
+            <include layout="@layout/row_view_shimmer_event" />
+            <include layout="@layout/row_view_shimmer_event" />
+            <include layout="@layout/row_view_shimmer_event" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/empty_players"
+            android:contentDescription="@string/app_desc"/>
+
+        <com.socialsportz.View.PRTextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"
+            android:gravity="center"
+            android:text="@string/booking_empty"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/text_size_small"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

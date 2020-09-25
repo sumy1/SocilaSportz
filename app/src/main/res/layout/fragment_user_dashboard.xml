@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/main_content"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<!--focusStealer, to avoid NestedScrollingView to scroll due to dynamically created views that take the focus-->
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/window_background">
+
+		<RelativeLayout
+			android:id="@+id/color_view"
+			android:layout_width="match_parent"
+			android:layout_height="100dp"
+			android:background="@drawable/canvas_red_gradient"
+			android:visibility="gone">
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/rv_sports"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+
+		</RelativeLayout>
+
+		<!--<androidx.core.widget.NestedScrollView
+			android:id="@+id/nested_scroll_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_below="@id/color_view"
+			android:background="@color/window_background"
+			android:orientation="vertical">-->
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:weightSum="3"
+				android:layout_below="@id/color_view"
+				android:background="@drawable/canvas_doodle_bg"
+				android:elevation="@dimen/margin_5dp"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="0dp"
+					android:orientation="vertical"
+					android:layout_weight="1">
+				<RelativeLayout
+					android:id="@+id/rel_facSeeAll"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_start_vary_8">
+
+					<com.socialsportz.View.PRTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/near_facility"
+						android:textColor="@color/black"
+						android:textSize="@dimen/_12sdp" />
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:orientation="horizontal">
+
+						<com.socialsportz.View.PRTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/see_all"
+							android:textColor="@color/dim_red"
+							android:layout_gravity="bottom"
+							android:textSize="@dimen/_11sdp"
+							android:visibility="visible"
+							tools:ignore="RelativeOverlap" />
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/margin_1dp"
+							android:src="@drawable/ic_swap_horizontal_circle_24px"></ImageView>
+
+
+					</LinearLayout>
+				</RelativeLayout>
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/rv_fac"
+					android:layout_width="match_parent"
+					android:visibility="visible"
+					android:layout_height="wrap_content" />
+
+					<RelativeLayout
+						android:id="@+id/rv_facility"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:visibility="gone"
+						android:layout_below="@+id/header_layoutt">
+
+						<ImageView
+							android:id="@+id/img_cart"
+							android:layout_width="@dimen/_70sdp"
+							android:layout_height="@dimen/_70sdp"
+							android:src="@drawable/players_logo"
+							android:layout_centerHorizontal="true"
+							></ImageView>
+
+						<com.socialsportz.View.PRTextView
+							android:id="@+id/tv_facility"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginStart="@dimen/_10sdp"
+							android:layout_gravity="center_vertical"
+							android:layout_centerVertical="true"
+							android:layout_marginTop="-20dp"
+							android:layout_below="@+id/img_cart"
+							android:text="Near by Facility not available!"
+							android:textColor="@color/dark_grey"
+							android:textSize="@dimen/_12sdp" />
+
+					</RelativeLayout>
+
+				</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<RelativeLayout
+					android:id="@+id/rel_eventSeeAll"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_start_vary_8">
+
+
+					<com.socialsportz.View.PRTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/featured_events"
+						android:textColor="@color/black"
+						android:textSize="@dimen/_12sdp" />
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:orientation="horizontal">
+
+						<com.socialsportz.View.PRTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/see_all"
+							android:layout_gravity="bottom"
+							android:textColor="@color/dim_red"
+							android:textSize="@dimen/_11sdp"
+							android:visibility="visible"
+							tools:ignore="RelativeOverlap" />
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/margin_1dp"
+							android:src="@drawable/ic_swap_horizontal_circle_24px"></ImageView>
+
+
+					</LinearLayout>
+				</RelativeLayout>
+
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/rv_events"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:visibility="visible"/>
+
+				<RelativeLayout
+					android:id="@+id/rv_event"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:visibility="gone"
+					android:layout_below="@+id/header_layoutt">
+
+					<ImageView
+						android:id="@+id/img_event"
+						android:layout_width="@dimen/_70sdp"
+						android:layout_height="@dimen/_70sdp"
+						android:src="@drawable/players_logo"
+						android:layout_centerHorizontal="true"
+						></ImageView>
+
+					<com.socialsportz.View.PRTextView
+						android:id="@+id/tv_event"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_10sdp"
+						android:layout_gravity="center_vertical"
+						android:layout_centerVertical="true"
+						android:layout_marginTop="-20dp"
+						android:layout_below="@+id/img_event"
+						android:text="Featured Event not available!"
+						android:textColor="@color/dark_grey"
+						android:textSize="@dimen/_12sdp" />
+
+				</RelativeLayout>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:orientation="vertical"
+				android:layout_weight="1">
+				<RelativeLayout
+					android:id="@+id/rel_academySeeALL"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="@dimen/margin_start_vary_8">
+
+					<com.socialsportz.View.PRTextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/near_academy"
+						android:textColor="@color/black"
+						android:textSize="@dimen/_12sdp" />
+
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentEnd="true"
+						android:orientation="horizontal">
+
+						<com.socialsportz.View.PRTextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/see_all"
+							android:textColor="@color/dim_red"
+							android:layout_gravity="bottom"
+							android:textSize="@dimen/_11sdp"
+							android:visibility="visible"
+							tools:ignore="RelativeOverlap" />
+
+						<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="@dimen/margin_1dp"
+							android:src="@drawable/ic_swap_horizontal_circle_24px"></ImageView>
+
+
+					</LinearLayout>
+				</RelativeLayout>
+
+				<androidx.recyclerview.widget.RecyclerView
+					android:id="@+id/rv_aca"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:visibility="visible"
+					android:layout_marginBottom="@dimen/margin_8dp" />
+
+				<RelativeLayout
+					android:id="@+id/rv_academy"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:gravity="center_vertical"
+					android:visibility="gone"
+					android:layout_marginBottom="@dimen/margin_8dp"
+					android:layout_below="@+id/header_layoutt">
+
+					<ImageView
+						android:id="@+id/img_academy"
+						android:layout_width="@dimen/_70sdp"
+						android:layout_height="@dimen/_70sdp"
+						android:src="@drawable/players_logo"
+						android:layout_alignParentTop="true"
+						android:layout_centerHorizontal="true"
+						></ImageView>
+
+					<com.socialsportz.View.PRTextView
+						android:id="@+id/tv_academy"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/_10sdp"
+						android:layout_gravity="center_vertical"
+						android:gravity="center_vertical"
+						android:layout_centerHorizontal="true"
+						android:layout_marginTop="-20dp"
+						android:layout_below="@+id/img_academy"
+						android:text="Near by Academy not available!"
+						android:textColor="@color/dark_grey"
+						android:textSize="@dimen/_12sdp" />
+
+				</RelativeLayout>
+			</LinearLayout>
+
+
+
+
+			</LinearLayout>
+
+		<!--//</androidx.core.widget.NestedScrollView>-->
+	</RelativeLayout>
+
+	<View
+		android:layout_width="0px"
+		android:layout_height="0px"
+		android:focusable="true"
+		android:focusableInTouchMode="true" />
+
+
+</RelativeLayout>
+

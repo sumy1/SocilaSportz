@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_3dp"
+        android:layout_marginEnd="@dimen/margin_3dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/margin_8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+				<View
+
+					android:layout_width="@dimen/margin_start_vary_60"
+					android:layout_height="@dimen/margin_18dp"
+					android:text="@string/slot_timing"
+					android:layout_alignParentEnd="true"
+					android:layout_marginTop="@dimen/margin_start_vary_10"
+					android:layout_marginEnd="@dimen/margin_start_vary_10"
+					android:layout_marginLeft="@dimen/margin_start_vary_5"
+					android:textSize="@dimen/text_size_regular"
+					android:background="@color/shimmer_background"
+					/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/tv_sport_timing"
+                            android:layout_width="180dp"
+                            android:layout_height="@dimen/margin_18dp"
+                            android:text="@string/slot_timing"
+                            android:textSize="@dimen/text_size_regular"
+							android:background="@color/shimmer_background"
+                            />
+
+						<View
+
+							android:layout_width="@dimen/margin_start_vary_60"
+							android:layout_height="@dimen/margin_18dp"
+							android:text="@string/slot_timing"
+							android:layout_marginLeft="@dimen/margin_start_vary_5"
+							android:textSize="@dimen/text_size_regular"
+							android:background="@color/shimmer_background"
+							/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/kit_available"
+                            android:textColor="@color/dark_grey"
+                            android:textSize="@dimen/text_size_micro"/>
+
+                        <com.socialsportz.View.PMTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/margin_3dp"
+                            android:text="yes"
+                            android:textColor="@color/dim_black"
+                            android:textSize="@dimen/text_size_micro"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.socialsportz.View.PRButton
+                    android:id="@+id/btn_add_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    android:background="@drawable/canvas_red_gradient_btn_bg"
+                    android:text="@string/add_to_cart"
+                    android:textSize="@dimen/text_size_small"
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textColor="@color/white"/>
+                <View
+                    android:id="@+id/chekbox"
+                    android:layout_width="@dimen/margin_25dp"
+                    android:layout_height="@dimen/margin_25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_10dp"
+                    app:buttonTint="@color/user_theme_color"
+                    android:checked="false"
+					android:background="@color/shimmer_background"
+                    android:visibility="visible"
+                    android:layout_centerVertical="true"
+                    ></View>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:elevation="@dimen/margin_1dp">
+        <View
+            android:id="@+id/tv_plan"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/margin_18dp"
+            android:text="Premium Slot"
+			android:layout_marginTop="@dimen/margin_start_vary_10"
+			android:layout_marginLeft="@dimen/margin_start_vary_10"
+            android:textColor="@color/white"
+            android:background="@color/shimmer_background"
+            android:textSize="@dimen/text_size_ideal"/>
+    </RelativeLayout>
+
+
+ </RelativeLayout>

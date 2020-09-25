@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/relative_rate_review_style"
+    app:cardCornerRadius="@dimen/margin_5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/margin_start_vary_60"
+            android:layout_height="@dimen/margin_start_vary_60"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:padding="2dp"
+            android:background="@color/shimmer_background"
+            android:elevation="@dimen/margin_3dp" />
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profile"
+            android:layout_marginTop="@dimen/margin_10dp"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/review_tv_name"
+                android:layout_width="140dp"
+                android:layout_height="@dimen/text_size_regular"
+                android:text="Kapil Rao"
+                android:textSize="@dimen/text_size_regular"
+                android:background="@color/shimmer_background"
+                android:padding="@dimen/margin_start_vary_2"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/margin_20dp"
+                    android:layout_height="@dimen/margin_20dp"
+                    android:layout_gravity="center"
+					android:layout_marginTop="@dimen/margin_start_vary_2"
+                    android:background="@color/shimmer_background"
+                    android:contentDescription="@string/app_desc"/>
+
+                <View
+                    android:id="@+id/review_tv_mail"
+                    android:layout_width="170dp"
+                    android:layout_height="@dimen/text_size_small"
+                    android:layout_marginStart="@dimen/margin_5dp"
+					android:layout_marginTop="@dimen/margin_start_vary_2"
+                    android:text="raokapil01@gmail.com"
+                    android:background="@color/shimmer_background"
+                    />
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginStart="@dimen/margin_10dp"
+                 android:orientation="horizontal">
+
+                 <ImageView
+                     android:layout_width="@dimen/margin_20dp"
+                     android:layout_height="@dimen/margin_20dp"
+                     android:layout_gravity="center"
+                     android:src="@drawable/ic_phone_white"
+                     android:tint="@color/theme_color"/>
+
+                 <com.vibescom.socialsportz.View.PRTextView
+                     android:id="@+id/recycler_rate_tv_contact"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/margin_5dp"
+                     android:text="7564312532"
+                     android:textSize="@dimen/text_size_small"
+                     android:textColor="@color/dark_grey"/>
+             </LinearLayout>
+ -->
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/review_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/margin_start_vary_2"
+            android:layout_below="@+id/iv_profile">
+
+            <View
+                android:id="@+id/recycler_rate_tv_review"
+                android:layout_width="140dp"
+                android:layout_height="@dimen/text_size_regular"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="Comment :"
+                android:layout_marginTop="@dimen/margin_start_vary_2"
+                android:background="@color/shimmer_background"
+                android:textSize="@dimen/text_size_regular"
+                android:textColor="@color/dark_grey" />
+
+            <View
+                android:id="@+id/review_tv_msg_text"
+                android:layout_width="170dp"
+                android:layout_height="@dimen/text_size_ideal"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="jdudhdhucydhdyd jhduedyhe dueiwewlcsjcj jsjdn najnjdsn cjncjsa"
+                android:textSize="@dimen/text_size_ideal"
+                android:textColor="#000"
+                android:background="@color/shimmer_background"
+                android:padding="2dp"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/rating_divider_view"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/review_layout"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:background="@color/dark_grey"
+            android:layout_marginBottom="@dimen/margin_5dp"/>
+
+        <LinearLayout
+            android:id="@+id/date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating_divider_view"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/tv_date_text"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/text_size_ideal"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:text="27 July 2019"
+                android:background="@color/shimmer_background"
+                android:textSize="@dimen/text_size_ideal"
+                android:textColor="@color/theme_color"
+                android:padding="2dp"/>
+        </LinearLayout>
+
+        <!--  <com.vibescom.socialsportz.View.PRButton
+              android:id="@+id/report_btn"
+              android:layout_width="wrap_content"
+              android:layout_height="@dimen/ongo_btn_height"
+              android:layout_centerVertical="true"
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/recycle_rate_button_style"
+              android:layout_below="@+id/rating_divider_view"
+              android:paddingStart="@dimen/margin_10dp"
+              android:paddingEnd="@dimen/margin_10dp"
+              android:layout_alignParentEnd="true"
+              android:layout_marginEnd="@dimen/margin_10dp"
+              android:text="@string/report_abuse"
+              android:textSize="@dimen/text_size_normal"
+              android:textColor="@color/black"
+              android:textAllCaps="false"
+              android:layout_marginBottom="@dimen/margin_10dp"
+              android:layout_marginTop="@dimen/margin_5dp"/>-->
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

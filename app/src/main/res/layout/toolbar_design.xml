@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:background="@drawable/canvas_toolbar_img_bg"
+    android:layout_height="@dimen/toolbar_height"
+    android:theme="@style/AppTheme.PopupOverlay">-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/canvas_toolbar_img_bg"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="vertical"
+        android:elevation="@dimen/margin_8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/toolbar_margin_top"
+            android:layout_marginStart="@dimen/rate_review_margin_end"
+            android:layout_marginEnd="@dimen/rate_review_margin_end">
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/iv_menu"
+                android:layout_width="@dimen/menu_btn_width"
+                android:layout_height="@dimen/menu_btn_height"
+                android:src="@drawable/ic_menu"
+                android:scaleType="fitCenter"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:contentDescription="@string/app_desc"/>
+			<ImageView
+				android:id="@+id/img"
+				android:layout_width="@dimen/_30sdp"
+				android:layout_height="@dimen/menu_btn_height"
+				android:layout_marginLeft="@dimen/_10sdp"
+				android:scaleType="fitCenter"
+				android:layout_centerVertical="true"
+				android:layout_toRightOf="@+id/iv_menu"
+				android:src="@drawable/logo"
+				android:contentDescription="@string/app_desc"></ImageView>
+            <com.socialsportz.View.PMTextView
+                android:id="@+id/tv_title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+				android:layout_marginLeft="@dimen/_10sdp"
+				android:layout_toRightOf="@+id/img"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxlarge"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/menu_btn_width"
+                    android:layout_height="@dimen/menu_btn_height"
+                    android:layout_gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/iv_notify"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_notifications"
+                        android:tint="@color/white"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_not_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_mini"
+                        android:background="@drawable/canvas_count_round_bg"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/menu_btn_width"
+                    android:layout_height="@dimen/menu_btn_height"
+                    android:layout_marginStart="@dimen/margin_10dp"
+                    android:layout_gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/iv_mail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_mail_outline"
+                        android:tint="@color/white"
+                        android:background="@null"
+                        android:scaleType="fitCenter"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_alert_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_mini"
+                        android:background="@drawable/canvas_count_round_bg"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/iv_search"
+                    android:layout_width="@dimen/menu_btn_width"
+                    android:layout_height="@dimen/menu_btn_height"
+                    android:src="@drawable/ic_search"
+                    android:tint="@color/white"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/app_desc"/>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/iv_settings"
+                    android:layout_width="@dimen/menu_btn_width"
+                    android:layout_height="@dimen/menu_btn_height"
+                    android:layout_marginStart="@dimen/margin_20dp"
+                    android:src="@drawable/ic_tune"
+                    android:tint="@color/white"
+                    android:background="@null"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="@string/app_desc"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/rate_review_margin_end"
+        android:layout_marginEnd="@dimen/rate_review_margin_end">
+
+        <!--<com.vibescom.socialsportz.View.PRTextView
+            android:id="@+id/tv_select_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_school_white"
+            android:drawablePadding="@dimen/margin_15dp"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down_white"
+            android:text="Noida Sports Academy , Noida"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/title_size"/>-->
+
+        <com.socialsportz.Utils.DropDownView
+            style="@style/formDropDown"
+            android:id="@+id/tv_select_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_games_white"
+            android:paddingStart="2dp"
+			android:layout_alignParentStart="true"
+            android:hint="Add Facility/Academy"
+			android:layout_centerVertical="true"
+			android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/title_size"
+            android:background="@null"/>
+
+		<ImageView
+			android:id="@+id/img_drop"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:drawablePadding="@dimen/margin_10dp"
+			android:layout_centerVertical="true"
+			android:layout_alignParentEnd="true"
+			android:src="@drawable/ic_keyboard_arrow_down_white"></ImageView>
+
+    </RelativeLayout>
+
+       <!-- <FrameLayout
+            android:id="@+id/frame_for_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_80dp"
+            android:layout_marginEnd="@dimen/rate_review_margin_end">
+
+            <com.vibescom.socialsportz.View.PREditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_bar_height"
+                android:background="@drawable/canvas_search_view_toolbar_bg"
+                android:drawableStart="@drawable/ic_search"
+                android:padding="@dimen/margin_5dp"
+                android:drawablePadding="@dimen/margin_5dp"
+                android:layout_gravity="center"
+                android:hint="Search bookings"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:textSize="@dimen/text_size_regular"
+                android:inputType="none"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_settings_voice"
+                android:layout_gravity="end|center"
+                android:padding="@dimen/margin_10dp"
+                android:baselineAlignBottom="true"
+                android:contentDescription="@string/app_desc"/>
+        </FrameLayout>-->
+
+    </LinearLayout>
+<!--
+</androidx.appcompat.widget.Toolbar>-->

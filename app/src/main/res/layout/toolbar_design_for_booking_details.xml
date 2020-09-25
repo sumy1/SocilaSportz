@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:background="@drawable/canvas_toolbar_img_bg"
+    android:layout_height="@dimen/margin_start_vary_65"
+    android:gravity="center"
+    android:theme="@style/AppTheme.PopupOverlay">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_20dp"
+            android:layout_marginEnd="@dimen/rate_review_margin_end">
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="@dimen/margin_45dp"
+                android:layout_height="@dimen/margin_45dp"
+                android:src="@drawable/ic_keyboard_arrow_left_white"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:contentDescription="@string/app_desc"/>
+            <com.socialsportz.View.PMTextView
+                android:id="@+id/tv_title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nav_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xxlarge"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

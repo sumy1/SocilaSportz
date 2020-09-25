@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_8dp">
+
+    <ImageView
+        android:id="@+id/iv_country"
+        android:layout_width="@dimen/margin_30dp"
+        android:layout_height="@dimen/margin_30dp"
+        android:layout_marginEnd="@dimen/margin_8dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_dashboard"
+        android:tint="@color/theme_color"
+        android:contentDescription="@string/app_desc"/>
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:text="Washroom"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"/>
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <ScrollView
+        android:layout_above="@id/see_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/form_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_start_vary_10"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PMTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_3dp"
+                android:text="@string/sports_name"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.socialsportz.Utils.DropDownView
+                android:id="@+id/et_sport_name"
+                style="@style/formDropDown"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:background="@drawable/canvas_form_round_bg"
+                android:drawableStart="@drawable/canvas_facility_round_icon"
+                android:drawableEnd="@drawable/ic_keyboard_arrow_down_grey"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:gravity="center_vertical"
+                android:hint="@string/sport_name_hint"
+                android:paddingStart="@dimen/margin_5dp"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/text_size_regular" />
+
+            <com.socialsportz.View.PMTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:layout_marginBottom="@dimen/margin_3dp"
+                android:text="@string/court_no"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/text_size_normal" />
+
+            <com.socialsportz.View.PREditText
+                android:id="@+id/et_no_courts"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:background="@drawable/canvas_form_round_bg"
+                android:drawableStart="@drawable/canvas_input_round_icon"
+                android:drawablePadding="@dimen/margin_10dp"
+                android:hint="@string/court_hint"
+                android:inputType="number"
+                android:paddingStart="@dimen/margin_5dp"
+                android:paddingEnd="@dimen/margin_10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/half_black"
+                android:textSize="@dimen/text_size_regular" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginBottom="@dimen/margin_3dp"
+                        android:text="@string/indoor_court"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_indoor_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginEnd="@dimen/margin_5dp"
+                        android:background="@drawable/canvas_form_round_bg"
+                        android:drawableStart="@drawable/canvas_input_round_icon"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:hint="@string/number_hint"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/margin_5dp"
+                        android:paddingEnd="@dimen/margin_10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/half_black"
+                        android:textSize="@dimen/text_size_regular" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_8dp"
+                        android:layout_marginBottom="@dimen/margin_3dp"
+                        android:text="@string/outdoor_court"
+                        android:textColor="@color/theme_color"
+                        android:textSize="@dimen/text_size_normal" />
+
+                    <com.socialsportz.View.PREditText
+                        android:id="@+id/et_outdoor_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:background="@drawable/canvas_form_round_bg"
+                        android:drawableStart="@drawable/canvas_input_round_icon"
+                        android:drawablePadding="@dimen/margin_10dp"
+                        android:hint="@string/number_hint"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/margin_5dp"
+                        android:paddingEnd="@dimen/margin_10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/half_black"
+                        android:textSize="@dimen/text_size_regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/see_all_layout"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@color/white"
+        android:elevation="@dimen/margin_3dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dim_red" />
+
+        <com.socialsportz.View.PMTextView
+            android:id="@+id/tv_see_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:drawableEnd="@drawable/ic_arrow_right_grey"
+            android:drawableTint="@color/dim_red"
+            android:gravity="end"
+            android:text="See all sports"
+            android:textColor="@color/dim_red"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:elevation="@dimen/margin_3dp"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dim_red" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.socialsportz.View.PRButton
+                android:id="@+id/btn_add"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:text="Add sports"
+                android:textColor="@color/dim_red" />
+
+            <com.socialsportz.View.PMButton
+                android:id="@+id/btn_done"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/dim_red"
+                android:text="Done"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

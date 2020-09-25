@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/relative_rate_review_style"
+    app:cardCornerRadius="@dimen/margin_start_vary_5">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/margin_start_vary_60"
+            android:layout_height="@dimen/margin_start_vary_60"
+            android:layout_gravity="start"
+            android:layout_marginStart="@dimen/margin_start_vary_10"
+            android:layout_marginTop="@dimen/margin_start_vary_5"
+            android:padding="2dp"
+            android:src="@drawable/ic_event_grey"
+            android:tint="@color/black"/>
+
+        <LinearLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_profile"
+            android:orientation="vertical">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_event_tv_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:layout_marginTop="@dimen/margin_start_vary_10"
+                android:padding="@dimen/margin_start_vary_2"
+                android:text="Round On Marathon"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_regular" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_10"
+                android:orientation="horizontal">
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_rate_tv_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:text="Venue:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_size_small" />
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_event_tv_venue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_vary_10"
+                    android:padding="2dp"
+                    android:text="Noida Cricket Stadium, Noida"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/event_divider_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="@dimen/margin_start_vary_10"
+            android:layout_marginBottom="@dimen/margin_start_vary_5"
+            android:background="@color/dark_grey"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp" />
+
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_start_vary_10"
+            android:layout_marginEnd="@dimen/margin_start_vary_10"
+            android:orientation="horizontal">
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="Price:"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_event_tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_5"
+                android:padding="2dp"
+                android:text="500"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/text_size_small" />
+
+            <com.socialsportz.View.PRTextView
+                android:id="@+id/recycler_event_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_start_vary_5"
+                android:padding="2dp"
+                android:text="INR"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/event_divider_view"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:orientation="vertical">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="Date:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_size_ideal" />
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_event_tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="30 July,2019-2 Aug,2019"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_ideal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="Time:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_size_ideal" />
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_event_tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="9 am to 11 am"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_ideal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:orientation="vertical">
+
+                <com.socialsportz.View.PRTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="Participants:"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="@dimen/text_size_ideal" />
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/recycler_event_tv_part"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="2dp"
+                    android:text="255"
+                    android:textColor="#000"
+                    android:textSize="@dimen/text_size_ideal" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

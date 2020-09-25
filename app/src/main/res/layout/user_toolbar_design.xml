@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_start_vary_80"
+    android:background="@drawable/canvas_toolbar_img_bg"
+    android:elevation="@dimen/margin_8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/iv_menu"
+        android:layout_width="@dimen/menu_btn_width"
+        android:layout_height="@dimen/menu_btn_height"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/margin_start_vary_10"
+        android:background="@null"
+        android:contentDescription="@string/app_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_menu" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_banner_logo"
+        android:layout_toEndOf="@+id/iv_menu"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/margin_start_vary_100"
+        android:layout_height="@dimen/menu_btn_height"
+        android:layout_gravity="center_vertical"
+        android:background="@null"
+        android:contentDescription="@string/app_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/tv_title_toolbar"
+        android:layout_toEndOf="@+id/iv_banner_logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxlarge" />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/iv_search"
+        android:layout_width="@dimen/menu_btn_width"
+        android:layout_height="@dimen/menu_btn_height"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/margin_start_vary_10"
+        android:background="@null"
+        android:contentDescription="@string/app_desc"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_search"
+        android:tint="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_30sdp"
+    android:layout_height="@dimen/_30sdp"
+    android:padding="@dimen/_3sdp"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.socialsportz.View.PRTextView
+        android:id="@+id/tv_sport"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="5"
+        android:textColor="@color/white"
+        android:background="@drawable/canvas_red_gradient_round_bg"/>
+
+</RelativeLayout>

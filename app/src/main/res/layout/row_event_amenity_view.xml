@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="@dimen/event_amenity_row_size"
+        android:layout_height="@dimen/event_amenity_row_size"
+        android:background="@drawable/canvas_white_round_bg"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_10dp"
+        android:layout_marginBottom="@dimen/margin_10dp"
+        android:layout_marginStart="@dimen/margin_5dp"
+        android:layout_marginEnd="@dimen/margin_5dp"
+        android:elevation="@dimen/margin_start_vary_2">
+
+        <ImageView
+            android:id="@+id/iv_amenity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/amenities"
+            android:contentDescription="@string/app_desc"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tickView"
+        android:layout_width="@dimen/margin_10dp"
+        android:layout_height="@dimen/margin_10dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_start_vary_10"
+        android:layout_marginEnd="@dimen/margin_10dp"
+        android:src="@drawable/canvas_tick_round_icon"
+        android:elevation="@dimen/margin_start_vary_2"
+        android:contentDescription="@string/app_desc"
+        android:visibility="gone"/>
+
+</FrameLayout>

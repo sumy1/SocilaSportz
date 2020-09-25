@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:background="@android:color/transparent"
+	android:gravity="center">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/canvas_round_corner_black">
+
+		<ImageView
+			android:id="@+id/img"
+			android:layout_width="250dp"
+			android:layout_height="200dp"
+			android:layout_below="@+id/header_layout"
+			android:layout_centerHorizontal="true"
+			android:layout_gravity="center"
+			android:contentDescription="@string/app_desc"
+			android:src="@drawable/notification" />
+
+		<LinearLayout
+			android:id="@+id/header_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/margin_20dp"
+			android:orientation="vertical">
+
+			<com.socialsportz.View.PMTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginTop="@dimen/margin_10dp"
+				android:text="@string/thanks_txt"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_xxlarge" />
+
+			<com.socialsportz.View.PRTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginEnd="@dimen/margin_15dp"
+				android:layout_marginStart="@dimen/margin_15dp"
+				android:gravity="center"
+				android:text="@string/thanks_desc"
+				android:textColor="@color/dark_grey"
+				android:textSize="@dimen/text_size_small" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/mid"
+			android:orientation="vertical">
+
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/margin_20dp"
+				android:layout_marginEnd="@dimen/margin_30dp"
+				android:layout_marginTop="@dimen/margin_3dp"
+				android:gravity="end"
+				android:orientation="horizontal">
+
+				<com.socialsportz.View.PRTextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginEnd="@dimen/margin_5dp"
+					android:gravity="center"
+					android:text="@string/expire_otp"
+					android:textColor="@color/white"
+					android:textSize="@dimen/text_size_micro" />
+
+				<com.socialsportz.View.PRTextView
+					android:id="@+id/tv_otp_time"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:text="2 : 00"
+					android:textColor="@color/theme_color"
+					android:textSize="@dimen/text_size_micro" />
+
+			</LinearLayout>
+
+			<com.socialsportz.View.PMButton
+				android:id="@+id/btn_verify"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/btn_height"
+				android:layout_marginEnd="@dimen/margin_25dp"
+				android:layout_marginStart="@dimen/margin_25dp"
+				android:background="@drawable/canvas_forgot_btn_bg"
+				android:text="@string/verify_otp"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_regular" />
+
+			<com.socialsportz.View.PRButton
+				android:id="@+id/btn_resend"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginBottom="@dimen/margin_20dp"
+				android:background="@null"
+				android:text="@string/resend_otp"
+				android:textAllCaps="false"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_ideal"
+				android:visibility="gone" />
+
+
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/mid"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/img"
+			android:orientation="vertical">
+
+			<com.socialsportz.View.PREditText
+				android:id="@+id/et_otp"
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/btn_height"
+				android:layout_below="@+id/tv"
+				android:layout_gravity="center"
+				android:layout_marginEnd="@dimen/margin_30dp"
+				android:layout_marginStart="@dimen/margin_30dp"
+				android:focusable="true"
+				android:hint="@string/enter_otp"
+				android:inputType="number"
+				android:maxLength="6"
+				android:textColor="@color/white"
+				android:textColorHint="@color/dark_grey"
+				android:textSize="@dimen/text_size_ideal" />
+
+			<com.socialsportz.View.PRTextView
+				android:id="@+id/tv"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginEnd="@dimen/margin_30dp"
+				android:layout_marginStart="@dimen/margin_30dp"
+				android:gravity="center"
+				android:text="@string/otp_msg"
+				android:textAllCaps="true"
+				android:textColor="@color/white"
+				android:textSize="@dimen/text_size_ideal" />
+
+
+		</RelativeLayout>
+
+	</RelativeLayout>
+</RelativeLayout>

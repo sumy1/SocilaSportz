@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/relative_rate_review_style"
+    android:layout_marginStart="@dimen/margin_3dp"
+    android:layout_marginEnd="@dimen/margin_3dp"
+    android:layout_marginBottom="@dimen/margin_3dp"
+    app:cardCornerRadius="@dimen/margin_8dp"
+    app:cardElevation="@dimen/margin_3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/event_banner_size"
+            app:cardCornerRadius="@dimen/margin_8dp"
+            android:elevation="@dimen/margin_3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/event_banner_size">
+
+                <ImageView
+                    android:id="@+id/iv_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/event_banner_size"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/running_event"
+                    android:background="@drawable/canvas_image_top_curve_bg"
+                    android:contentDescription="@string/app_desc"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/margin_5dp"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:elevation="@dimen/margin_3dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.socialsportz.View.PRTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="@dimen/margin_8dp"
+                            android:text="Status : "
+                            android:textColor="@color/white"
+                            android:background="@color/gradient_red_end"
+                            android:textSize="@dimen/text_size_ideal" />
+
+                        <com.socialsportz.View.PRTextView
+                            android:id="@+id/tv_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingEnd="@dimen/margin_8dp"
+                            android:text="Pending"
+                            android:textColor="@color/white"
+                            android:background="@color/gradient_red_end"
+                            android:textSize="@dimen/text_size_ideal" />
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_banner"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/end_layout"
+                android:padding="@dimen/margin_start_vary_8"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.socialsportz.View.PMTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Booking Id : "
+                        android:textColor="@color/user_theme_color"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_booking_order"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SSZ1000015729445367"
+                        android:textColor="@color/user_theme_color"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.socialsportz.View.PMTextView
+                        android:id="@+id/tv_order_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_5dp"
+                        android:text="(29 Feb 2019)"
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_micro" />
+
+                </LinearLayout>
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Noida Academy"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_regular" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <com.socialsportz.View.PRTextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Noida Cricket Stadium, Noida"
+                        android:textColor="@color/dark_grey"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_20dp"
+                        android:layout_height="@dimen/margin_20dp"
+                        android:src="@drawable/football_image"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:contentDescription="@string/app_desc"/>
+
+                    <com.socialsportz.View.PRTextView
+                        android:id="@+id/tv_sport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_3dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="@string/football"
+                        android:textColor="@color/black_semi_transparent"
+                        android:textSize="@dimen/text_size_normal" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/end_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/margin_8dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.socialsportz.View.PRTextView
+                    android:id="@+id/tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    android:layout_gravity="center"
+                    android:text="@string/price_hint"
+                    android:textColor="@color/user_theme_color"
+                    android:textSize="@dimen/text_size_ideal" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

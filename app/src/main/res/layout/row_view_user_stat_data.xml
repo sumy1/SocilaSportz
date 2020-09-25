@@ -1,0 +1,31 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/total_no"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="100+"
+        android:textColor="@color/gradient_red_start"
+        android:textSize="@dimen/title_size"
+        android:background="@drawable/canvas_white_gradient_round_bg"
+        android:elevation="@dimen/margin_5dp"/>
+    <com.socialsportz.View.PMTextView
+        android:id="@+id/total_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin_10dp"
+        android:paddingEnd="@dimen/margin_10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/total_booking"
+        android:textSize="@dimen/text_size_large"
+        android:textColor="@color/dim_grey"/>
+
+</LinearLayout>
